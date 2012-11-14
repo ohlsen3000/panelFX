@@ -205,13 +205,13 @@
         </condition>
         <condition property="javafx.sdk.missing+default">
             <and>
-                <equals arg1="${platform.active}" arg2="Default_JavaFX_Platform" trim="true"/>
+                <equals arg1="${platform.active}" arg2="Default_JavaFXPlatform" trim="true"/>
                 <not><isset property="javafx.sdk.defined"/></not>
             </and>
         </condition>
         <condition property="javafx.sdk.missing-default">
             <and>
-                <not><equals arg1="${platform.active}" arg2="Default_JavaFX_Platform" trim="true"/></not>
+                <not><equals arg1="${platform.active}" arg2="Default_JavaFXPlatform" trim="true"/></not>
                 <not><isset property="javafx.sdk.defined"/></not>
             </and>
         </condition>
@@ -420,13 +420,13 @@
         </condition>
         <condition property="javafx.runtime.missing+default">
             <and>
-                <equals arg1="${platform.active}" arg2="Default_JavaFX_Platform" trim="true"/>
+                <equals arg1="${platform.active}" arg2="Default_JavaFXPlatform" trim="true"/>
                 <not><isset property="javafx.runtime.defined"/></not>
             </and>
         </condition>
         <condition property="javafx.runtime.missing-default">
             <and>
-                <not><equals arg1="${platform.active}" arg2="Default_JavaFX_Platform" trim="true"/></not>
+                <not><equals arg1="${platform.active}" arg2="Default_JavaFXPlatform" trim="true"/></not>
                 <not><isset property="javafx.runtime.defined"/></not>
             </and>
         </condition>
@@ -1283,7 +1283,7 @@
         <sequential>
             <antcall target="-pre-jfx-jar"/>
             <echo message="javafx.ant.classpath = ${javafx.ant.classpath}" level="verbose"/>
-            <typedef name="fx_jar" classname="com.sun.javafx.tools.ant.FXJar" classpath="${javafx.ant.classpath}"/>
+            <typedef name="fxjar" classname="com.sun.javafx.tools.ant.FXJar" classpath="${javafx.ant.classpath}"/>
             <echo message="Launching &lt;fx:jar&gt; task from ${ant-javafx.jar.location}" level="info"/>
             <property name="pp_jar_destfile" value="${jfx.deployment.dir}${file.separator}${jfx.deployment.jar}"/>
             <property name="pp_jar_buildclasses" value="${basedir}${file.separator}${build.classes.dir}"/>
@@ -1305,7 +1305,7 @@
                     var JFXPARV = "value";
                     var JFXLAZY = "download.mode.lazy.jar";
                     var withpreloader = project.getProperty("app-with-preloader");
-                    var fx_ant_api_1_1 = project.getProperty("have-fx-ant-api-1.1");
+                    var fxant_api_1_1 = project.getProperty("have-fx-ant-api-1.1");
 
                     // get jars with lazy download mode property set
                     function getLazyJars() {
@@ -1329,7 +1329,7 @@
                     }
                     
                     // fx:jar
-                    var jar = project.createTask("fx_jar");
+                    var jar = project.createTask("fxjar");
                     jar.setProject(project);
                     var destfile = project.getProperty("pp_jar_destfile");
                     jar.setDestfile(destfile);
@@ -1361,7 +1361,7 @@
                                     par.setName(propn);
                                     par.setValue(propv);
                                 } else {
-                                    if(fx_ant_api_1_1 == "true") {
+                                    if(fxant_api_1_1 == "true") {
                                         var arg = app.createArgument();
                                         arg.addText(propn);
                                     }
@@ -1516,7 +1516,7 @@
         <sequential>
             <antcall target="-pre-jfx-deploy"/>
             <echo message="javafx.ant.classpath = ${javafx.ant.classpath}" level="verbose"/>
-            <typedef name="fx_deploy" classname="com.sun.javafx.tools.ant.DeployFXTask" classpath="${javafx.ant.classpath}"/>
+            <typedef name="fxdeploy" classname="com.sun.javafx.tools.ant.DeployFXTask" classpath="${javafx.ant.classpath}"/>
             <echo message="Launching &lt;fx:deploy&gt; task from ${ant-javafx.jar.location}" level="info"/>
             <property name="pp_deploy_dir" value="${jfx.deployment.dir}"/>
             <property name="pp_deploy_fs1" value="lib${file.separator}${javafx.preloader.jar.filename}"/>
@@ -1537,7 +1537,7 @@
                     var JFXCALLB = "javafx.jscallback";
                     var JFXLAZY = "download.mode.lazy.jar";
                     var withpreloader = project.getProperty("app-with-preloader");
-                    var fx_ant_api_1_1 = project.getProperty("have-fx-ant-api-1.1");
+                    var fxant_api_1_1 = project.getProperty("have-fx-ant-api-1.1");
 
                     // get jars with lazy download mode property set
                     function getLazyJars() {
@@ -1561,7 +1561,7 @@
                     }
                     
                     // fx:deploy
-                    var deploy = project.createTask("fx_deploy");
+                    var deploy = project.createTask("fxdeploy");
                     deploy.setProject(project);
                     var width = project.getProperty("javafx.width");
                     var height = project.getProperty("javafx.height");
@@ -1579,7 +1579,7 @@
                     deploy.setOutfile(outfile);
                     deploy.setIncludeDT(isTrue(includeDT));
                     if(offline != null) {
-                        if(fx_ant_api_1_1 == "true") {
+                        if(fxant_api_1_1 == "true") {
                             deploy.setOfflineAllowed(isTrue(offline));
                         } else {
                             println("Warning: offlineAllowed not supported by this version of JavaFX SDK deployment Ant task. Please upgrade JavaFX to 2.0.2 or higher.");
@@ -1613,7 +1613,7 @@
                                     par.setName(propn);
                                     par.setValue(propv);
                                 } else {
-                                    if(fx_ant_api_1_1 == "true") {
+                                    if(fxant_api_1_1 == "true") {
                                         var arg = app.createArgument();
                                         arg.addText(propn);
                                     } else {
@@ -1680,7 +1680,7 @@
                     info.setVendor(vendor);
                     var icon = project.getProperty("javafx.deploy.icon");
                     if(icon != null) {
-                        if(fx_ant_api_1_1 == "true") {
+                        if(fxant_api_1_1 == "true") {
                             var iicon = info.createIcon();
                             iicon.setHref(icon);
                         } else {
