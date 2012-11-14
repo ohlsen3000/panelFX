@@ -1,0 +1,11 @@
+dist/
+build/
+bin
+.settings
+.project
+.gradle
+nbproject/private
+.classpath
+target
+
+
