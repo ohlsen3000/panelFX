@@ -48,10 +48,10 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(panePulpFiction);
         
         FlowPane paneBastelecke = createFlowPane();
-        paneBastelecke.getChildren().add(createButton("Standup", "standup", actionListener));
+        paneBastelecke.getChildren().add(createButton("Stand up", "standup", actionListener));
         paneBastelecke.getChildren().add(createButton("Cubage", "qbitch", actionListener));
         paneBastelecke.getChildren().add(createButton("Alarm", "alarm", actionListener));
-        paneBastelecke.getChildren().add(createButton("Öey", "oey", actionListener));
+        paneBastelecke.getChildren().add(createButton("Öööey", "oey", actionListener));
         paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
         paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
         paneBastelecke.getChildren().add(createButton("Falsch", "falsch", actionListener));
@@ -67,31 +67,31 @@ public class PanelFX extends Application {
         paneMisc.getChildren().add(createButton("Bieker", "bieker", actionListener));
         paneMisc.getChildren().add(createButton("Ballad", "ballad", actionListener));
         paneMisc.getChildren().add(createButton("Jeopardy", "jeopardy", actionListener));
-        paneMisc.getChildren().add(createButton("Remoot", "remoot", actionListener));
-        paneMisc.getChildren().add(createButton("Delate", "delate", actionListener));
+        paneMisc.getChildren().add(createButton("Remote", "remoot", actionListener));
+        paneMisc.getChildren().add(createButton("Delete", "delate", actionListener));
         paneMisc.getChildren().add(createButton("Snapshoot", "snapshoot", actionListener));
-        paneMisc.getChildren().add(createButton("Khaan", "khan", actionListener));
+        paneMisc.getChildren().add(createButton("Khan", "khan", actionListener));
         paneMisc.getChildren().add(createButton("Essort", "essort", actionListener));
         paneMisc.getChildren().add(createButton("Wie geil", "geil", actionListener));
         paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
-        paneMisc.getChildren().add(createButton("Fail satanic", "gescheitert_satan", actionListener));
-        paneMisc.getChildren().add(createButton("Quiet", "quiet", actionListener));
+        paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan", actionListener));
+        paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
         masterPane.getChildren().add(createLabel("Misc"));
         masterPane.getChildren().add(paneMisc);
         
         FlowPane paneJoeHanson = createFlowPane();
-        paneJoeHanson.getChildren().add(createButton("Bitte?", "bidde_fragend", actionListener));
+        paneJoeHanson.getChildren().add(createButton("BIDDE?", "bidde_fragend", actionListener));
         paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Revert", "reewert", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Reewert", "reewert", actionListener));
         paneJoeHanson.getChildren().add(createButton("Rewe", "rewe", actionListener));
         paneJoeHanson.getChildren().add(createButton("Das ist das", "dasist", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Eeehm", "eehm", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Eehm", "eehm", actionListener));
         paneJoeHanson.getChildren().add(createButton("Domäne", "domaene", actionListener));
         paneJoeHanson.getChildren().add(createButton("So nicht!", "sonicht", actionListener));
         paneJoeHanson.getChildren().add(createButton("Weißt Du's?", "weisstdus", actionListener));
         paneJoeHanson.getChildren().add(createButton("Konverter", "konverter", actionListener));
         paneJoeHanson.getChildren().add(createButton("Kaffee", "kaffee", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Annee", "aneene", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Annee-ne", "aneene", actionListener));
         masterPane.getChildren().add(createLabel("Joe Hanson"));
         masterPane.getChildren().add(paneJoeHanson);
 
