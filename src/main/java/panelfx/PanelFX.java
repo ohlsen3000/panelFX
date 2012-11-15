@@ -10,10 +10,12 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -21,237 +23,108 @@ import javafx.stage.Stage;
  * @author ugz
  */
 public class PanelFX extends Application {
-
-    Button buttonAlarm = new Button("Alarm");
-    Button buttonAnsteht = new Button("Was ansteht");
-    Button buttonBaehm = new Button("Bäm");
-    Button buttonBallad = new Button("Ballad");
-    Button buttonBiddeFragend = new Button("Bitte?");
-    Button buttonBiddeVeraengstigt = new Button("bidde?");
-    Button buttonBieker = new Button("Bieker");
-    Button buttonButch = new Button("Zur Seite");
-    Button buttonDankoe = new Button("Danköö");
-    Button buttonDasIst = new Button("Das ist das");
-    Button buttonDelate = new Button("Delate");
-    Button buttonDomaene = new Button("Domäne");
-    Button buttonEehm = new Button("Eeehm");
-    Button buttonErbaermlich = new Button("Erbärmlich");
-    Button buttonEssort = new Button("Essort");
-    Button buttonFalsch = new Button("Falsch");
-    Button buttonFog = new Button("The Fog");
-    Button buttonGeil = new Button("Wie geil");
-    Button buttonGescheiterReiner = new Button("Fail");
-    Button buttonGescheitertSatan = new Button("Fail satanic");
-    Button buttonJeopardy = new Button("Jeopardy");
-    Button buttonKaffee = new Button("Kaffee");
-    Button buttonKevin = new Button("HorHorHor");
-    Button buttonKhan = new Button("Khaan");
-    Button buttonKonverter = new Button("Konverter");
-    Button buttonKonzept = new Button("Aus dem Konzept");
-    Button buttonLauschangriff = new Button("Lauschangriff");
-    Button buttonNeinMann = new Button("Nein Mann");
-    Button buttonOey = new Button("Öey");
-    Button buttonQbitch = new Button("Cubage");
-    Button buttonQuiet = new Button("Quiet");
-    Button buttonRewert = new Button("Revert");
-    Button buttonRemoot = new Button("Remoot");
-    Button buttonRewe = new Button("Rewe");
-    Button buttonSchafskaese = new Button("Schafskäse");
-    Button buttonSnapshoot = new Button("Snapshoot");
-    Button buttonSoNicht = new Button("So nicht!");
-    Button buttonStandup = new Button("Standup");
-    Button buttonWas = new Button("1 mal was");
-    Button buttonWasJetzt = new Button("Was jetzt?");
-    Button buttonWeisstDus = new Button("Weißt Du's?");
-
+    
 
     @Override
     public void start(Stage primaryStage) {
 
-        initButtons();
-        StackPane root = new StackPane();
-        FlowPane flow = new FlowPane();
+        FlowPane masterPane = new FlowPane();
+        masterPane.setPadding(new Insets(5, 5, 5, 5));
+        masterPane.setVgap(5);
+        masterPane.setHgap(5);
+        masterPane.setStyle("-fx-background-color: #414141;");
+
+        EventHandler actionListener = createButtonListener();
+        
+        FlowPane panePulpFiction = createFlowPane();
+        panePulpFiction.getChildren().add(createButton("Was jetzt?", "wasjetzt", actionListener));
+        panePulpFiction.getChildren().add(createButton("1 mal was", "was", actionListener));
+        panePulpFiction.getChildren().add(createButton("Ich sag dir", "ansteht", actionListener));
+        panePulpFiction.getChildren().add(createButton("Konzept", "konzept", actionListener));
+        panePulpFiction.getChildren().add(createButton("Zur Seite", "butch", actionListener));
+        panePulpFiction.getChildren().add(createButton("Nein Mann", "neinmann", actionListener));
+        masterPane.getChildren().add(createLabel("Pulp Fiction"));
+        masterPane.getChildren().add(panePulpFiction);
+        
+        FlowPane paneBastelecke = createFlowPane();
+        paneBastelecke.getChildren().add(createButton("Standup", "standup", actionListener));
+        paneBastelecke.getChildren().add(createButton("Cubage", "qbitch", actionListener));
+        paneBastelecke.getChildren().add(createButton("Alarm", "alarm", actionListener));
+        paneBastelecke.getChildren().add(createButton("Öey", "oey", actionListener));
+        paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
+        paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
+        paneBastelecke.getChildren().add(createButton("Falsch", "falsch", actionListener));
+        paneBastelecke.getChildren().add(createButton("Danköö", "dankoe", actionListener));
+        paneBastelecke.getChildren().add(createButton("Schafskäse", "schafskaese", actionListener));
+        paneBastelecke.getChildren().add(createButton("Bäm", "baehm", actionListener));
+        paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich", actionListener));
+        paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
+        masterPane.getChildren().add(createLabel("Bastelecke"));
+        masterPane.getChildren().add(paneBastelecke);
+        
+        FlowPane paneMisc = createFlowPane();
+        paneMisc.getChildren().add(createButton("Bieker", "bieker", actionListener));
+        paneMisc.getChildren().add(createButton("Ballad", "ballad", actionListener));
+        paneMisc.getChildren().add(createButton("Jeopardy", "jeopardy", actionListener));
+        paneMisc.getChildren().add(createButton("Remoot", "remoot", actionListener));
+        paneMisc.getChildren().add(createButton("Delate", "delate", actionListener));
+        paneMisc.getChildren().add(createButton("Snapshoot", "snapshoot", actionListener));
+        paneMisc.getChildren().add(createButton("Khaan", "khan", actionListener));
+        paneMisc.getChildren().add(createButton("Essort", "essort", actionListener));
+        paneMisc.getChildren().add(createButton("Wie geil", "geil", actionListener));
+        paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
+        paneMisc.getChildren().add(createButton("Fail satanic", "gescheitert_satan", actionListener));
+        paneMisc.getChildren().add(createButton("Quiet", "quiet", actionListener));
+        masterPane.getChildren().add(createLabel("Misc"));
+        masterPane.getChildren().add(paneMisc);
+        
+        FlowPane paneJoeHanson = createFlowPane();
+        paneJoeHanson.getChildren().add(createButton("Bitte?", "bidde_fragend", actionListener));
+        paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Revert", "reewert", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Rewe", "rewe", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Das ist das", "dasist", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Eeehm", "eehm", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Domäne", "domaene", actionListener));
+        paneJoeHanson.getChildren().add(createButton("So nicht!", "sonicht", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Weißt Du's?", "weisstdus", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Konverter", "konverter", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Kaffee", "kaffee", actionListener));
+        paneJoeHanson.getChildren().add(createButton("Annee", "aneene", actionListener));
+        masterPane.getChildren().add(createLabel("Joe Hanson"));
+        masterPane.getChildren().add(paneJoeHanson);
 
 
-        flow.setPadding(new Insets(5, 0, 5, 0));
-        flow.setVgap(4);
-        flow.setHgap(4);
-        flow.setStyle("-fx-background-color: AAAAAA;");
-
-        flow.getChildren().add(buttonAlarm);
-        flow.getChildren().add(buttonAnsteht);
-        flow.getChildren().add(buttonBaehm);
-        flow.getChildren().add(buttonBallad);
-        flow.getChildren().add(buttonBiddeFragend);
-        flow.getChildren().add(buttonBiddeVeraengstigt);
-        flow.getChildren().add(buttonBieker);
-
-        flow.getChildren().add(buttonButch);
-        flow.getChildren().add(buttonDankoe);
-        flow.getChildren().add(buttonDasIst);
-        flow.getChildren().add(buttonDelate);
-        flow.getChildren().add(buttonDomaene);
-        flow.getChildren().add(buttonEehm);
-        flow.getChildren().add(buttonErbaermlich);
-        flow.getChildren().add(buttonEssort);
-        flow.getChildren().add(buttonFalsch);
-        flow.getChildren().add(buttonFog);
-        flow.getChildren().add(buttonGeil);
-        flow.getChildren().add(buttonGescheiterReiner);
-        flow.getChildren().add(buttonGescheitertSatan);
-        flow.getChildren().add(buttonJeopardy);
-        flow.getChildren().add(buttonKaffee);
-        flow.getChildren().add(buttonKevin);
-        flow.getChildren().add(buttonKhan);
-        flow.getChildren().add(buttonKonverter);
-        flow.getChildren().add(buttonKonzept);
-        flow.getChildren().add(buttonLauschangriff);
-        flow.getChildren().add(buttonNeinMann);
-        flow.getChildren().add(buttonOey);
-        flow.getChildren().add(buttonQbitch);
-        flow.getChildren().add(buttonQuiet);
-        flow.getChildren().add(buttonRewert);
-        flow.getChildren().add(buttonRemoot);
-        flow.getChildren().add(buttonRewe);
-        flow.getChildren().add(buttonSchafskaese);
-        flow.getChildren().add(buttonSoNicht);
-        flow.getChildren().add(buttonStandup);
-        flow.getChildren().add(buttonWas);
-        flow.getChildren().add(buttonWasJetzt);
-        flow.getChildren().add(buttonWeisstDus);
-
-
-        Scene scene = new Scene(flow, 600, 400);
+        Scene scene = new Scene(masterPane, 660, 350);
+        
+        primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
         primaryStage.setTitle("The Panel");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    
+    private Label createLabel(String caption) {
+        Label label = new Label(caption);
+        label.setTextFill(Color.web("#EEEEEE"));
+        return label;
+    }
+    
+    private FlowPane createFlowPane() {
+        FlowPane pane = new FlowPane();
+        pane.setPadding(new Insets(5, 5, 5, 5));
+        pane.setVgap(5);
+        pane.setHgap(5);
+        pane.setMinWidth(640);
+        pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
+        return pane;
+    }
 
-    private void initButtons() {
-        EventHandler actionListener = createButtonListener();
-
-        buttonAlarm.setId("alarm");
-        buttonAlarm.setOnAction(actionListener);
-
-        buttonAnsteht.setId("ansteht");
-        buttonAnsteht.setOnAction(actionListener);
-
-        buttonBaehm.setId("baehm");
-        buttonBaehm.setOnAction(actionListener);
-
-        buttonBallad.setId("ballad");
-        buttonBallad.setOnAction(actionListener);
-
-        buttonBiddeFragend.setId("bidde_fragend");
-        buttonBiddeFragend.setOnAction(actionListener);
-
-        buttonBiddeVeraengstigt.setId("bidde_veraengstigt");
-        buttonBiddeVeraengstigt.setOnAction(actionListener);
-
-        buttonBieker.setId("bieker");
-        buttonBieker.setOnAction(actionListener);
-
-        buttonButch.setId("butch");
-        buttonButch.setOnAction(actionListener);
-
-        buttonDankoe.setId("dankoe");
-        buttonDankoe.setOnAction(actionListener);
-
-        buttonDasIst.setId("dasist");
-        buttonDasIst.setOnAction(actionListener);
-
-        buttonDelate.setId("delate");
-        buttonDelate.setOnAction(actionListener);
-
-        buttonDomaene.setId("domaene");
-        buttonDomaene.setOnAction(actionListener);
-
-        buttonEehm.setId("eehm");
-        buttonEehm.setOnAction(actionListener);
-
-        buttonErbaermlich.setId("erbaermlich");
-        buttonErbaermlich.setOnAction(actionListener);
-
-        buttonEssort.setId("essort");
-        buttonEssort.setOnAction(actionListener);
-
-        buttonFalsch.setId("falsch");
-        buttonFalsch.setOnAction(actionListener);
-
-        buttonFog.setId("fog");
-        buttonFog.setOnAction(actionListener);
-
-        buttonGeil.setId("geil");
-        buttonGeil.setOnAction(actionListener);
-
-        buttonGescheiterReiner.setId("gesch_reiner");
-        buttonGescheiterReiner.setOnAction(actionListener);
-
-        buttonGescheitertSatan.setId("gescheitert_satan");
-        buttonGescheitertSatan.setOnAction(actionListener);
-
-        buttonJeopardy.setId("jeopardy");
-        buttonJeopardy.setOnAction(actionListener);
-
-        buttonKaffee.setId("kaffee");
-        buttonKaffee.setOnAction(actionListener);
-
-        buttonKevin.setId("kevin");
-        buttonKevin.setOnAction(actionListener);
-
-        buttonKhan.setId("khan");
-        buttonKhan.setOnAction(actionListener);
-
-        buttonKonverter.setId("konverter");
-        buttonKonverter.setOnAction(actionListener);
-
-        buttonKonzept.setId("konzept");
-        buttonKonzept.setOnAction(actionListener);
-
-        buttonLauschangriff.setId("lauschangriff");
-        buttonLauschangriff.setOnAction(actionListener);
-
-        buttonNeinMann.setId("neinmann");
-        buttonNeinMann.setOnAction(actionListener);
-
-        buttonOey.setId("oey");
-        buttonOey.setOnAction(actionListener);
-
-        buttonQbitch.setId("qbitch");
-        buttonQbitch.setOnAction(actionListener);
-
-        buttonQuiet.setId("quiet");
-        buttonQuiet.setOnAction(actionListener);
-
-        buttonRewert.setId("reewert");
-        buttonRewert.setOnAction(actionListener);
-
-        buttonRemoot.setId("remoot");
-        buttonRemoot.setOnAction(actionListener);
-
-        buttonRewe.setId("rewe");
-        buttonRewe.setOnAction(actionListener);
-
-        buttonSchafskaese.setId("schafskaese");
-        buttonSchafskaese.setOnAction(actionListener);
-
-        buttonSnapshoot.setId("snapshoot");
-        buttonSnapshoot.setOnAction(actionListener);
-
-        buttonSoNicht.setId("sonicht");
-        buttonSoNicht.setOnAction(actionListener);
-
-        buttonStandup.setId("standup");
-        buttonStandup.setOnAction(actionListener);
-
-        buttonWas.setId("was");
-        buttonWas.setOnAction(actionListener);
-
-        buttonWasJetzt.setId("wasjetzt");
-        buttonWasJetzt.setOnAction(actionListener);
-
-        buttonWeisstDus.setId("weisstdus");
-        buttonWeisstDus.setOnAction(actionListener);
+    private Button createButton(String label, String soundFileName, EventHandler actionListener) {
+        Button button = new Button(label);
+        button.setId(soundFileName);
+        button.setOnAction(actionListener);
+        button.setMinWidth(100);
+        return button;
     }
 
     private EventHandler createButtonListener() {
