@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  * @author ugz
  */
 public class PanelFX extends Application {
-    
+
 
     @Override
     public void start(Stage primaryStage) {
@@ -36,7 +36,7 @@ public class PanelFX extends Application {
         masterPane.setStyle("-fx-background-image: url('"  + image +  "')");
 
         EventHandler actionListener = createButtonListener();
-        
+
         FlowPane panePulpFiction = createFlowPane();
         panePulpFiction.getChildren().add(createButton("Was jetzt?", "wasjetzt", actionListener));
         panePulpFiction.getChildren().add(createButton("1 mal was", "was", actionListener));
@@ -46,7 +46,7 @@ public class PanelFX extends Application {
         panePulpFiction.getChildren().add(createButton("Nein Mann", "neinmann", actionListener));
         masterPane.getChildren().add(createLabel("Pulp Fiction"));
         masterPane.getChildren().add(panePulpFiction);
-        
+
         FlowPane paneBastelecke = createFlowPane();
         paneBastelecke.getChildren().add(createButton("Stand up", "standup", actionListener));
         paneBastelecke.getChildren().add(createButton("Cubage", "qbitch", actionListener));
@@ -54,15 +54,25 @@ public class PanelFX extends Application {
         paneBastelecke.getChildren().add(createButton("Öööey", "oey", actionListener));
         paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
         paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
-        paneBastelecke.getChildren().add(createButton("Falsch", "falsch", actionListener));
-        paneBastelecke.getChildren().add(createButton("Danköö", "dankoe", actionListener));
-        paneBastelecke.getChildren().add(createButton("Schafskäse", "schafskaese", actionListener));
+
         paneBastelecke.getChildren().add(createButton("Bäm", "baehm", actionListener));
         paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich", actionListener));
         paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
+        paneBastelecke.getChildren().add(createButton("Neein", "nein", actionListener));
+        paneBastelecke.getChildren().add(createButton("Hilfe", "hilfe", actionListener));
         masterPane.getChildren().add(createLabel("Bastelecke"));
         masterPane.getChildren().add(paneBastelecke);
-        
+
+        FlowPane paneFrank = createFlowPane();
+        paneFrank.getChildren().add(createButton("Schafskäse", "schafskaese", actionListener));
+        paneFrank.getChildren().add(createButton("Neeein", "nein_fmr", actionListener));
+        paneFrank.getChildren().add(createButton("Aaaaaaah", "stoehner_fmr", actionListener));
+        paneFrank.getChildren().add(createButton("Falsch", "falsch", actionListener));
+        paneFrank.getChildren().add(createButton("Danköö", "dankoe", actionListener));
+        paneFrank.getChildren().add(createButton("Bullshit", "bullshit", actionListener));
+        masterPane.getChildren().add(createLabel("Frank"));
+        masterPane.getChildren().add(paneFrank);
+
         FlowPane paneMisc = createFlowPane();
         paneMisc.getChildren().add(createButton("Bieker", "bieker", actionListener));
         paneMisc.getChildren().add(createButton("Ballad", "ballad", actionListener));
@@ -78,7 +88,7 @@ public class PanelFX extends Application {
         paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
         masterPane.getChildren().add(createLabel("Misc"));
         masterPane.getChildren().add(paneMisc);
-        
+
         FlowPane paneJoeHanson = createFlowPane();
         paneJoeHanson.getChildren().add(createButton("BIDDE?", "bidde_fragend", actionListener));
         paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt", actionListener));
@@ -96,27 +106,27 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(paneJoeHanson);
 
 
-        Scene scene = new Scene(masterPane, 680, 350);
-        
+        Scene scene = new Scene(masterPane, 750, 400);
+
         primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
         primaryStage.setTitle("The Panel FX");
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-    
+
     private Label createLabel(String caption) {
         Label label = new Label(caption);
         label.setTextFill(Color.web("#EEEEEE"));
         return label;
     }
-    
+
     private FlowPane createFlowPane() {
         FlowPane pane = new FlowPane();
         pane.setPadding(new Insets(5, 5, 5, 5));
         pane.setVgap(5);
         pane.setHgap(5);
-        pane.setMinWidth(640);
+        pane.setMinWidth(700);
         pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
         return pane;
     }
@@ -125,7 +135,7 @@ public class PanelFX extends Application {
         Button button = new Button(label);
         button.setId(soundFileName);
         button.setOnAction(actionListener);
-        button.setMinWidth(100);
+        button.setMinWidth(110);
         return button;
     }
 
