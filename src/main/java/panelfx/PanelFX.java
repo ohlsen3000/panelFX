@@ -29,10 +29,11 @@ public class PanelFX extends Application {
     public void start(Stage primaryStage) {
 
         FlowPane masterPane = new FlowPane();
-        masterPane.setPadding(new Insets(5, 5, 5, 5));
+        masterPane.setPadding(new Insets(5, 20, 5, 20));
         masterPane.setVgap(5);
         masterPane.setHgap(5);
-        masterPane.setStyle("-fx-background-color: #414141;");
+        String image = PanelFX.class.getResource("wood.jpg").toExternalForm();
+        masterPane.setStyle("-fx-background-image: url('"  + image +  "')");
 
         EventHandler actionListener = createButtonListener();
         
@@ -95,10 +96,10 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(paneJoeHanson);
 
 
-        Scene scene = new Scene(masterPane, 660, 350);
+        Scene scene = new Scene(masterPane, 680, 350);
         
         primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
-        primaryStage.setTitle("The Panel");
+        primaryStage.setTitle("The Panel FX");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
