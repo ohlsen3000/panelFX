@@ -60,6 +60,7 @@ public class PanelFX extends Application {
         paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
         paneBastelecke.getChildren().add(createButton("Neein", "nein", actionListener));
         paneBastelecke.getChildren().add(createButton("Hilfe", "hilfe", actionListener));
+        paneBastelecke.getChildren().add(createButton("Cool", "cool", actionListener));
         masterPane.getChildren().add(createLabel("Bastelecke"));
         masterPane.getChildren().add(paneBastelecke);
 
@@ -86,6 +87,9 @@ public class PanelFX extends Application {
         paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
         paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan", actionListener));
         paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
+        paneMisc.getChildren().add(createButton("DDR Lacher", "ddr", actionListener));
+        paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar", actionListener));
+        paneMisc.getChildren().add(createButton("Altobelli", "altobelli", actionListener));
         masterPane.getChildren().add(createLabel("Misc"));
         masterPane.getChildren().add(paneMisc);
 
@@ -106,7 +110,7 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(paneJoeHanson);
 
 
-        Scene scene = new Scene(masterPane, 750, 400);
+        Scene scene = new Scene(masterPane, 750, 430);
 
         primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
         primaryStage.setTitle("The Panel FX");
