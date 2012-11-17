@@ -87,9 +87,10 @@ public class PanelFX extends Application {
         paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
         paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan", actionListener));
         paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
-        paneMisc.getChildren().add(createButton("DDR Lacher", "ddr", actionListener));
+        paneMisc.getChildren().add(createButton("Höhöhö", "ddr", actionListener));
         paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar", actionListener));
         paneMisc.getChildren().add(createButton("Altobelli", "altobelli", actionListener));
+        paneMisc.getChildren().add(createButton("Tach", "tachzusammen", actionListener));
         masterPane.getChildren().add(createLabel("Misc"));
         masterPane.getChildren().add(paneMisc);
 
