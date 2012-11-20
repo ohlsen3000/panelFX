@@ -54,7 +54,6 @@ public class PanelFX extends Application {
         paneBastelecke.getChildren().add(createButton("Öööey", "oey", actionListener));
         paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
         paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
-
         paneBastelecke.getChildren().add(createButton("Bäm", "baehm", actionListener));
         paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich", actionListener));
         paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
@@ -91,6 +90,8 @@ public class PanelFX extends Application {
         paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar", actionListener));
         paneMisc.getChildren().add(createButton("Altobelli", "altobelli", actionListener));
         paneMisc.getChildren().add(createButton("Tach", "tachzusammen", actionListener));
+        paneMisc.getChildren().add(createButton("Lokal", "lokal", actionListener));
+        paneMisc.getChildren().add(createButton("Kotzen", "kotzen", actionListener));
         masterPane.getChildren().add(createLabel("Misc"));
         masterPane.getChildren().add(paneMisc);
 
