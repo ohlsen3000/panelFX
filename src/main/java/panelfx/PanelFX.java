@@ -153,9 +153,7 @@ public class PanelFX extends Application {
             public void handle(ActionEvent event) {
                 String actionSource = ((Button)event.getSource()).getId();
                 String url = PanelFX.class.getResource(actionSource + ".mp3").toString();
-                Media sound = new Media(url);
-                MediaPlayer player = new MediaPlayer(sound);
-                player.play();
+                new SoundThread(url).run();
             }
         };
     }
