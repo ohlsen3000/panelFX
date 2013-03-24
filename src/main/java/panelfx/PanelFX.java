@@ -13,8 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -24,149 +22,178 @@ import javafx.stage.Stage;
  */
 public class PanelFX extends Application {
 
+	private final RunningSounds runningSounds = new RunningSounds();
 
-    @Override
-    public void start(Stage primaryStage) {
+	@Override
+	public void start(final Stage primaryStage) {
 
-        FlowPane masterPane = new FlowPane();
-        masterPane.setPadding(new Insets(5, 20, 5, 20));
-        masterPane.setVgap(5);
-        masterPane.setHgap(5);
-        String image = PanelFX.class.getResource("wood.jpg").toExternalForm();
-        masterPane.setStyle("-fx-background-image: url('"  + image +  "')");
-
-        EventHandler actionListener = createButtonListener();
-
-        FlowPane panePulpFiction = createFlowPane();
-        panePulpFiction.getChildren().add(createButton("Was jetzt?", "wasjetzt", actionListener));
-        panePulpFiction.getChildren().add(createButton("1 mal was", "was", actionListener));
-        panePulpFiction.getChildren().add(createButton("Ich sag dir", "ansteht", actionListener));
-        panePulpFiction.getChildren().add(createButton("Konzept", "konzept", actionListener));
-        panePulpFiction.getChildren().add(createButton("Zur Seite", "butch", actionListener));
-        panePulpFiction.getChildren().add(createButton("Nein Mann", "neinmann", actionListener));
-        masterPane.getChildren().add(createLabel("Pulp Fiction"));
-        masterPane.getChildren().add(panePulpFiction);
-
-        FlowPane paneBastelecke = createFlowPane();
-        paneBastelecke.getChildren().add(createButton("Stand up", "standup", actionListener));
-        paneBastelecke.getChildren().add(createButton("Cubage", "qbitch", actionListener));
-        paneBastelecke.getChildren().add(createButton("Alarm", "alarm", actionListener));
-        paneBastelecke.getChildren().add(createButton("Öööey", "oey", actionListener));
-        paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
-        paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
-        paneBastelecke.getChildren().add(createButton("Bäm", "baehm", actionListener));
-        paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich", actionListener));
-        paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
-        paneBastelecke.getChildren().add(createButton("Neein", "nein", actionListener));
-        paneBastelecke.getChildren().add(createButton("Hilfe", "hilfe", actionListener));
-        paneBastelecke.getChildren().add(createButton("Cool", "cool", actionListener));
-        masterPane.getChildren().add(createLabel("Bastelecke"));
-        masterPane.getChildren().add(paneBastelecke);
-
-        FlowPane paneFrank = createFlowPane();
-        paneFrank.getChildren().add(createButton("Schafskäse", "schafskaese", actionListener));
-        paneFrank.getChildren().add(createButton("Neeein", "nein_fmr", actionListener));
-        paneFrank.getChildren().add(createButton("Aaaaaaah", "stoehner_fmr", actionListener));
-        paneFrank.getChildren().add(createButton("Falsch", "falsch", actionListener));
-        paneFrank.getChildren().add(createButton("Danköö", "dankoe", actionListener));
-        paneFrank.getChildren().add(createButton("Bullshit", "bullshit", actionListener));
-        paneFrank.getChildren().add(createButton("Kotzen", "kotzen", actionListener));
-        paneFrank.getChildren().add(createButton("Hust", "hust", actionListener));
-        masterPane.getChildren().add(createLabel("Frank"));
-        masterPane.getChildren().add(paneFrank);
-
-        FlowPane paneMisc = createFlowPane();
-        paneMisc.getChildren().add(createButton("Bieker", "bieker", actionListener));
-        paneMisc.getChildren().add(createButton("Ballad", "ballad", actionListener));
-        paneMisc.getChildren().add(createButton("Jeopardy", "jeopardy", actionListener));
-        paneMisc.getChildren().add(createButton("Remote", "remoot", actionListener));
-        paneMisc.getChildren().add(createButton("Delete", "delate", actionListener));
-        paneMisc.getChildren().add(createButton("Snapshoot", "snapshoot", actionListener));
-        paneMisc.getChildren().add(createButton("Khan", "khan", actionListener));
-        paneMisc.getChildren().add(createButton("Essort", "essort", actionListener));
-        paneMisc.getChildren().add(createButton("Wie geil", "geil", actionListener));
-        paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
-        paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan", actionListener));
-        paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
-        paneMisc.getChildren().add(createButton("Höhöhö", "ddr", actionListener));
-        paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar", actionListener));
-        paneMisc.getChildren().add(createButton("Altobelli", "altobelli", actionListener));
-        paneMisc.getChildren().add(createButton("Tach", "tachzusammen", actionListener));
-        paneMisc.getChildren().add(createButton("Lokal", "lokal", actionListener));
-        paneMisc.getChildren().add(createButton("Push it", "pushit", actionListener));
-        masterPane.getChildren().add(createLabel("Misc"));
-        masterPane.getChildren().add(paneMisc);
-
-        FlowPane paneJoeHanson = createFlowPane();
-        paneJoeHanson.getChildren().add(createButton("BIDDE?", "bidde_fragend", actionListener));
-        paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Reewert", "reewert", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Rewe", "rewe", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Das ist das", "dasist", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Eehm", "eehm", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Domäne", "domaene", actionListener));
-        paneJoeHanson.getChildren().add(createButton("So nicht!", "sonicht", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Weißt Du's?", "weisstdus", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Konverter", "konverter", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Kaffee", "kaffee", actionListener));
-        paneJoeHanson.getChildren().add(createButton("Annee-ne", "aneene", actionListener));
-        masterPane.getChildren().add(createLabel("Joe Hanson"));
-        masterPane.getChildren().add(paneJoeHanson);
+		final FlowPane masterPane = new FlowPane();
+		masterPane.setPadding(new Insets(5, 20, 5, 20));
+		masterPane.setVgap(5);
+		masterPane.setHgap(5);
+		final String image = PanelFX.class.getResource("wood.jpg").toExternalForm();
+		masterPane.setStyle("-fx-background-image: url('"  + image +  "')");
 
 
-        Scene scene = new Scene(masterPane, 750, 450);
+		final FlowPane controllingPane = createFlowPane();
+		controllingPane.getChildren().add(createButton("STOP", "STOP", createControlButtonListener()));
 
-        primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
-        primaryStage.setTitle("The Panel FX");
-        primaryStage.setResizable(false);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+		masterPane.getChildren().add(createLabel("Control"));
+		masterPane.getChildren().add(controllingPane);
 
-    private Label createLabel(String caption) {
-        Label label = new Label(caption);
-        label.setTextFill(Color.web("#EEEEEE"));
-        return label;
-    }
 
-    private FlowPane createFlowPane() {
-        FlowPane pane = new FlowPane();
-        pane.setPadding(new Insets(5, 5, 5, 5));
-        pane.setVgap(5);
-        pane.setHgap(5);
-        pane.setMinWidth(700);
-        pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
-        return pane;
-    }
 
-    private Button createButton(String label, String soundFileName, EventHandler actionListener) {
-        Button button = new Button(label);
-        button.setId(soundFileName);
-        button.setOnAction(actionListener);
-        button.setMinWidth(110);
-        return button;
-    }
+		final EventHandler actionListener = createButtonListener();
 
-    private EventHandler createButtonListener() {
-        return new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                String actionSource = ((Button)event.getSource()).getId();
-                String url = PanelFX.class.getResource(actionSource + ".mp3").toString();
-                new SoundThread(url).run();
-            }
-        };
-    }
+		final FlowPane panePulpFiction = createFlowPane();
+		panePulpFiction.getChildren().add(createButton("Was jetzt?", "wasjetzt", actionListener));
+		panePulpFiction.getChildren().add(createButton("1 mal was", "was", actionListener));
+		panePulpFiction.getChildren().add(createButton("Ich sag dir", "ansteht", actionListener));
+		panePulpFiction.getChildren().add(createButton("Konzept", "konzept", actionListener));
+		panePulpFiction.getChildren().add(createButton("Zur Seite", "butch", actionListener));
+		panePulpFiction.getChildren().add(createButton("Nein Mann", "neinmann", actionListener));
+		masterPane.getChildren().add(createLabel("Pulp Fiction"));
+		masterPane.getChildren().add(panePulpFiction);
 
-    /**
-     * The main() method is ignored in correctly deployed JavaFX application.
-     * main() serves only as fallback in case the application can not be
-     * launched through deployment artifacts, e.g., in IDEs with limited FX
-     * support. NetBeans ignores main().
-     *
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-    }
+		final FlowPane paneBastelecke = createFlowPane();
+		paneBastelecke.getChildren().add(createButton("Stand up", "standup", actionListener));
+		paneBastelecke.getChildren().add(createButton("Cubage", "qbitch", actionListener));
+		paneBastelecke.getChildren().add(createButton("Battle 1", "eurobattle1", actionListener));
+		paneBastelecke.getChildren().add(createButton("Battle 2", "eurobattle2", actionListener));
+		paneBastelecke.getChildren().add(createButton("Battle 3", "eurobattle3", actionListener));
+		paneBastelecke.getChildren().add(createButton("Alarm", "alarm", actionListener));
+		paneBastelecke.getChildren().add(createButton("Push it", "pushit", actionListener));
+		paneBastelecke.getChildren().add(createButton("Öööey", "oey", actionListener));
+		paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff", actionListener));
+		paneBastelecke.getChildren().add(createButton("The Fog", "fog", actionListener));
+		paneBastelecke.getChildren().add(createButton("Bäm", "baehm", actionListener));
+		paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich", actionListener));
+		paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin", actionListener));
+		paneBastelecke.getChildren().add(createButton("Neein", "nein", actionListener));
+		paneBastelecke.getChildren().add(createButton("Hilfe", "hilfe", actionListener));
+		paneBastelecke.getChildren().add(createButton("Cool", "cool", actionListener));
+		masterPane.getChildren().add(createLabel("Bastelecke"));
+		masterPane.getChildren().add(paneBastelecke);
+
+		final FlowPane paneFrank = createFlowPane();
+		paneFrank.getChildren().add(createButton("Schafskäse", "schafskaese", actionListener));
+		paneFrank.getChildren().add(createButton("Neeein", "nein_fmr", actionListener));
+		paneFrank.getChildren().add(createButton("Aaaaaaah", "stoehner_fmr", actionListener));
+		paneFrank.getChildren().add(createButton("Falsch", "falsch", actionListener));
+		paneFrank.getChildren().add(createButton("Danköö", "dankoe", actionListener));
+		paneFrank.getChildren().add(createButton("Bullshit", "bullshit", actionListener));
+		paneFrank.getChildren().add(createButton("Kotzen", "kotzen", actionListener));
+		paneFrank.getChildren().add(createButton("Hust", "hust", actionListener));
+		masterPane.getChildren().add(createLabel("Frank"));
+		masterPane.getChildren().add(paneFrank);
+
+		final FlowPane paneMisc = createFlowPane();
+		paneMisc.getChildren().add(createButton("Bieker", "bieker", actionListener));
+		paneMisc.getChildren().add(createButton("Ballad", "ballad", actionListener));
+		paneMisc.getChildren().add(createButton("Jeopardy", "jeopardy", actionListener));
+		paneMisc.getChildren().add(createButton("Remote", "remoot", actionListener));
+		paneMisc.getChildren().add(createButton("Delete", "delate", actionListener));
+		paneMisc.getChildren().add(createButton("Snapshoot", "snapshoot", actionListener));
+		paneMisc.getChildren().add(createButton("Khan", "khan", actionListener));
+		paneMisc.getChildren().add(createButton("Essort", "essort", actionListener));
+		paneMisc.getChildren().add(createButton("Wie geil", "geil", actionListener));
+		paneMisc.getChildren().add(createButton("Fail", "gesch_reiner", actionListener));
+		paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan", actionListener));
+		paneMisc.getChildren().add(createButton("Quiet!", "quiet", actionListener));
+		paneMisc.getChildren().add(createButton("Höhöhö", "ddr", actionListener));
+		paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar", actionListener));
+		paneMisc.getChildren().add(createButton("Altobelli", "altobelli", actionListener));
+		paneMisc.getChildren().add(createButton("Tach", "tachzusammen", actionListener));
+		paneMisc.getChildren().add(createButton("Lokal", "lokal", actionListener));
+		paneMisc.getChildren().add(createButton("Was denn", "wasdenn", actionListener));
+		paneMisc.getChildren().add(createButton("Knarz", "knarz_equalized", actionListener));
+		masterPane.getChildren().add(createLabel("Misc"));
+		masterPane.getChildren().add(paneMisc);
+
+		final FlowPane paneJoeHanson = createFlowPane();
+		paneJoeHanson.getChildren().add(createButton("BIDDE?", "bidde_fragend", actionListener));
+		paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Reewert", "reewert", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Rewe", "rewe", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Das ist das", "dasist", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Eehm", "eehm", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Domäne", "domaene", actionListener));
+		paneJoeHanson.getChildren().add(createButton("So nicht!", "sonicht", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Weißt Du's?", "weisstdus", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Konverter", "konverter", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Kaffee", "kaffee", actionListener));
+		paneJoeHanson.getChildren().add(createButton("Annee-ne", "aneene", actionListener));
+		masterPane.getChildren().add(createLabel("Joe Hanson"));
+		masterPane.getChildren().add(paneJoeHanson);
+
+		final Scene scene = new Scene(masterPane, 750, 450);
+
+		primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
+		primaryStage.setTitle("The Panel FX");
+		primaryStage.setResizable(true);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+	private Label createLabel(final String caption) {
+		final Label label = new Label(caption);
+		label.setTextFill(Color.web("#EEEEEE"));
+		return label;
+	}
+
+	private FlowPane createFlowPane() {
+		final FlowPane pane = new FlowPane();
+		pane.setPadding(new Insets(5, 5, 5, 5));
+		pane.setVgap(5);
+		pane.setHgap(5);
+		pane.setMinWidth(700);
+		pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
+		return pane;
+	}
+
+	private Button createButton(final String label, final String soundFileName, final EventHandler actionListener) {
+		final Button button = new Button(label);
+		button.setId(soundFileName);
+		button.setOnAction(actionListener);
+		button.setMinWidth(110);
+		return button;
+	}
+
+	private EventHandler<ActionEvent> createControlButtonListener(){
+		return new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(final ActionEvent event) {
+				final String actionSource = ((Button)event.getSource()).getId();
+
+				if ("STOP".equals(actionSource)){
+					PanelFX.this.runningSounds.stopAll();
+				}
+			}
+		};
+	}
+
+	private EventHandler createButtonListener() {
+		return new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(final ActionEvent event) {
+				final String actionSource = ((Button)event.getSource()).getId();
+
+				final String url = PanelFX.class.getResource(actionSource + ".mp3").toString();
+				final SoundThread sound = new SoundThread(url, PanelFX.this.runningSounds);
+				sound.run();
+			}
+		};
+	}
+
+	/**
+	 * The main() method is ignored in correctly deployed JavaFX application.
+	 * main() serves only as fallback in case the application can not be
+	 * launched through deployment artifacts, e.g., in IDEs with limited FX
+	 * support. NetBeans ignores main().
+	 *
+	 * @param args the command line arguments
+	 */
+	public static void main(final String[] args) {
+		Application.launch(args);
+	}
 }

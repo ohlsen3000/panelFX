@@ -12,16 +12,31 @@ import javafx.scene.media.MediaPlayer;
  */
 public class SoundThread implements Runnable {
 
-    private String fileUrl;
+	MediaPlayer player = null;
 
-    public SoundThread(String fileUrl) {
-        this.fileUrl = fileUrl;
-    }
+	RunningSounds runningSounds = null;
 
-    @Override
-    public void run() {
-        Media sound = new Media(fileUrl);
-        MediaPlayer player = new MediaPlayer(sound);
-        player.play();
-    }
+	public SoundThread(final String fileUrl, final RunningSounds runningSounds) {
+
+		final Media sound = new Media(fileUrl);
+		this.player = new MediaPlayer(sound);
+		this.runningSounds = runningSounds;
+	}
+
+	@Override
+	public void run() {
+		this.runningSounds.add(this);
+		this.player.play();
+	}
+
+	public void stop(){
+		this.player.stop();
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		this.runningSounds.remove(this);
+	}
+
+
 }
