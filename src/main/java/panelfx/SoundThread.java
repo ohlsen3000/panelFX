@@ -14,9 +14,9 @@ public class SoundThread implements Runnable {
 
 	MediaPlayer player = null;
 
-	RunningSounds runningSounds = null;
+	PlayingSounds runningSounds = null;
 
-	public SoundThread(final String fileUrl, final RunningSounds runningSounds) {
+	public SoundThread(final String fileUrl, final PlayingSounds runningSounds) {
 
 		final Media sound = new Media(fileUrl);
 		this.player = new MediaPlayer(sound);

@@ -2,7 +2,7 @@ package panelfx;
 
 import java.util.ArrayList;
 
-public class RunningSounds {
+public class PlayingSounds {
 
 	ArrayList<SoundThread> sounds = new ArrayList<>();
 
