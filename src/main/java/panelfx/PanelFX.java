@@ -122,11 +122,11 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(this.createLabel("Joe Hanson"));
         masterPane.getChildren().add(paneJoeHanson);
 
-        final Scene scene = new Scene(masterPane, 750, 450);
+        final Scene scene = new Scene(masterPane, 750, 560);
 
         primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
         primaryStage.setTitle("The Panel FX");
-        primaryStage.setResizable(true);
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -188,7 +188,7 @@ public class PanelFX extends Application {
      * main() serves only as fallback in case the application can not be
      * launched through deployment artifacts, e.g., in IDEs with limited FX
      * support. NetBeans ignores main().
-     * 
+     *
      * @param args
      *            the command line arguments
      */
