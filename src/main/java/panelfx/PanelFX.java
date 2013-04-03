@@ -77,6 +77,7 @@ public class PanelFX extends Application {
         paneBastelecke.getChildren().add(this.createButton("Hilfe", "hilfe", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Cool", "cool", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Knarz", "knarz_equalized", actionListener));
+        paneBastelecke.getChildren().add(this.createButton("Sorry", "sorry", actionListener));
         masterPane.getChildren().add(this.createLabel("Bastelecke"));
         masterPane.getChildren().add(paneBastelecke);
 
