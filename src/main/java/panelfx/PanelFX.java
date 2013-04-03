@@ -8,10 +8,14 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -33,10 +37,14 @@ public class PanelFX extends Application {
         final String image = PanelFX.class.getResource("wood.jpg").toExternalForm();
         masterPane.setStyle("-fx-background-image: url('" + image + "')");
 
-        final FlowPane controllingPane = this.createFlowPane();
-        controllingPane.getChildren().add(this.createButton("STOP", "STOP", this.createControlButtonListener()));
-
-        masterPane.getChildren().add(this.createLabel("Control"));
+        final FlowPane controllingPane = this.createFlowPane(false);
+        Image muteImage = new Image(getClass().getResourceAsStream("mute.png"));
+        ImageView muteView = new ImageView(muteImage);
+        muteView.setId("STOP");
+        muteView.setOnMouseClicked(this.createControlButtonListener());
+        muteView.setCursor(Cursor.HAND);
+        controllingPane.getChildren().add(muteView);
+        controllingPane.setAlignment(Pos.CENTER_RIGHT);
         masterPane.getChildren().add(controllingPane);
 
         final EventHandler<ActionEvent> actionListener = this.createButtonListener();
@@ -122,7 +130,7 @@ public class PanelFX extends Application {
         masterPane.getChildren().add(this.createLabel("Joe Hanson"));
         masterPane.getChildren().add(paneJoeHanson);
 
-        final Scene scene = new Scene(masterPane, 750, 560);
+        final Scene scene = new Scene(masterPane, 750, 540);
 
         primaryStage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
         primaryStage.setTitle("The Panel FX");
@@ -138,12 +146,18 @@ public class PanelFX extends Application {
     }
 
     private FlowPane createFlowPane() {
+        return createFlowPane(true);
+    }
+
+    private FlowPane createFlowPane(boolean border) {
         final FlowPane pane = new FlowPane();
         pane.setPadding(new Insets(5, 5, 5, 5));
         pane.setVgap(5);
         pane.setHgap(5);
         pane.setMinWidth(700);
-        pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
+        if (border) {
+            pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
+        }
         return pane;
     }
 
@@ -155,15 +169,15 @@ public class PanelFX extends Application {
         return button;
     }
 
-    private EventHandler<ActionEvent> createControlButtonListener() {
-        return new EventHandler<ActionEvent>() {
+    private EventHandler<MouseEvent> createControlButtonListener() {
+        return new EventHandler<MouseEvent>() {
 
             @Override
-            public void handle(final ActionEvent event) {
-                final String actionSource = ((Button) event.getSource()).getId();
+            public void handle(final MouseEvent event) {
+                final String actionSource = ((ImageView) event.getSource()).getId();
 
                 if ("STOP".equals(actionSource)) {
-                    PanelFX.this.runningSounds.stopAll();
+                    runningSounds.stopAll();
                 }
             }
         };
