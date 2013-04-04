@@ -63,8 +63,8 @@ public class PanelFX extends Application {
         paneBastelecke.getChildren().add(this.createButton("Stand up", "standup", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Cubage", "qbitch", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Battle 1", "eurobattle1", actionListener));
-        paneBastelecke.getChildren().add(this.createButton("Battle 2", "eurobattle2", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Battle 3", "eurobattle3", actionListener));
+        paneBastelecke.getChildren().add(this.createButton("Klingel 1. OG", "klingel", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Alarm", "alarm", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Push it", "pushit", actionListener));
         paneBastelecke.getChildren().add(this.createButton("Öööey", "oey", actionListener));
