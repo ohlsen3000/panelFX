@@ -90,6 +90,9 @@ public class PanelFX extends Application {
         paneFrank.getChildren().add(this.createButton("Bullshit", "bullshit", actionListener));
         paneFrank.getChildren().add(this.createButton("Kotzen", "kotzen", actionListener));
         paneFrank.getChildren().add(this.createButton("Hust", "hust", actionListener));
+        paneFrank.getChildren().add(this.createButton("Frank Müller", "fmueller", actionListener));
+        paneFrank.getChildren().add(this.createButton("Zur Lieferung", "lieferung", actionListener));
+        paneFrank.getChildren().add(this.createButton("Steele 2", "steele2", actionListener));
         masterPane.getChildren().add(this.createLabel("Frank"));
         masterPane.getChildren().add(paneFrank);
 
