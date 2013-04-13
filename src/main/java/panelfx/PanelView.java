@@ -1,7 +1,7 @@
 package panelfx;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -23,12 +23,12 @@ import javax.annotation.PostConstruct;
 public class PanelView {
 	private Scene scene;
 
-	private final List<Button> soundButtons = new ArrayList<>();
+	private final Map<Sound, Button> soundButtons = new HashMap<>();
 	private ImageView muteView;
 
 	public void registerSoundButtonActionListener(final EventHandler<ActionEvent> pushButtonEvent){
 
-		for (final Button button : this.soundButtons){
+		for (final Button button : this.soundButtons.values()){
 			button.setOnAction(pushButtonEvent);
 		}
 	}
@@ -46,8 +46,20 @@ public class PanelView {
 		stage.show();
 	}
 
+	private void createButtons(){
+
+		for (final Sound sound : Sound.values()){
+			final Button button = new Button(sound.getLabel());
+			button.setId(sound.getFilename());
+			button.setMinWidth(110);
+
+			this.soundButtons.put(sound, button);
+		}
+	}
+
 	@PostConstruct
 	public void build() {
+		createButtons();
 
 		final FlowPane masterPane = new FlowPane();
 		masterPane.setPadding(new Insets(5, 20, 5, 20));
@@ -66,92 +78,104 @@ public class PanelView {
 		masterPane.getChildren().add(controllingPane);
 
 		final FlowPane panePulpFiction = this.createFlowPane();
-		panePulpFiction.getChildren().add(createButton("Was jetzt?", "wasjetzt"));
-		panePulpFiction.getChildren().add(createButton("1 mal was", "was"));
-		panePulpFiction.getChildren().add(createButton("Ich sag dir", "ansteht"));
-		panePulpFiction.getChildren().add(createButton("Konzept", "konzept"));
-		panePulpFiction.getChildren().add(createButton("Zur Seite", "butch"));
-		panePulpFiction.getChildren().add(createButton("Nein Mann", "neinmann"));
+
+		addSound(panePulpFiction, Sound.WAS_JETZT);
+		addSound(panePulpFiction, Sound.EINMAL_WAS);
+		addSound(panePulpFiction, Sound.ANSTEHT);
+		addSound(panePulpFiction, Sound.KONZEPT);
+		addSound(panePulpFiction, Sound.ZUR_SEITE);
+		addSound(panePulpFiction, Sound.NEIN_MANN);
+
 		masterPane.getChildren().add(createLabel("Pulp Fiction"));
 		masterPane.getChildren().add(panePulpFiction);
 
 		final FlowPane paneBastelecke = this.createFlowPane();
-		paneBastelecke.getChildren().add(createButton("Stand up", "standup"));
-		paneBastelecke.getChildren().add(createButton("Cubage", "qbitch"));
-		paneBastelecke.getChildren().add(createButton("Battle 1", "eurobattle1"));
-		paneBastelecke.getChildren().add(createButton("Battle 3", "eurobattle3"));
-		paneBastelecke.getChildren().add(createButton("Klingel 1. OG", "klingel"));
-		paneBastelecke.getChildren().add(createButton("Alarm", "alarm"));
-		paneBastelecke.getChildren().add(createButton("Push it", "pushit"));
-		paneBastelecke.getChildren().add(createButton("Öööey", "oey"));
-		paneBastelecke.getChildren().add(createButton("Lauschangriff", "lauschangriff"));
-		paneBastelecke.getChildren().add(createButton("The Fog", "fog"));
-		paneBastelecke.getChildren().add(createButton("Bäm", "baehm"));
-		paneBastelecke.getChildren().add(createButton("Erbärmlich", "erbaermlich"));
-		paneBastelecke.getChildren().add(createButton("HorHorHor", "kevin"));
-		paneBastelecke.getChildren().add(createButton("Neein", "nein"));
-		paneBastelecke.getChildren().add(createButton("Hilfe", "hilfe"));
-		paneBastelecke.getChildren().add(createButton("Cool", "cool"));
-		paneBastelecke.getChildren().add(createButton("Knarz", "knarz_equalized"));
-		paneBastelecke.getChildren().add(createButton("Sorry", "sorry"));
+
+		addSound(paneBastelecke, Sound.STANDUP);
+		addSound(paneBastelecke, Sound.CUBAGE);
+		addSound(paneBastelecke, Sound.BATTLE1);
+		addSound(paneBastelecke, Sound.BATTLE3);
+		addSound(paneBastelecke, Sound.DOORBELL);
+		addSound(paneBastelecke, Sound.ALARM);
+		addSound(paneBastelecke, Sound.PUSH_IT);
+		addSound(paneBastelecke, Sound.OEOEOEEY);
+		addSound(paneBastelecke, Sound.LAUSCHANGRIFF);
+		addSound(paneBastelecke, Sound.FOG);
+		addSound(paneBastelecke, Sound.BAEM);
+		addSound(paneBastelecke, Sound.ERBAERMLICH);
+		addSound(paneBastelecke, Sound.HORHOR);
+		addSound(paneBastelecke, Sound.NEIN_ULTZ);
+		addSound(paneBastelecke, Sound.HILFE);
+		addSound(paneBastelecke, Sound.COOL);
+		addSound(paneBastelecke, Sound.KNARZ);
+		addSound(paneBastelecke, Sound.SORRY);
+
 		masterPane.getChildren().add(createLabel("Bastelecke"));
 		masterPane.getChildren().add(paneBastelecke);
 
 		final FlowPane paneFrank = this.createFlowPane();
-		paneFrank.getChildren().add(createButton("Schafskäse", "schafskaese"));
-		paneFrank.getChildren().add(createButton("Neeein", "nein_fmr"));
-		paneFrank.getChildren().add(createButton("Aaaaaaah", "stoehner_fmr"));
-		paneFrank.getChildren().add(createButton("Falsch", "falsch"));
-		paneFrank.getChildren().add(createButton("Danköö", "dankoe"));
-		paneFrank.getChildren().add(createButton("Bullshit", "bullshit"));
-		paneFrank.getChildren().add(createButton("Kotzen", "kotzen"));
-		paneFrank.getChildren().add(createButton("Hust", "hust"));
-		paneFrank.getChildren().add(createButton("Frank Müller", "fmueller"));
-		paneFrank.getChildren().add(createButton("Zur Lieferung", "lieferung"));
-		paneFrank.getChildren().add(createButton("Steele 2", "steele2"));
+
+		addSound(paneFrank, Sound.NEIN_FRALLER);
+		addSound(paneFrank, Sound.AAAAAAH);
+		addSound(paneFrank, Sound.FALSCH);
+		addSound(paneFrank, Sound.DANKOEOE);
+		addSound(paneFrank, Sound.BULLSHIT);
+		addSound(paneFrank, Sound.KOTZEN);
+		addSound(paneFrank, Sound.HUST);
+		addSound(paneFrank, Sound.FRANK_MUELLER);
+		addSound(paneFrank, Sound.ZUR_LIEFERUNG);
+		addSound(paneFrank, Sound.SCHAFSKAESE);
+		addSound(paneFrank, Sound.STEELE2);
+
 		masterPane.getChildren().add(createLabel("Frank"));
 		masterPane.getChildren().add(paneFrank);
 
 		final FlowPane paneMisc = this.createFlowPane();
-		paneMisc.getChildren().add(createButton("Bieker", "bieker"));
-		paneMisc.getChildren().add(createButton("Ballad", "ballad"));
-		paneMisc.getChildren().add(createButton("Jeopardy", "jeopardy"));
-		paneMisc.getChildren().add(createButton("Remote", "remoot"));
-		paneMisc.getChildren().add(createButton("Delete", "delate"));
-		paneMisc.getChildren().add(createButton("Snapshoot", "snapshoot"));
-		paneMisc.getChildren().add(createButton("Khan", "khan"));
-		paneMisc.getChildren().add(createButton("Essort", "essort"));
-		paneMisc.getChildren().add(createButton("Wie geil", "geil"));
-		paneMisc.getChildren().add(createButton("Fail", "gesch_reiner"));
-		paneMisc.getChildren().add(createButton("Fail Satanic", "gescheitert_satan"));
-		paneMisc.getChildren().add(createButton("Quiet!", "quiet"));
-		paneMisc.getChildren().add(createButton("Höhöhö", "ddr"));
-		paneMisc.getChildren().add(createButton("Ganz klar", "ganzklar"));
-		paneMisc.getChildren().add(createButton("Altobelli", "altobelli"));
-		paneMisc.getChildren().add(createButton("Tach", "tachzusammen"));
-		paneMisc.getChildren().add(createButton("Lokal", "lokal"));
-		paneMisc.getChildren().add(createButton("Was denn", "wasdenn"));
+
+		addSound(paneMisc, Sound.BIEKER);
+		addSound(paneMisc, Sound.BALLAD);
+		addSound(paneMisc, Sound.JEOPARDY);
+		addSound(paneMisc, Sound.REMOTE);
+		addSound(paneMisc, Sound.DELETE);
+		addSound(paneMisc, Sound.SNAPHOT);
+		addSound(paneMisc, Sound.KHAN);
+		addSound(paneMisc, Sound.ASSERT);
+		addSound(paneMisc, Sound.WIE_GEIL);
+		addSound(paneMisc, Sound.FAIL);
+		addSound(paneMisc, Sound.FAIL_SATANIC);
+		addSound(paneMisc, Sound.LAUGHING_DIYER);
+		addSound(paneMisc, Sound.GANZ_KLAR);
+		addSound(paneMisc, Sound.ALTOBELLI);
+		addSound(paneMisc, Sound.TACH);
+		addSound(paneMisc, Sound.LOKAL);
+		addSound(paneMisc, Sound.WAS_DENN);
+
 		masterPane.getChildren().add(createLabel("Misc"));
 		masterPane.getChildren().add(paneMisc);
 
 		final FlowPane paneJoeHanson = this.createFlowPane();
-		paneJoeHanson.getChildren().add(createButton("BIDDE?", "bidde_fragend"));
-		paneJoeHanson.getChildren().add(createButton("bidde?", "bidde_veraengstigt"));
-		paneJoeHanson.getChildren().add(createButton("Reewert", "reewert"));
-		paneJoeHanson.getChildren().add(createButton("Rewe", "rewe"));
-		paneJoeHanson.getChildren().add(createButton("Das ist das", "dasist"));
-		paneJoeHanson.getChildren().add(createButton("Eehm", "eehm"));
-		paneJoeHanson.getChildren().add(createButton("Domäne", "domaene"));
-		paneJoeHanson.getChildren().add(createButton("So nicht!", "sonicht"));
-		paneJoeHanson.getChildren().add(createButton("Weißt Du's?", "weisstdus"));
-		paneJoeHanson.getChildren().add(createButton("Konverter", "konverter"));
-		paneJoeHanson.getChildren().add(createButton("Kaffee", "kaffee"));
-		paneJoeHanson.getChildren().add(createButton("Annee-ne", "aneene"));
+
+		addSound(paneJoeHanson, Sound.BIDDE_QUESTIONING);
+		addSound(paneJoeHanson, Sound.BIDDE_IN_TROUBLE);
+		addSound(paneJoeHanson, Sound.REVERT);
+		addSound(paneJoeHanson, Sound.REWE);
+		addSound(paneJoeHanson, Sound.WAS_DU_GLAUBST);
+		addSound(paneJoeHanson, Sound.EEHM);
+		addSound(paneJoeHanson, Sound.DOMAIN);
+		addSound(paneJoeHanson, Sound.SO_NICHT);
+		addSound(paneJoeHanson, Sound.WEISST_DUS);
+		addSound(paneJoeHanson, Sound.CONVERTER);
+		addSound(paneJoeHanson, Sound.COFFEE);
+		addSound(paneJoeHanson, Sound.ANNEE_NE);
+
 		masterPane.getChildren().add(createLabel("Joe Hanson"));
 		masterPane.getChildren().add(paneJoeHanson);
 
 		//		this.scene = new Scene(masterPane, 750, 520);
 		this.scene = new Scene(masterPane);
+	}
+	private void addSound(final FlowPane flowPane, final Sound sound){
+		flowPane.getChildren().add(this.soundButtons.get(sound));
 	}
 
 	private Label createLabel(final String caption) {
@@ -176,13 +200,4 @@ public class PanelView {
 		return pane;
 	}
 
-	private Button createButton(final String label, final String soundFileName) {
-		final Button button = new Button(label);
-		button.setId(soundFileName);
-		button.setMinWidth(110);
-
-		this.soundButtons.add(button);
-
-		return button;
-	}
 }
