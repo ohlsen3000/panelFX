@@ -105,7 +105,7 @@ public class PanelView {
 				Sound.KOTZEN, Sound.HUST, Sound.FRANK_MUELLER,
 				Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
 
-		masterPane.getChildren().add(createLabel("Frank"));
+		masterPane.getChildren().add(createLabel("Fraller"));
 		masterPane.getChildren().add(paneFrank);
 
 		final FlowPane paneMisc = this.createFlowPane(Sound.BIEKER,
@@ -113,7 +113,7 @@ public class PanelView {
 				Sound.SNAPHOT, Sound.KHAN, Sound.ASSERT, Sound.WIE_GEIL,
 				Sound.FAIL, Sound.FAIL_SATANIC, Sound.LAUGHING_DIYER,
 				Sound.GANZ_KLAR, Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL,
-				Sound.WAS_DENN);
+				Sound.WAS_DENN, Sound.NJAEH);
 
 		masterPane.getChildren().add(createLabel("Misc"));
 		masterPane.getChildren().add(paneMisc);
@@ -125,7 +125,7 @@ public class PanelView {
 				Sound.SO_NICHT, Sound.WEISST_DUS, Sound.CONVERTER,
 				Sound.COFFEE, Sound.ANNEE_NE);
 
-		masterPane.getChildren().add(createLabel("Joe Hanson"));
+		masterPane.getChildren().add(createLabel("Jother"));
 		masterPane.getChildren().add(paneJoeHanson);
 
 		// this.scene = new Scene(masterPane, 750, 520);
