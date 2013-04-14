@@ -11,6 +11,8 @@ import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -25,6 +27,11 @@ public class PanelView {
 
 	private final Map<Sound, Button> soundButtons = new HashMap<>();
 	private ImageView muteView;
+
+	private TabPane tabPane;
+
+	private Tab primaryTab;
+	private Tab movieTab;
 
 	public void registerSoundButtonActionListener(
 			final EventHandler<ActionEvent> pushButtonEvent) {
@@ -70,7 +77,9 @@ public class PanelView {
 		masterPane.setHgap(5);
 		final String image = PanelFX.class.getResource("wood.jpg")
 				.toExternalForm();
-		masterPane.setStyle("-fx-background-image: url('" + image + "')");
+		final String woodStyle = "-fx-background-image: url('" + image + "')";
+
+		masterPane.setStyle(woodStyle);
 
 		final FlowPane controllingPane = this.createFlowPane(false);
 		final Image muteImage = new Image(getClass().getResourceAsStream(
@@ -82,13 +91,44 @@ public class PanelView {
 		controllingPane.setAlignment(Pos.CENTER_RIGHT);
 		masterPane.getChildren().add(controllingPane);
 
+		this.tabPane = new TabPane();
+
+		masterPane.getChildren().add(this.tabPane);
+
+		createPrimaryTab(woodStyle);
+		createMovieTab(woodStyle);
+
+		// this.scene = new Scene(masterPane, 750, 520);
+		this.scene = new Scene(masterPane);
+	}
+
+	private void createMovieTab(final String style){
+		this.movieTab = new Tab("Filmzitate");
+		this.movieTab.setClosable(false);
+		this.tabPane.getTabs().add(this.movieTab);
+
+		final FlowPane tabContent = new FlowPane();
+		tabContent.setStyle(style);
+		this.movieTab.setContent(tabContent);
+
 		final FlowPane panePulpFiction = this.createFlowPane(
 				//
 				Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT,
 				Sound.KONZEPT, Sound.ZUR_SEITE, Sound.NEIN_MANN);
 
-		masterPane.getChildren().add(createLabel("Pulp Fiction"));
-		masterPane.getChildren().add(panePulpFiction);
+		tabContent.getChildren().add(createLabel("Pulp Fiction"));
+		tabContent.getChildren().add(panePulpFiction);
+
+	}
+
+	private void createPrimaryTab(final String style) {
+		this.primaryTab = new Tab("Hits");
+		this.primaryTab.setClosable(false);
+		this.tabPane.getTabs().add(this.primaryTab);
+
+		final FlowPane primaryTabContent = new FlowPane();
+		primaryTabContent.setStyle(style);
+		this.primaryTab.setContent(primaryTabContent);
 
 		final FlowPane paneBastelecke = this.createFlowPane(Sound.STANDUP,
 				Sound.CUBAGE, Sound.BATTLE1, Sound.BATTLE3, Sound.DOORBELL,
@@ -97,16 +137,16 @@ public class PanelView {
 				Sound.HORHOR, Sound.NEIN_ULTZ, Sound.HILFE, Sound.COOL,
 				Sound.KNARZ, Sound.SORRY);
 
-		masterPane.getChildren().add(createLabel("Bastelecke"));
-		masterPane.getChildren().add(paneBastelecke);
+		primaryTabContent.getChildren().add(createLabel("Bastelecke"));
+		primaryTabContent.getChildren().add(paneBastelecke);
 
 		final FlowPane paneFrank = this.createFlowPane(Sound.NEIN_FRALLER,
 				Sound.AAAAAAH, Sound.FALSCH, Sound.DANKOEOE, Sound.BULLSHIT,
 				Sound.KOTZEN, Sound.HUST, Sound.FRANK_MUELLER,
 				Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
 
-		masterPane.getChildren().add(createLabel("Fraller"));
-		masterPane.getChildren().add(paneFrank);
+		primaryTabContent.getChildren().add(createLabel("Fraller"));
+		primaryTabContent.getChildren().add(paneFrank);
 
 		final FlowPane paneMisc = this.createFlowPane(Sound.BIEKER,
 				Sound.BALLAD, Sound.JEOPARDY, Sound.REMOTE, Sound.DELETE,
@@ -115,8 +155,8 @@ public class PanelView {
 				Sound.GANZ_KLAR, Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL,
 				Sound.WAS_DENN, Sound.NJAEH);
 
-		masterPane.getChildren().add(createLabel("Misc"));
-		masterPane.getChildren().add(paneMisc);
+		primaryTabContent.getChildren().add(createLabel("Misc"));
+		primaryTabContent.getChildren().add(paneMisc);
 
 		final FlowPane paneJoeHanson = this.createFlowPane(
 
@@ -125,11 +165,8 @@ public class PanelView {
 				Sound.SO_NICHT, Sound.WEISST_DUS, Sound.CONVERTER,
 				Sound.COFFEE, Sound.ANNEE_NE);
 
-		masterPane.getChildren().add(createLabel("Jother"));
-		masterPane.getChildren().add(paneJoeHanson);
-
-		// this.scene = new Scene(masterPane, 750, 520);
-		this.scene = new Scene(masterPane);
+		primaryTabContent.getChildren().add(createLabel("Jother"));
+		primaryTabContent.getChildren().add(paneJoeHanson);
 	}
 
 	private void addSound(final FlowPane flowPane, final Sound sound) {
