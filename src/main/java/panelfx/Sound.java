@@ -59,6 +59,7 @@ public enum Sound {
 	SNAPHOT("Snapshoot", "snapshoot"),
 	SO_NICHT("So nicht!", "sonicht"),
 	SORRY("Sorry", "sorry"),
+	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"),
 	STANDUP("Stand up", "standup"),
 	STEELE2("Steele 2", "steele2"),
 	TACH("Tach", "tachzusammen"),
