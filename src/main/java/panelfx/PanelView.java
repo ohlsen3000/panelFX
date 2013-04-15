@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.effect.BlendMode;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -71,14 +72,9 @@ public class PanelView {
         createButtons();
 
         final FlowPane masterPane = new FlowPane();
-        masterPane.setPadding(new Insets(5, 20, 25, 20));
+        masterPane.setPadding(new Insets(5, 20, 30, 20));
         masterPane.setVgap(5);
         masterPane.setHgap(5);
-        final String image = PanelFX.class.getResource("wood.jpg")
-                .toExternalForm();
-        final String woodStyle = "-fx-background-image: url('" + image + "')";
-
-        masterPane.setStyle(woodStyle);
 
         final FlowPane controllingPane = this.createFlowPane(false);
         final Image muteImage = new Image(getClass().getResourceAsStream(
@@ -94,38 +90,14 @@ public class PanelView {
 
         masterPane.getChildren().add(this.tabPane);
 
-        createPrimaryTab(woodStyle);
-        createMovieTab(woodStyle);
+        createPrimaryTab();
+        createMovieTab();
 
         this.scene = new Scene(masterPane);
+        scene.getStylesheets().addAll(PanelFX.class.getResource("stylesheet.css").toExternalForm());
     }
 
-    private void createMovieTab(final String style) {
-
-        this.movieTab = new Tab("Filmzitate");
-        this.movieTab.setClosable(false);
-        this.tabPane.getTabs().add(this.movieTab);
-
-        final FlowPane tabContent = new FlowPane();
-        tabContent.setPadding(new Insets(10, 0, 0, 0));
-        tabContent.setStyle(style);
-        this.movieTab.setContent(tabContent);
-
-        final FlowPane panePulpFiction = this.createFlowPane(
-                Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT,
-                Sound.KONZEPT, Sound.ZUR_SEITE, Sound.NEIN_MANN);
-
-        tabContent.getChildren().add(createLabel("Pulp Fiction"));
-        tabContent.getChildren().add(panePulpFiction);
-
-        final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN);
-
-
-        tabContent.getChildren().add(createLabel("Poker-Filme"));
-        tabContent.getChildren().add(pokerPane);
-    }
-
-    private void createPrimaryTab(final String style) {
+    private void createPrimaryTab() {
 
         this.primaryTab = new Tab("Hits");
         this.primaryTab.setClosable(false);
@@ -133,7 +105,7 @@ public class PanelView {
 
         final FlowPane primaryTabContent = new FlowPane();
         primaryTabContent.setPadding(new Insets(10, 0, 0, 0));
-        primaryTabContent.setStyle(style);
+        primaryTabContent.getStyleClass().add("wood-shifted");
         this.primaryTab.setContent(primaryTabContent);
 
         final FlowPane paneBastelecke = this.createFlowPane(Sound.STANDUP,
@@ -174,6 +146,31 @@ public class PanelView {
         primaryTabContent.getChildren().add(paneJoeHanson);
     }
 
+    private void createMovieTab() {
+
+        this.movieTab = new Tab("Filmzitate");
+        this.movieTab.setClosable(false);
+        this.tabPane.getTabs().add(this.movieTab);
+
+        final FlowPane tabContent = new FlowPane();
+        tabContent.setPadding(new Insets(10, 0, 0, 0));
+        tabContent.getStyleClass().add("wood-shifted");
+        this.movieTab.setContent(tabContent);
+
+        final FlowPane panePulpFiction = this.createFlowPane(
+                Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT,
+                Sound.KONZEPT, Sound.ZUR_SEITE, Sound.NEIN_MANN);
+
+        tabContent.getChildren().add(createLabel("Pulp Fiction"));
+        tabContent.getChildren().add(panePulpFiction);
+
+        final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN);
+
+
+        tabContent.getChildren().add(createLabel("Poker-Filme"));
+        tabContent.getChildren().add(pokerPane);
+    }
+
     private void addSound(final FlowPane flowPane, final Sound sound) {
         flowPane.getChildren().add(this.soundButtons.get(sound));
     }
@@ -200,7 +197,7 @@ public class PanelView {
         pane.setHgap(5);
         pane.setMinWidth(700);
         if (border) {
-            pane.setStyle(" -fx-border-color: #777777; -fx-border-radius: 5;");
+            pane.getStyleClass().add("button-group");
         }
         return pane;
     }

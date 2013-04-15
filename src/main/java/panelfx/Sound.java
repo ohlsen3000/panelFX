@@ -43,7 +43,7 @@ public enum Sound {
 	KONZEPT("Konzept", "konzept"),
 	KOTZEN("Kotzen", "kotzen"),
 	LAUGHING_DIYER("Höhöhö", "ddr"),
-	LAUSCHANGRIFF("Tosch Attack", "lauschangriff"),
+	LAUSCHANGRIFF("Listener", "lauschangriff"),
 	LOKAL("Lokal", "lokal"),
 	NEIN_FRALLER("Neeein", "nein_fmr"),
 	NEIN_MANN("Nein Mann", "neinmann"),
