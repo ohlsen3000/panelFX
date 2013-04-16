@@ -88,7 +88,7 @@ public class PanelView {
 
         this.createPrimaryTab();
         this.createMovieTab();
-        this.createNewbiesTab();
+        this.createClassicsTab();
 
         this.scene = new Scene(masterPane);
         this.scene.getStylesheets().addAll(PanelFX.class.getResource("stylesheet.css").toExternalForm());
@@ -152,9 +152,14 @@ public class PanelView {
 
         tabContent.getChildren().add(this.createLabel("Poker-Filme"));
         tabContent.getChildren().add(pokerPane);
+        
+        final FlowPane bangBoomBangPane = this.createFlowPane(Sound.ABSTECHEN, Sound.SCHEISS_LAUNE);
+
+        tabContent.getChildren().add(this.createLabel("Bang Boom Bang"));
+        tabContent.getChildren().add(bangBoomBangPane);
     }
 
-    private void createNewbiesTab() {
+    private void createClassicsTab() {
 
         this.newbiesTab = new Tab("Klassiker");
         this.newbiesTab.setClosable(false);
@@ -166,9 +171,16 @@ public class PanelView {
         this.newbiesTab.setContent(tabContent);
 
         final FlowPane evergreens = this.createFlowPane(Sound.SLAPSTICK);
-
-        tabContent.getChildren().add(this.createLabel("Chriska"));
+        tabContent.getChildren().add(this.createLabel("Sound FX"));
         tabContent.getChildren().add(evergreens);
+        
+        final FlowPane shrinePanel = this.createFlowPane(Sound.GUDE_LAUNE, Sound.SCHLAEGEREI, Sound.FEIERGEMEINDE);
+        tabContent.getChildren().add(this.createLabel("The Shrine"));
+        tabContent.getChildren().add(shrinePanel);
+        
+        final FlowPane mediamarktPanel = this.createFlowPane(Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
+        tabContent.getChildren().add(this.createLabel("Mediamarkt"));
+        tabContent.getChildren().add(mediamarktPanel);
     }
 
     private void addSound(final FlowPane flowPane, final Sound sound) {
