@@ -3,6 +3,7 @@ package panelfx;
 public enum Sound {
 
 	AAAAAAH("Aaaaaaah", "stoehner_fmr"), //
+	ABSTECHEN("Stech ihn ab", "abstechen"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
 	ANNEE_NE("Annee-ne", "aneene"), //
@@ -27,12 +28,15 @@ public enum Sound {
 	EEHM("Eehm", "eehm"), //
 	EINMAL_WAS("1 mal was", "was"), //
 	ERBAERMLICH("Erbärmlich", "erbaermlich"), //
+	FAHRRADKETTE("Hätte, hätte", "fahrradkette"),//
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALSCH("Falsch", "falsch"), //
+	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	FOG("The Fog", "fog"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
+	GUDE_LAUNE("Gude Laune", "gude_laune"), //
 	HILFE("Hilfe", "hilfe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
@@ -55,6 +59,9 @@ public enum Sound {
 	REVERT("Reewert", "reewert"), //
 	REWE("Rewe", "rewe"), //
 	SCHAFSKAESE("Schafskäse", "schafskaese"), //
+	SCHEISE("Scheise", "scheise"),//
+	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
+	SCHLAEGEREI("Schlaegerei", "schlaegerei"), //
 	SLAPSTICK("Slapstick", "hui"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
 	SO_NICHT("So nicht!", "sonicht"), //
@@ -71,14 +78,9 @@ public enum Sound {
 	WIE_GEIL("Wie geil", "geil"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
-	ABSTECHEN("Stech ihn ab", "abstechen"), //
-	SCHEISS_LAUNE("Scheiss Laune", "laune"), //
-	GUDE_LAUNE("Gude Laune", "gude_laune"), //
-	SCHLAEGEREI("Schlaegerei", "schlaegerei"), //
-	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	ZWEIHUNDERT_PULS("200 Puls", "200puls"), //
-	BILDSCHIRM("Bildschirm", "bildschirm"), //
-	SCHEISE("Scheise", "scheise");
+	BILDSCHIRM("Bildschirm", "bildschirm") //
+	;
 
 	private String label;
 	private String filename;

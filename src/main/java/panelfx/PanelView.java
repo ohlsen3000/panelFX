@@ -170,7 +170,7 @@ public class PanelView {
 		tabContent.getStyleClass().add("wood-shifted");
 		this.newbiesTab.setContent(tabContent);
 
-		final FlowPane cubageTeamSounds = this.createFlowPane(Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER);
+		final FlowPane cubageTeamSounds = this.createFlowPane(Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE);
 		tabContent.getChildren().add(createLabel("Cubage Team (2010 - 2012)"));
 		tabContent.getChildren().add(cubageTeamSounds);
 
