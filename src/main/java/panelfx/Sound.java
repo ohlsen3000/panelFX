@@ -51,6 +51,7 @@ public enum Sound {
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
+	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OEOEOEEY("Öööey", "oey"), //
 	PUSH_IT("Push it", "pushit"), //
