@@ -57,6 +57,7 @@ public enum Sound {
 	OEOEOEEY("Öööey", "oey"), //
 	PURCHE("Purche", "purche"), //
 	PUSH_IT("Push it", "pushit"), //
+	QUEEN_TEN("Q T", "queen_ten"), //
 	QUIET("Quiet!", "quiet"), //
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
@@ -68,6 +69,7 @@ public enum Sound {
 	SLAPSTICK("Slapstick", "hui"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
 	SO_NICHT("So nicht!", "sonicht"), //
+	SO_SICK("So sick!", "so_sick"), //
 	SORRY("Sorry", "sorry"), //
 	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"), //
 	STANDUP("Stand up", "standup"), //

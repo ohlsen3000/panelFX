@@ -148,7 +148,7 @@ public class PanelView {
 		tabContent.getChildren().add(createLabel("Pulp Fiction"));
 		tabContent.getChildren().add(panePulpFiction);
 
-		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN, Sound.NICHT_GESCHOBEN);
+		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN, Sound.NICHT_GESCHOBEN, Sound.QUEEN_TEN, Sound.SO_SICK);
 
 		tabContent.getChildren().add(createLabel("Poker-Filme"));
 		tabContent.getChildren().add(pokerPane);
