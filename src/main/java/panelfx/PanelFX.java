@@ -14,12 +14,21 @@ public class PanelFX extends Application {
 
 	PanelController controller;
 
+	PlayingSounds playingSounds;
+
+	AlarmClock alarmClock;
 
 
 	@Override
 	public void start(final Stage primaryStage) {
-		this.controller = new PanelController(primaryStage);
+		this.playingSounds = new PlayingSounds();
+
+		this.controller = new PanelController(primaryStage, this.playingSounds);
 		this.controller.show();
+
+		this.alarmClock = new AlarmClock(this.playingSounds);
+		this.alarmClock.run();
+
 
 	}
 	/**

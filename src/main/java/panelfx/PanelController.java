@@ -16,10 +16,10 @@ public class PanelController {
 
 	private final Stage primaryStage;
 
-	public PanelController(final Stage primaryStage) {
+	public PanelController(final Stage primaryStage, final PlayingSounds playingSounds) {
 		super();
 		this.primaryStage = primaryStage;
-		this.runningSounds = new PlayingSounds();
+		this.runningSounds = playingSounds;
 		this.panelView = new PanelView();
 
 		this.panelView.build();
