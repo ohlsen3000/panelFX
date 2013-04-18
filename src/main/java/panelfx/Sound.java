@@ -35,6 +35,7 @@ public enum Sound {
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	FOG("The Fog", "fog"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
+	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"),//
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
 	GUDE_LAUNE("Gude Laune", "gude_laune"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -62,6 +63,7 @@ public enum Sound {
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
 	REWE("Rewe", "rewe"), //
+	RICHTIG_GEPOKERT("Richtig gepokert", "richtig_gepokert"), //
 	SCHAFSKAESE("Schafskäse", "schafskaese"), //
 	SCHEISE("Scheise", "scheise"),//
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
