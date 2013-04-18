@@ -40,6 +40,7 @@ public enum Sound {
 	HILFE("Hilfe", "hilfe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
+	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
 	KHAN("Khan", "khan"), //
 	KNARZ("Knarz", "knarz_equalized"), //
@@ -54,6 +55,7 @@ public enum Sound {
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OEOEOEEY("Öööey", "oey"), //
+	PURCHE("Purche", "purche"), //
 	PUSH_IT("Push it", "pushit"), //
 	QUIET("Quiet!", "quiet"), //
 	REMOTE("Remote", "remoot"), //
@@ -75,7 +77,9 @@ public enum Sound {
 	WAS_DU_GLAUBST_JOTHER("Das ist das", "dasist"), //
 	WAS_DU_GLAUBST_MAROHDE("Was Du glaubst", "was_du_glaubst"), //
 	WAS_JETZT("Was jetzt?", "wasjetzt"), //
+	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
+	WIDERPORST("Widerporst", "widerporst"), //
 	WIE_GEIL("Wie geil", "geil"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //

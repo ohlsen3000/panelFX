@@ -157,6 +157,11 @@ public class PanelView {
 
 		tabContent.getChildren().add(createLabel("Bang Boom Bang"));
 		tabContent.getChildren().add(bangBoomBangPane);
+		
+		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK);
+
+		tabContent.getChildren().add(createLabel("Das Leben des Brian"));
+		tabContent.getChildren().add(lifeOfBrianPane);
 	}
 
 	private void createClassicsTab() {
