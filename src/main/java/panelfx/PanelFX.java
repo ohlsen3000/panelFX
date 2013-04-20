@@ -53,7 +53,7 @@ public class PanelFX extends Application {
 		//		final Bean<?> pS = beans.iterator().next();
 		//
 		//		final CreationalContext ctx = this.weldContainer.getBeanManager().createCreationalContext(pS); // could be inlined below
-		final PlayingSounds playingSounds = (PlayingSounds) getBeanByName("playingSounds", PlayingSounds);
+		final PlayingSounds playingSounds = (PlayingSounds) getBeanByName("playingSounds", PlayingSounds.class);
 		this.controller = new PanelController(primaryStage, playingSounds);
 		this.controller.show();
 
