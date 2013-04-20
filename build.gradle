@@ -1,10 +1,37 @@
-apply from:
-'https://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/javafx.plugin'
+apply plugin: 'base'
+apply plugin: 'eclipse'
+apply from: 'https://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/javafx.plugin'
 
 [compileJava, compileTestJava].each{ it.options.encoding = 'UTF-8' }
 
+//eclipse.classpath.file {
+//	beforeMerged { classpath ->
+//		classpath.entries.removeAll { entry -> entry.kind == 'lib' || entry.kind == 'var' }
+//	}
+//	whenMerged { classpath ->
+//		classpath.entries.findAll { entry -> entry.kind == 'lib' }*.exported = false
+//	}
+//}
+//
+//eclipse.project.file.beforeMerged { project ->
+//	project.natures.clear()
+//}
+
+
+
+dependencies {
+	compile group: 'org.jboss.weld.se', name: 'weld-se-core', version: '1.1.11.Final'
+	compile group: 'javax.enterprise', name: 'cdi-api', version: '1.0'
+}
 
 
 javafx {
      mainClass = 'panelfx.PanelFX'
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		url "http://repo.springsource.org/release"
+	}
 }
