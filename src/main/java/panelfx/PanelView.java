@@ -148,7 +148,7 @@ public class PanelView {
 		tabContent.getChildren().add(createLabel("Pulp Fiction"));
 		tabContent.getChildren().add(panePulpFiction);
 
-		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN, Sound.NICHT_GESCHOBEN, Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
+		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN, Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST, Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
 
 		tabContent.getChildren().add(createLabel("Poker-Filme"));
 		tabContent.getChildren().add(pokerPane);
@@ -158,7 +158,7 @@ public class PanelView {
 		tabContent.getChildren().add(createLabel("Bang Boom Bang"));
 		tabContent.getChildren().add(bangBoomBangPane);
 		
-		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK);
+		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK, Sound.ER_SIE);
 
 		tabContent.getChildren().add(createLabel("Das Leben des Brian"));
 		tabContent.getChildren().add(lifeOfBrianPane);
