@@ -113,7 +113,7 @@ public enum Sound {
 		return this.url;
 	}
 
-	public static Sound lookUpByLabel(final String actionSource) {
+	public static Sound lookUpByFilename(final String actionSource) {
 
 		Sound found = null;
 		for (final Sound sound : Sound.values()){

@@ -20,7 +20,7 @@ public class PanelController {
 	private final PanelView panelView;
 
 	@Inject
-	private PlayingSounds runningSounds;
+	private PlayingSounds playingSounds;
 
 	@Inject
 	Event<Sound> soundEvent;
@@ -49,7 +49,7 @@ public class PanelController {
 				final String actionSource = ((Button) event.getSource())
 						.getId();
 
-				final Sound sound = Sound.lookUpByLabel(actionSource);
+				final Sound sound = Sound.lookUpByFilename(actionSource);
 
 				if (sound != null) {
 					PanelController.this.soundEvent.fire(sound);
@@ -67,7 +67,7 @@ public class PanelController {
 						.getId();
 
 				if ("STOP".equals(actionSource)) {
-					PanelController.this.runningSounds.stopAll();
+					PanelController.this.playingSounds.stopAll();
 				}
 			}
 		};
