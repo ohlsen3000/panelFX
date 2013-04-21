@@ -7,30 +7,38 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-//@ApplicationScoped
-public class PanelController {
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.event.Event;
+import javax.enterprise.event.Observes;
+import javax.inject.Inject;
+import javax.inject.Named;
 
+@ApplicationScoped
+@Named("soundPanelController")
+public class PanelController {
 
 	private final PanelView panelView;
 
-	private PlayingSounds runningSounds = new PlayingSounds();
+	@Inject
+	private PlayingSounds runningSounds;
 
-	private final Stage primaryStage;
+	@Inject
+	Event<Sound> soundEvent;
 
-	public PanelController(final Stage primaryStage, final PlayingSounds playingSounds) {
+	public PanelController() {
 		super();
-		this.primaryStage = primaryStage;
-		this.runningSounds = playingSounds;
 		this.panelView = new PanelView();
 
 		this.panelView.build();
-		this.panelView.registerSoundButtonActionListener(createButtonListener());
+		this.panelView
+				.registerSoundButtonActionListener(createButtonListener());
 
-		this.panelView.registerControlActionListener(createControlButtonListener());
+		this.panelView
+				.registerControlActionListener(createControlButtonListener());
 	}
 
-	public void show(){
-		this.panelView.show(this.primaryStage);
+	public void show(@Observes @StartupScene final Stage primaryStage) {
+		this.panelView.show(primaryStage);
 	}
 
 	private EventHandler<ActionEvent> createButtonListener() {
@@ -38,11 +46,14 @@ public class PanelController {
 
 			@Override
 			public void handle(final ActionEvent event) {
-				final String actionSource = ((Button) event.getSource()).getId();
+				final String actionSource = ((Button) event.getSource())
+						.getId();
 
-				final String url = PanelFX.class.getResource(actionSource + ".mp3").toString();
-				final SoundThread sound = new SoundThread(url, PanelController.this.runningSounds);
-				sound.run();
+				final Sound sound = Sound.lookUpByLabel(actionSource);
+
+				if (sound != null) {
+					PanelController.this.soundEvent.fire(sound);
+				}
 			}
 		};
 	}
@@ -52,7 +63,8 @@ public class PanelController {
 
 			@Override
 			public void handle(final MouseEvent event) {
-				final String actionSource = ((ImageView) event.getSource()).getId();
+				final String actionSource = ((ImageView) event.getSource())
+						.getId();
 
 				if ("STOP".equals(actionSource)) {
 					PanelController.this.runningSounds.stopAll();

@@ -91,10 +91,12 @@ public enum Sound {
 
 	private String label;
 	private String filename;
+	private String url;
 
 	private Sound(final String label, final String filename) {
 		this.label = label;
 		this.filename = filename;
+		this.url = PanelFX.class.getResource(filename + ".mp3").toString();
 	}
 
 	public String getLabel() {
@@ -103,6 +105,24 @@ public enum Sound {
 
 	public String getFilename() {
 		return this.filename;
+	}
+
+	public String getUrl() {
+		return this.url;
+	}
+
+	public static Sound lookUpByLabel(final String actionSource) {
+
+		Sound found = null;
+		for (final Sound sound : Sound.values()){
+
+			if (sound.filename.equals(actionSource)){
+				found = sound;
+				break;
+			}
+
+		}
+		return found;
 	}
 
 }
