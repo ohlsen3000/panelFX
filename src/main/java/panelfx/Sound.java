@@ -25,9 +25,11 @@ public enum Sound {
 	DELETE("Delete", "delate"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
+	DU_BEISST("Du beisst", "du_beisst"), //
 	EEHM("Eehm", "eehm"), //
 	EINMAL_WAS("1 mal was", "was"), //
 	ERBAERMLICH("Erbärmlich", "erbaermlich"), //
+	ER_SIE("Er / Sie", "er_sie"), //
 	FAHRRADKETTE("Hätte, hätte", "fahrradkette"),//
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
@@ -47,6 +49,7 @@ public enum Sound {
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
 	KOTZEN("Kotzen", "kotzen"), //
+	LASS_SEIN("Lass es sein", "lass_es_sein"), //
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
@@ -60,6 +63,7 @@ public enum Sound {
 	PUSH_IT("Push it", "pushit"), //
 	QUEEN_TEN("Q T", "queen_ten"), //
 	QUIET("Quiet!", "quiet"), //
+	REAL("Real", "for_real"), //
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
 	REWE("Rewe", "rewe"), //
