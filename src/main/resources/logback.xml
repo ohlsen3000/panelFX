@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60 seconds">
+
+    <property name="logging.directory" value="build/log" />
+    <property name="webapp.name" value="panelfx" />
+
+    <appender name="FILE"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${logging.directory}/${webapp.name}.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${logging.directory}/${webapp.name}.%d{yyyy-MM-dd}.%i.log
+            </FileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{HH:mm:ss.SSS} %X{user} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="LOGINMODULE"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${logging.directory}/${webapp.name}-loginmodule.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${logging.directory}/${webapp.name}-loginmodule.%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{HH:mm:ss.SSS} %X{user} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} %X{user} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <logger name="javax.persistence" level="INFO" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <logger name="com.timocom" level="INFO" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+    
+    <logger name="com.sun" level="INFO" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+    
+    
+    <root level="DEBUG">
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
