@@ -9,8 +9,6 @@ import java.util.TimerTask;
 
 public class AlarmClock implements Runnable {
 
-    private final String user;
-
     private final int hour;
     private final int minute;
 
@@ -19,9 +17,9 @@ public class AlarmClock implements Runnable {
     public AlarmClock(final PlayingSounds playingSounds) {
         super();
         this.playingSounds = playingSounds;
-        this.user = System.getProperty("user.name");
         this.hour = 10;
         this.minute = 0;
+
     }
 
     @Override
