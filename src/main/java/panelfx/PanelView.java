@@ -120,7 +120,7 @@ public class PanelView {
 
 		final FlowPane paneMisc = this.createFlowPane(Sound.WAS_DU_GLAUBST_MAROHDE, Sound.JEOPARDY, Sound.REMOTE, Sound.DELETE, Sound.SNAPHOT, Sound.KHAN,
 				Sound.ASSERT, Sound.WIE_GEIL, Sound.FAIL, Sound.FAIL_SATANIC, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR, Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL,
-				Sound.WAS_DENN, Sound.NJAEH);
+				Sound.WAS_DENN, Sound.NJAEH, Sound.QUIET);
 
 		primaryTabContent.getChildren().add(createLabel("Misc"));
 		primaryTabContent.getChildren().add(paneMisc);
@@ -157,7 +157,7 @@ public class PanelView {
 
 		tabContent.getChildren().add(createLabel("Bang Boom Bang"));
 		tabContent.getChildren().add(bangBoomBangPane);
-		
+
 		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK, Sound.ER_SIE);
 
 		tabContent.getChildren().add(createLabel("Das Leben des Brian"));
