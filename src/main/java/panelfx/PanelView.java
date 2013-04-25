@@ -31,6 +31,7 @@ public class PanelView {
 	private Tab primaryTab;
 	private Tab movieTab;
 	private Tab newbiesTab;
+	private Tab soundTab;
 
 	public void registerSoundButtonActionListener(final EventHandler<ActionEvent> pushButtonEvent) {
 
@@ -89,6 +90,7 @@ public class PanelView {
 		createPrimaryTab();
 		createMovieTab();
 		createClassicsTab();
+		createSoundsTab();
 
 		this.scene = new Scene(masterPane);
 		this.scene.getStylesheets().addAll(PanelFX.class.getResource("stylesheet.css").toExternalForm());
@@ -162,6 +164,11 @@ public class PanelView {
 
 		tabContent.getChildren().add(createLabel("Das Leben des Brian"));
 		tabContent.getChildren().add(lifeOfBrianPane);
+		
+		final FlowPane revengeOfTheDispossessedPane = this.createFlowPane(Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES, Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.PFEIFENWICHS);
+
+		tabContent.getChildren().add(createLabel("Didi und die Rache der Enterbten"));
+		tabContent.getChildren().add(revengeOfTheDispossessedPane);
 	}
 
 	private void createClassicsTab() {
@@ -190,6 +197,31 @@ public class PanelView {
 		final FlowPane mediamarktPanel = this.createFlowPane(Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
 		tabContent.getChildren().add(createLabel("Mediamarkt"));
 		tabContent.getChildren().add(mediamarktPanel);
+	}
+	
+	private void createSoundsTab() {
+
+		this.newbiesTab = new Tab("Geräuschkulisse");
+		this.newbiesTab.setClosable(false);
+		this.tabPane.getTabs().add(this.newbiesTab);
+
+		final FlowPane tabContent = new FlowPane();
+		tabContent.setPadding(new Insets(10, 0, 0, 0));
+		tabContent.getStyleClass().add("wood-shifted");
+		this.newbiesTab.setContent(tabContent);
+
+		final FlowPane laughing = this.createFlowPane(Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
+		tabContent.getChildren().add(createLabel("Lachen"));
+		tabContent.getChildren().add(laughing);
+		
+		final FlowPane comic = this.createFlowPane(Sound.BOING);
+		tabContent.getChildren().add(createLabel("Zeichentrick"));
+		tabContent.getChildren().add(comic);
+		
+		final FlowPane misc = this.createFlowPane(Sound.DOD, Sound.GRAUEN, Sound.BEEP);
+		tabContent.getChildren().add(createLabel("Sonstiges"));
+		tabContent.getChildren().add(misc);
+
 	}
 
 	private void addSound(final FlowPane flowPane, final Sound sound) {
