@@ -33,19 +33,22 @@ public class PanelView {
 	private Tab newbiesTab;
 	private Tab soundTab;
 
-	public void registerSoundButtonActionListener(final EventHandler<ActionEvent> pushButtonEvent) {
+	public void registerSoundButtonActionListener(
+			final EventHandler<ActionEvent> pushButtonEvent) {
 
 		for (final Button button : this.soundButtons.values()) {
 			button.setOnAction(pushButtonEvent);
 		}
 	}
 
-	public void registerControlActionListener(final EventHandler<MouseEvent> controlEvent) {
+	public void registerControlActionListener(
+			final EventHandler<MouseEvent> controlEvent) {
 		this.muteView.setOnMouseClicked(controlEvent);
 	}
 
 	public void show(final Stage stage) {
-		stage.getIcons().add(new Image(PanelFX.class.getResourceAsStream("icon.png")));
+		stage.getIcons().add(
+				new Image(PanelFX.class.getResourceAsStream("icon.png")));
 
 		stage.setTitle("The Panel FX");
 		stage.setScene(this.scene);
@@ -75,7 +78,8 @@ public class PanelView {
 		masterPane.setHgap(5);
 
 		final FlowPane controllingPane = this.createFlowPane(false);
-		final Image muteImage = new Image(this.getClass().getResourceAsStream("mute.png"));
+		final Image muteImage = new Image(this.getClass().getResourceAsStream(
+				"mute.png"));
 		this.muteView = new ImageView(muteImage);
 		this.muteView.setId("STOP");
 		this.muteView.setCursor(Cursor.HAND);
@@ -93,7 +97,8 @@ public class PanelView {
 		createSoundsTab();
 
 		this.scene = new Scene(masterPane);
-		this.scene.getStylesheets().addAll(PanelFX.class.getResource("stylesheet.css").toExternalForm());
+		this.scene.getStylesheets().addAll(
+				PanelFX.class.getResource("stylesheet.css").toExternalForm());
 	}
 
 	private void createPrimaryTab() {
@@ -107,28 +112,41 @@ public class PanelView {
 		primaryTabContent.getStyleClass().add("wood-shifted");
 		this.primaryTab.setContent(primaryTabContent);
 
-		final FlowPane paneBastelecke = this.createFlowPane(Sound.STANDUP, Sound.CUBAGE, Sound.BATTLE1, Sound.BATTLE3, Sound.DOORBELL, Sound.ALARM,
-				Sound.PUSH_IT, Sound.OEOEOEEY, Sound.LAUSCHANGRIFF, Sound.FOG, Sound.BAEM, Sound.ERBAERMLICH, Sound.HORHOR, Sound.NEIN_ULTZ, Sound.HILFE,
-				Sound.COOL, Sound.KNARZ, Sound.SORRY);
+		final FlowPane paneBastelecke = this.createFlowPane(Sound.STANDUP,
+				Sound.CUBAGE, Sound.BATTLE1, Sound.BATTLE3, Sound.DOORBELL,
+				Sound.ALARM, Sound.PUSH_IT, Sound.OEOEOEEY,
+				Sound.LAUSCHANGRIFF, Sound.FOG, Sound.BAEM, Sound.ERBAERMLICH,
+				Sound.HORHOR, Sound.NEIN_ULTZ, Sound.HILFE, Sound.COOL,
+				Sound.KNARZ, Sound.SORRY);
 
 		primaryTabContent.getChildren().add(createLabel("Bastelecke"));
 		primaryTabContent.getChildren().add(paneBastelecke);
 
-		final FlowPane paneFrank = this.createFlowPane(Sound.NEIN_FRALLER, Sound.AAAAAAH, Sound.FALSCH, Sound.DANKOEOE, Sound.BULLSHIT, Sound.KOTZEN,
-				Sound.HUST, Sound.FRANK_MUELLER, Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
+		final FlowPane paneFrank = this.createFlowPane(Sound.NEIN_FRALLER,
+				Sound.AAAAAAH, Sound.FALSCH, Sound.DANKOEOE, Sound.BULLSHIT,
+				Sound.KOTZEN, Sound.HUST, Sound.FRANK_MUELLER,
+				Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
 
-		primaryTabContent.getChildren().add(createLabel("Frank"));
+		primaryTabContent.getChildren().add(createLabel("Fraller"));
 		primaryTabContent.getChildren().add(paneFrank);
 
-		final FlowPane paneMisc = this.createFlowPane(Sound.WAS_DU_GLAUBST_MAROHDE, Sound.JEOPARDY, Sound.REMOTE, Sound.DELETE, Sound.SNAPHOT, Sound.KHAN,
-				Sound.ASSERT, Sound.WIE_GEIL, Sound.FAIL, Sound.FAIL_SATANIC, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR, Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL,
-				Sound.WAS_DENN, Sound.NJAEH, Sound.QUIET);
+		final FlowPane paneMisc = this.createFlowPane(
+				Sound.WAS_DU_GLAUBST_MAROHDE, Sound.JEOPARDY, Sound.REMOTE,
+				Sound.DELETE, Sound.SNAPHOT, Sound.KHAN, Sound.ASSERT,
+				Sound.WIE_GEIL, Sound.FAIL, Sound.FAIL_SATANIC,
+				Sound.LAUGHING_DIYER, Sound.GANZ_KLAR, Sound.ALTOBELLI,
+				Sound.TACH, Sound.LOKAL, Sound.WAS_DENN, Sound.NJAEH,
+				Sound.QUIET);
 
 		primaryTabContent.getChildren().add(createLabel("Misc"));
 		primaryTabContent.getChildren().add(paneMisc);
 
-		final FlowPane paneJoeHanson = this.createFlowPane(Sound.BIDDE_QUESTIONING, Sound.BIDDE_IN_TROUBLE, Sound.REVERT, Sound.REWE,
-				Sound.EEHM, Sound.DOMAIN, Sound.SO_NICHT, Sound.WEISST_DUS, Sound.CONVERTER, Sound.COFFEE, Sound.ANNEE_NE);
+		final FlowPane paneJoeHanson = this
+				.createFlowPane(Sound.BIDDE_QUESTIONING,
+						Sound.BIDDE_IN_TROUBLE, Sound.REVERT, Sound.REWE,
+						Sound.EEHM, Sound.DOMAIN, Sound.SO_NICHT,
+						Sound.WEISST_DUS, Sound.CONVERTER, Sound.COFFEE,
+						Sound.ANNEE_NE);
 
 		primaryTabContent.getChildren().add(createLabel("Jother"));
 		primaryTabContent.getChildren().add(paneJoeHanson);
@@ -145,29 +163,40 @@ public class PanelView {
 		tabContent.getStyleClass().add("wood-shifted");
 		this.movieTab.setContent(tabContent);
 
-		final FlowPane panePulpFiction = this.createFlowPane(Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT, Sound.KONZEPT, Sound.ZUR_SEITE, Sound.NEIN_MANN);
+		final FlowPane panePulpFiction = this.createFlowPane(Sound.WAS_JETZT,
+				Sound.EINMAL_WAS, Sound.ANSTEHT, Sound.KONZEPT,
+				Sound.ZUR_SEITE, Sound.NEIN_MANN);
 
 		tabContent.getChildren().add(createLabel("Pulp Fiction"));
 		tabContent.getChildren().add(panePulpFiction);
 
-		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN, Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST, Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
+		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN,
+				Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST,
+				Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.REAL,
+				Sound.FREAKING_IDIOTS, Sound.SO_SICK);
 
 		tabContent.getChildren().add(createLabel("Poker-Filme"));
 		tabContent.getChildren().add(pokerPane);
 
-		final FlowPane bangBoomBangPane = this.createFlowPane(Sound.ABSTECHEN, Sound.SCHEISS_LAUNE);
+		final FlowPane bangBoomBangPane = this.createFlowPane(Sound.ABSTECHEN,
+				Sound.SCHEISS_LAUNE);
 
 		tabContent.getChildren().add(createLabel("Bang Boom Bang"));
 		tabContent.getChildren().add(bangBoomBangPane);
 
-		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK, Sound.ER_SIE);
+		final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST,
+				Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK,
+				Sound.ER_SIE);
 
 		tabContent.getChildren().add(createLabel("Das Leben des Brian"));
 		tabContent.getChildren().add(lifeOfBrianPane);
-		
-		final FlowPane revengeOfTheDispossessedPane = this.createFlowPane(Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES, Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.PFEIFENWICHS);
 
-		tabContent.getChildren().add(createLabel("Didi und die Rache der Enterbten"));
+		final FlowPane revengeOfTheDispossessedPane = this.createFlowPane(
+				Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES,
+				Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.PFEIFENWICHS);
+
+		tabContent.getChildren().add(
+				createLabel("Didi und die Rache der Enterbten"));
 		tabContent.getChildren().add(revengeOfTheDispossessedPane);
 	}
 
@@ -182,23 +211,28 @@ public class PanelView {
 		tabContent.getStyleClass().add("wood-shifted");
 		this.newbiesTab.setContent(tabContent);
 
-		final FlowPane cubageTeamSounds = this.createFlowPane(Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE);
+		final FlowPane cubageTeamSounds = this.createFlowPane(Sound.SLAPSTICK,
+				Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE);
 		tabContent.getChildren().add(createLabel("Cubage Team (2010 - 2012)"));
 		tabContent.getChildren().add(cubageTeamSounds);
 
-		final FlowPane basteleckeSounds = this.createFlowPane(Sound.BIEKER, Sound.BALLAD);
-		tabContent.getChildren().add(createLabel("Bastelecke Team (2012 - present)"));
+		final FlowPane basteleckeSounds = this.createFlowPane(Sound.BIEKER,
+				Sound.BALLAD);
+		tabContent.getChildren().add(
+				createLabel("Bastelecke Team (2012 - present)"));
 		tabContent.getChildren().add(basteleckeSounds);
 
-		final FlowPane shrinePanel = this.createFlowPane(Sound.GUDE_LAUNE, Sound.SCHLAEGEREI, Sound.FEIERGEMEINDE);
+		final FlowPane shrinePanel = this.createFlowPane(Sound.GUDE_LAUNE,
+				Sound.SCHLAEGEREI, Sound.FEIERGEMEINDE);
 		tabContent.getChildren().add(createLabel("The Shrine"));
 		tabContent.getChildren().add(shrinePanel);
 
-		final FlowPane mediamarktPanel = this.createFlowPane(Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
+		final FlowPane mediamarktPanel = this.createFlowPane(
+				Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
 		tabContent.getChildren().add(createLabel("Mediamarkt"));
 		tabContent.getChildren().add(mediamarktPanel);
 	}
-	
+
 	private void createSoundsTab() {
 
 		this.newbiesTab = new Tab("Geräuschkulisse");
@@ -210,15 +244,17 @@ public class PanelView {
 		tabContent.getStyleClass().add("wood-shifted");
 		this.newbiesTab.setContent(tabContent);
 
-		final FlowPane laughing = this.createFlowPane(Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
+		final FlowPane laughing = this.createFlowPane(Sound.ERNIE_LACHEN,
+				Sound.HOEHOEHOEHOEHOE);
 		tabContent.getChildren().add(createLabel("Lachen"));
 		tabContent.getChildren().add(laughing);
-		
+
 		final FlowPane comic = this.createFlowPane(Sound.BOING);
 		tabContent.getChildren().add(createLabel("Zeichentrick"));
 		tabContent.getChildren().add(comic);
-		
-		final FlowPane misc = this.createFlowPane(Sound.DOD, Sound.GRAUEN, Sound.BEEP);
+
+		final FlowPane misc = this.createFlowPane(Sound.SAMETIME, Sound.DOD,
+				Sound.GRAUEN, Sound.BEEP);
 		tabContent.getChildren().add(createLabel("Sonstiges"));
 		tabContent.getChildren().add(misc);
 
