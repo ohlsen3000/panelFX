@@ -40,6 +40,7 @@ public enum Sound {
 	FALSCH("Falsch", "falsch"), //
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	FOG("The Fog", "fog"), //
+	FRAGE("Frage", "frage"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
@@ -60,6 +61,7 @@ public enum Sound {
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
+	MUELLTONNE("Mülltonne", "muelltonne"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
@@ -104,6 +106,7 @@ public enum Sound {
 	WIE_GEIL("Wie geil", "geil"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
+	ZWEI_DINGE("Zwei Dinge", "zwei_dinge"), //
 	ZWEIHUNDERT_PULS("200 Puls", "200puls"), //
 	BILDSCHIRM("Bildschirm", "bildschirm") //
 	;

@@ -193,11 +193,18 @@ public class PanelView {
 
 		final FlowPane revengeOfTheDispossessedPane = this.createFlowPane(
 				Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES,
-				Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.PFEIFENWICHS);
+				Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.MUELLTONNE, Sound.PFEIFENWICHS, Sound.FRAGE);
 
 		tabContent.getChildren().add(
 				createLabel("Didi und die Rache der Enterbten"));
 		tabContent.getChildren().add(revengeOfTheDispossessedPane);
+		
+		final FlowPane ottoPane = this.createFlowPane(
+				Sound.ZWEI_DINGE);
+
+		tabContent.getChildren().add(
+				createLabel("Otto - Der Film"));
+		tabContent.getChildren().add(ottoPane);
 	}
 
 	private void createClassicsTab() {
