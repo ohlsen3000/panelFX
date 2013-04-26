@@ -1,5 +1,6 @@
 apply from:
 'https://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/javafx.plugin'
+apply plugin: 'eclipse'
 
 [compileJava, compileTestJava].each{ it.options.encoding = 'UTF-8' }
 
