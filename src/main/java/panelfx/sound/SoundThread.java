@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package panelfx;
+package panelfx.sound;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;

@@ -1,4 +1,4 @@
-package panelfx;
+package panelfx.sound;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -9,26 +9,28 @@ import javafx.stage.Stage;
 
 public class PanelController {
 
-
 	private final PanelView panelView;
 
 	private PlayingSounds runningSounds = new PlayingSounds();
 
 	private final Stage primaryStage;
 
-	public PanelController(final Stage primaryStage, final PlayingSounds playingSounds) {
+	public PanelController(final Stage primaryStage,
+			final PlayingSounds playingSounds) {
 		super();
 		this.primaryStage = primaryStage;
 		this.runningSounds = playingSounds;
 		this.panelView = new PanelView();
 
 		this.panelView.build();
-		this.panelView.registerSoundButtonActionListener(createButtonListener());
+		this.panelView
+				.registerSoundButtonActionListener(createButtonListener());
 
-		this.panelView.registerControlActionListener(createControlButtonListener());
+		this.panelView
+				.registerControlActionListener(createControlButtonListener());
 	}
 
-	public void show(){
+	public void show() {
 		this.panelView.show(this.primaryStage);
 	}
 
@@ -37,10 +39,13 @@ public class PanelController {
 
 			@Override
 			public void handle(final ActionEvent event) {
-				final String actionSource = ((Button) event.getSource()).getId();
+				final String actionSource = ((Button) event.getSource())
+						.getId();
 
-				final String url = PanelFX.class.getResource(actionSource + ".mp3").toString();
-				final SoundThread sound = new SoundThread(url, PanelController.this.runningSounds);
+				final String url = Sound.class.getResource(
+						actionSource + ".mp3").toString();
+				final SoundThread sound = new SoundThread(url,
+						PanelController.this.runningSounds);
 				sound.run();
 			}
 		};
@@ -51,7 +56,8 @@ public class PanelController {
 
 			@Override
 			public void handle(final MouseEvent event) {
-				final String actionSource = ((ImageView) event.getSource()).getId();
+				final String actionSource = ((ImageView) event.getSource())
+						.getId();
 
 				if ("STOP".equals(actionSource)) {
 					PanelController.this.runningSounds.stopAll();

@@ -4,6 +4,9 @@
  */
 package panelfx;
 
+import panelfx.sound.AlarmClock;
+import panelfx.sound.PanelController;
+import panelfx.sound.PlayingSounds;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

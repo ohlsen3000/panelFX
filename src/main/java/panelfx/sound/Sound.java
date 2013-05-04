@@ -1,4 +1,4 @@
-package panelfx;
+package panelfx.sound;
 
 public enum Sound {
 

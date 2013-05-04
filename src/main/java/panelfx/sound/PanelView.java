@@ -1,4 +1,4 @@
-package panelfx;
+package panelfx.sound;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,6 +21,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import javax.annotation.PostConstruct;
+
+import panelfx.PanelFX;
 
 public class PanelView {
 
