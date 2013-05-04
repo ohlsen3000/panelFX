@@ -170,13 +170,18 @@ public class PanelView {
 		tabContent.getChildren().add(createLabel("Pulp Fiction"));
 		tabContent.getChildren().add(panePulpFiction);
 
-		final FlowPane pokerPane = this.createFlowPane(Sound.SPIEL_LERNEN,
-				Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST,
+		final FlowPane pokerPane = this.createFlowPane(Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST,
 				Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.REAL,
 				Sound.FREAKING_IDIOTS, Sound.SO_SICK);
 
 		tabContent.getChildren().add(createLabel("Poker-Filme"));
 		tabContent.getChildren().add(pokerPane);
+		
+		final FlowPane callOnToDancePane = this.createFlowPane(Sound.NASSER_SACK, Sound.TANGO, Sound.GEBUNKERT, Sound.RASIERT, 
+				Sound.VORLETZTES_SPIEL, Sound.SPIEL_LERNEN, Sound.GAR_NICHT, Sound.VERABSCHIEDEN, Sound.SEPPL, Sound.FEIERABEND, Sound.SCHNAUZE_VOLL, Sound.SENSE);
+
+		tabContent.getChildren().add(createLabel("Aufforderung zum Tanz"));
+		tabContent.getChildren().add(callOnToDancePane);
 
 		final FlowPane bangBoomBangPane = this.createFlowPane(Sound.ABSTECHEN,
 				Sound.SCHEISS_LAUNE);

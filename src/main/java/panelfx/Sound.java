@@ -17,6 +17,7 @@ public enum Sound {
 	BIDDE_IN_TROUBLE("bidde?", "bidde_veraengstigt"), //
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
 	BIEKER("Bieker", "bieker"), //
+	BILDSCHIRM("Bildschirm", "bildschirm"), //
 	BOING("Boing", "boing"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
@@ -38,12 +39,15 @@ public enum Sound {
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALSCH("Falsch", "falsch"), //
+	FEIERABEND("Feierabend", "feierabend"),//
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
+	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
+	GEBUNKERT("Gebunkert", "gebunkert"), //
 	GUDE_LAUNE("Gude Laune", "gude_laune"), //
 	GRAUEN("Geräusch des Grauens", "grauen"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -62,6 +66,7 @@ public enum Sound {
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
+	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
@@ -74,6 +79,7 @@ public enum Sound {
 	PUSH_IT("Push it", "pushit"), //
 	QUEEN_TEN("Q T", "queen_ten"), //
 	QUIET("Quiet!", "quiet"), //
+	RASIERT("Rasiert", "rasiert"), //
 	REAL("For real?", "for_real"), //
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
@@ -85,6 +91,9 @@ public enum Sound {
 	SCHEISE("Scheise", "scheise"), //
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
+	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
+	SENSE("Sense", "sense"), //
+	SEPPL("Seppl", "seppl"), //
 	SLAPSTICK("Slapstick", "hui"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
 	SO_NICHT("So nicht!", "sonicht"), //
@@ -94,7 +103,10 @@ public enum Sound {
 	STANDUP("Stand up", "standup"), //
 	STEELE2("Steele 2", "steele2"), //
 	TACH("Tach", "tachzusammen"), //
+	TANGO("Tango", "tango"), //
+	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
+	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
 	WAS_DENN("Was denn", "wasdenn"), // //
 	WAS_DU_GLAUBST_JOTHER("Das ist das", "dasist"), //
 	WAS_DU_GLAUBST_MAROHDE("Was Du glaubst", "was_du_glaubst"), //
@@ -107,8 +119,7 @@ public enum Sound {
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
 	ZWEI_DINGE("Zwei Dinge", "zwei_dinge"), //
-	ZWEIHUNDERT_PULS("200 Puls", "200puls"), //
-	BILDSCHIRM("Bildschirm", "bildschirm") //
+	ZWEIHUNDERT_PULS("200 Puls", "200puls") //
 	;
 
 	private String label;
