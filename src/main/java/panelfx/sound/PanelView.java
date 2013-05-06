@@ -268,7 +268,7 @@ public class PanelView {
 		tabContent.getChildren().add(comic);
 
 		final FlowPane misc = this.createFlowPane(Sound.SAMETIME, Sound.DOD,
-				Sound.GRAUEN, Sound.BEEP);
+				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
 		tabContent.getChildren().add(createLabel("Sonstiges"));
 		tabContent.getChildren().add(misc);
 
