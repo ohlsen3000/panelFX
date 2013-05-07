@@ -10,7 +10,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
@@ -21,7 +20,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import javax.annotation.PostConstruct;
@@ -31,6 +29,9 @@ import panelfx.sound.Sound;
 import panelfx.timer.TeaTimer;
 
 public class PanelView {
+
+    public static final int WIDTH = 740;
+    public static final int PADDING_LEFT_RIGHT = 20;
 
     private Scene scene;
     private final Map<Sound, Button> soundButtons = new HashMap<>();
@@ -81,11 +82,13 @@ public class PanelView {
         this.createButtons();
 
         final FlowPane masterPane = new FlowPane();
-        masterPane.setPadding(new Insets(5, 20, 30, 20));
+        masterPane.setPadding(new Insets(5, PADDING_LEFT_RIGHT, 30, PADDING_LEFT_RIGHT));
         masterPane.setVgap(5);
         masterPane.setHgap(5);
 
-        final FlowPane controllingPane = this.createFlowPane(false);
+        final FlowPane controllingPane = new FlowPane();
+        controllingPane.setMaxWidth(700);
+        controllingPane.setMinWidth(700);
         final Image muteImage = new Image(this.getClass().getResourceAsStream("mute.png"));
         this.muteView = new ImageView(muteImage);
         this.muteView.setId("STOP");
@@ -114,36 +117,34 @@ public class PanelView {
         this.primaryTab.setClosable(false);
         this.tabPane.getTabs().add(this.primaryTab);
 
-        final FlowPane primaryTabContent = new FlowPane();
-        primaryTabContent.setPadding(new Insets(10, 0, 0, 0));
-        primaryTabContent.getStyleClass().add("wood-shifted");
-        this.primaryTab.setContent(primaryTabContent);
+        final FlowPane tabContent = new FlowPane();
+        tabContent.setVgap(5);
+        tabContent.setHgap(5);
+        tabContent.setPadding(new Insets(10, 0, 0, 0));
+        tabContent.getStyleClass().add("wood-shifted");
+        this.primaryTab.setContent(tabContent);
 
-        final FlowPane paneBastelecke = this.createFlowPane(Sound.STANDUP, Sound.CUBAGE, Sound.BATTLE1, Sound.BATTLE3, Sound.DOORBELL, Sound.ALARM,
-                Sound.PUSH_IT, Sound.OEOEOEEY, Sound.LAUSCHANGRIFF, Sound.FOG, Sound.BAEM, Sound.ERBAERMLICH, Sound.HORHOR, Sound.NEIN_ULTZ, Sound.HILFE,
-                Sound.COOL, Sound.KNARZ, Sound.SORRY);
+        final FlowPane paneBastelecke = new ButtonGroup("Bastelecke", this.soundButtons, Sound.STANDUP, Sound.CUBAGE, Sound.BATTLE1, Sound.BATTLE3,
+                Sound.DOORBELL, Sound.ALARM, Sound.PUSH_IT, Sound.OEOEOEEY, Sound.LAUSCHANGRIFF, Sound.FOG, Sound.BAEM, Sound.ERBAERMLICH, Sound.HORHOR,
+                Sound.NEIN_ULTZ, Sound.HILFE, Sound.COOL, Sound.KNARZ, Sound.SORRY);
 
-        primaryTabContent.getChildren().add(this.createLabel("Bastelecke"));
-        primaryTabContent.getChildren().add(paneBastelecke);
+        tabContent.getChildren().add(paneBastelecke);
 
-        final FlowPane paneFrank = this.createFlowPane(Sound.NEIN_FRALLER, Sound.AAAAAAH, Sound.FALSCH, Sound.DANKOEOE, Sound.BULLSHIT, Sound.KOTZEN,
-                Sound.HUST, Sound.FRANK_MUELLER, Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
+        final FlowPane paneFrank = new ButtonGroup("Frank", this.soundButtons, Sound.NEIN_FRALLER, Sound.AAAAAAH, Sound.FALSCH, Sound.DANKOEOE, Sound.BULLSHIT,
+                Sound.KOTZEN, Sound.HUST, Sound.FRANK_MUELLER, Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE, Sound.STEELE2);
 
-        primaryTabContent.getChildren().add(this.createLabel("Fraller"));
-        primaryTabContent.getChildren().add(paneFrank);
+        tabContent.getChildren().add(paneFrank);
 
-        final FlowPane paneMisc = this.createFlowPane(Sound.WAS_DU_GLAUBST_MAROHDE, Sound.JEOPARDY, Sound.REMOTE, Sound.DELETE, Sound.SNAPHOT, Sound.KHAN,
-                Sound.ASSERT, Sound.WIE_GEIL, Sound.FAIL, Sound.FAIL_SATANIC, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR, Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL,
-                Sound.WAS_DENN, Sound.NJAEH, Sound.QUIET);
+        final FlowPane bSides = new ButtonGroup("Misc", this.soundButtons, Sound.WAS_DU_GLAUBST_MAROHDE, Sound.JEOPARDY, Sound.REMOTE, Sound.DELETE,
+                Sound.SNAPHOT, Sound.KHAN, Sound.ASSERT, Sound.WIE_GEIL, Sound.FAIL, Sound.FAIL_SATANIC, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR,
+                Sound.ALTOBELLI, Sound.TACH, Sound.LOKAL, Sound.WAS_DENN, Sound.NJAEH, Sound.QUIET);
 
-        primaryTabContent.getChildren().add(this.createLabel("Misc"));
-        primaryTabContent.getChildren().add(paneMisc);
+        tabContent.getChildren().add(bSides);
 
-        final FlowPane paneJoeHanson = this.createFlowPane(Sound.BIDDE_QUESTIONING, Sound.BIDDE_IN_TROUBLE, Sound.REVERT, Sound.REWE, Sound.EEHM, Sound.DOMAIN,
-                Sound.SO_NICHT, Sound.WEISST_DUS, Sound.CONVERTER, Sound.COFFEE, Sound.ANNEE_NE);
+        final FlowPane paneJoeHanson = new ButtonGroup("Jother", this.soundButtons, Sound.BIDDE_QUESTIONING, Sound.BIDDE_IN_TROUBLE, Sound.REVERT, Sound.REWE,
+                Sound.EEHM, Sound.DOMAIN, Sound.SO_NICHT, Sound.WEISST_DUS, Sound.CONVERTER, Sound.COFFEE, Sound.ANNEE_NE);
 
-        primaryTabContent.getChildren().add(this.createLabel("Jother"));
-        primaryTabContent.getChildren().add(paneJoeHanson);
+        tabContent.getChildren().add(paneJoeHanson);
     }
 
     private void createMovieTab() {
@@ -154,46 +155,43 @@ public class PanelView {
 
         final FlowPane tabContent = new FlowPane();
         tabContent.setPadding(new Insets(10, 0, 0, 0));
+        tabContent.setVgap(5);
+        tabContent.setHgap(5);
         tabContent.getStyleClass().add("wood-shifted");
         this.movieTab.setContent(tabContent);
 
-        final FlowPane panePulpFiction = this.createFlowPane(Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT, Sound.KONZEPT, Sound.ZUR_SEITE, Sound.NEIN_MANN);
+        final FlowPane panePulpFiction = new ButtonGroup("Pulp Fiction", this.soundButtons, Sound.WAS_JETZT, Sound.EINMAL_WAS, Sound.ANSTEHT, Sound.KONZEPT,
+                Sound.ZUR_SEITE, Sound.NEIN_MANN);
 
-        tabContent.getChildren().add(this.createLabel("Pulp Fiction"));
         tabContent.getChildren().add(panePulpFiction);
 
-        final FlowPane pokerPane = this.createFlowPane(Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST, Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN,
-                Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
+        final FlowPane pokerPane = new ButtonGroup("Poker-Filme", this.soundButtons, Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN, Sound.DU_BEISST,
+                Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN, Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
 
-        tabContent.getChildren().add(this.createLabel("Poker-Filme"));
         tabContent.getChildren().add(pokerPane);
 
-        final FlowPane callOnToDancePane = this.createFlowPane(Sound.NASSER_SACK, Sound.TANGO, Sound.GEBUNKERT, Sound.RASIERT, Sound.VORLETZTES_SPIEL,
-                Sound.SPIEL_LERNEN, Sound.GAR_NICHT, Sound.VERABSCHIEDEN, Sound.SEPPL, Sound.FEIERABEND, Sound.SCHNAUZE_VOLL, Sound.SENSE);
+        final FlowPane callOnToDancePane = new ButtonGroup("Aufforderung zum Tanz", this.soundButtons, Sound.NASSER_SACK, Sound.TANGO, Sound.GEBUNKERT,
+                Sound.RASIERT, Sound.VORLETZTES_SPIEL, Sound.SPIEL_LERNEN, Sound.GAR_NICHT, Sound.VERABSCHIEDEN, Sound.SEPPL, Sound.FEIERABEND,
+                Sound.SCHNAUZE_VOLL, Sound.SENSE);
 
-        tabContent.getChildren().add(this.createLabel("Aufforderung zum Tanz"));
         tabContent.getChildren().add(callOnToDancePane);
 
-        final FlowPane bangBoomBangPane = this.createFlowPane(Sound.ABSTECHEN, Sound.SCHEISS_LAUNE);
-
-        tabContent.getChildren().add(this.createLabel("Bang Boom Bang"));
+        final FlowPane bangBoomBangPane = new ButtonGroup("Bang Boom Bang", this.soundButtons, Sound.ABSTECHEN, Sound.SCHEISS_LAUNE);
         tabContent.getChildren().add(bangBoomBangPane);
 
-        final FlowPane lifeOfBrianPane = this.createFlowPane(Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH, Sound.WEIBSVOLK, Sound.ER_SIE);
+        final FlowPane ottoPane = new ButtonGroup("Otto - Der Film", this.soundButtons, Sound.ZWEI_DINGE);
+        tabContent.getChildren().add(ottoPane);
 
-        tabContent.getChildren().add(this.createLabel("Das Leben des Brian"));
+        final FlowPane lifeOfBrianPane = new ButtonGroup("Das Leben des Brian", this.soundButtons, Sound.WIDERPORST, Sound.PURCHE, Sound.JA_NATUERLICH,
+                Sound.WEIBSVOLK, Sound.ER_SIE);
+
         tabContent.getChildren().add(lifeOfBrianPane);
 
-        final FlowPane revengeOfTheDispossessedPane = this.createFlowPane(Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES, Sound.KEINE_TRICKS,
-                Sound.VERSAGER, Sound.MUELLTONNE, Sound.PFEIFENWICHS, Sound.FRAGE);
+        final FlowPane revengeOfTheDispossessedPane = new ButtonGroup("Didi und die Rache der Enterbten", this.soundButtons, Sound.WEITERMACHEN,
+                Sound.RUEDIGER, Sound.OMINOES, Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.MUELLTONNE, Sound.PFEIFENWICHS, Sound.FRAGE);
 
-        tabContent.getChildren().add(this.createLabel("Didi und die Rache der Enterbten"));
         tabContent.getChildren().add(revengeOfTheDispossessedPane);
 
-        final FlowPane ottoPane = this.createFlowPane(Sound.ZWEI_DINGE);
-
-        tabContent.getChildren().add(this.createLabel("Otto - Der Film"));
-        tabContent.getChildren().add(ottoPane);
     }
 
     private void createClassicsTab() {
@@ -203,48 +201,46 @@ public class PanelView {
         this.tabPane.getTabs().add(this.newbiesTab);
 
         final FlowPane tabContent = new FlowPane();
+        tabContent.setVgap(5);
+        tabContent.setHgap(5);
         tabContent.setPadding(new Insets(10, 0, 0, 0));
         tabContent.getStyleClass().add("wood-shifted");
         this.newbiesTab.setContent(tabContent);
 
-        final FlowPane cubageTeamSounds = this.createFlowPane(Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE);
-        tabContent.getChildren().add(this.createLabel("Cubage Team (2010 - 2012)"));
+        final FlowPane cubageTeamSounds = new ButtonGroup("Cubage Team (2010 - 2012)", this.soundButtons, Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER,
+                Sound.FAHRRADKETTE);
         tabContent.getChildren().add(cubageTeamSounds);
 
-        final FlowPane basteleckeSounds = this.createFlowPane(Sound.BIEKER, Sound.BALLAD);
-        tabContent.getChildren().add(this.createLabel("Bastelecke Team (2012 - present)"));
+        final FlowPane basteleckeSounds = new ButtonGroup("Bastelecke Team (2012 - present)", this.soundButtons, Sound.BIEKER, Sound.BALLAD);
         tabContent.getChildren().add(basteleckeSounds);
 
-        final FlowPane shrinePanel = this.createFlowPane(Sound.GUDE_LAUNE, Sound.SCHLAEGEREI, Sound.FEIERGEMEINDE);
-        tabContent.getChildren().add(this.createLabel("The Shrine"));
+        final FlowPane shrinePanel = new ButtonGroup("The Shrine", this.soundButtons, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI, Sound.FEIERGEMEINDE);
         tabContent.getChildren().add(shrinePanel);
 
-        final FlowPane mediamarktPanel = this.createFlowPane(Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
-        tabContent.getChildren().add(this.createLabel("Mediamarkt"));
+        final FlowPane mediamarktPanel = new ButtonGroup("Mediamarkt", this.soundButtons, Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM, Sound.SCHEISE);
         tabContent.getChildren().add(mediamarktPanel);
     }
 
     private void createSoundsTab() {
 
-        this.newbiesTab = new Tab("Diverse");
+        this.newbiesTab = new Tab("B-Seiten");
         this.newbiesTab.setClosable(false);
         this.tabPane.getTabs().add(this.newbiesTab);
 
         final FlowPane tabContent = new FlowPane();
+        tabContent.setVgap(5);
+        tabContent.setHgap(5);
         tabContent.setPadding(new Insets(10, 0, 0, 0));
         tabContent.getStyleClass().add("wood-shifted");
         this.newbiesTab.setContent(tabContent);
 
-        final FlowPane laughing = this.createFlowPane(Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
-        tabContent.getChildren().add(this.createLabel("Lachen"));
+        final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
         tabContent.getChildren().add(laughing);
 
-        final FlowPane comic = this.createFlowPane(Sound.BOING);
-        tabContent.getChildren().add(this.createLabel("Zeichentrick"));
+        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING);
         tabContent.getChildren().add(comic);
 
-        final FlowPane misc = this.createFlowPane(Sound.SAMETIME, Sound.DOD, Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
-        tabContent.getChildren().add(this.createLabel("Sonstiges"));
+        final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons, Sound.SAMETIME, Sound.DOD, Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
         tabContent.getChildren().add(misc);
 
     }
@@ -313,34 +309,4 @@ public class PanelView {
         };
     }
 
-    private void addSound(final FlowPane flowPane, final Sound sound) {
-        flowPane.getChildren().add(this.soundButtons.get(sound));
-    }
-
-    private Label createLabel(final String caption) {
-        final Label label = new Label(caption);
-        label.setTextFill(Color.web("#EEEEEE"));
-        return label;
-    }
-
-    private FlowPane createFlowPane(final Sound... sounds) {
-        final FlowPane pane = this.createFlowPane(true);
-
-        for (final Sound sound : sounds) {
-            this.addSound(pane, sound);
-        }
-        return pane;
-    }
-
-    private FlowPane createFlowPane(final boolean border) {
-        final FlowPane pane = new FlowPane();
-        pane.setPadding(new Insets(5, 5, 5, 5));
-        pane.setVgap(5);
-        pane.setHgap(5);
-        pane.setMinWidth(700);
-        if (border) {
-            pane.getStyleClass().add("button-group");
-        }
-        return pane;
-    }
 }

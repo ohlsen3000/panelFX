@@ -34,7 +34,7 @@ public class PanelController {
         this.panelView.show(this.primaryStage);
     }
 
-    private EventHandler<ActionEvent> createButtonListener() {
+    public EventHandler<ActionEvent> createButtonListener() {
         return new EventHandler<ActionEvent>() {
 
             @Override
@@ -48,7 +48,7 @@ public class PanelController {
         };
     }
 
-    private EventHandler<MouseEvent> createControlButtonListener() {
+    public EventHandler<MouseEvent> createControlButtonListener() {
         return new EventHandler<MouseEvent>() {
 
             @Override
