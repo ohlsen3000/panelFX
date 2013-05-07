@@ -13,11 +13,16 @@ public interface ClockView {
     /**
      * Set the total amount of steps in seconds
      */
-    public void setTotalTime(int seconds);
+    void setTotalTime(int seconds);
 
     /**
      * Set the remaining seconds
      */
-    public void tick(int secondsLeft);
+    void tick(int secondsLeft);
+
+    /**
+     * Notify
+     */
+    void onFinish();
 
 }

@@ -39,10 +39,10 @@ public class TeaTimer implements EventHandler<ActionEvent> {
         }
 
         this.clockModel = new ClockModel(totalSeconds);
-        this.getView().setTotalTime(this.clockModel.getTotalSeconds());
-        this.getView().tick(this.clockModel.getSecondsLeft());
+        this.view.setTotalTime(this.clockModel.getTotalSeconds());
+        this.view.tick(this.clockModel.getSecondsLeft());
         this.canvas.getChildren().clear();
-        this.canvas.getChildren().add((Node) this.getView());
+        this.canvas.getChildren().add((Node) this.view);
         this.createTimeline();
         this.timeline.playFromStart();
     }
@@ -57,7 +57,7 @@ public class TeaTimer implements EventHandler<ActionEvent> {
     public void handle(final ActionEvent arg0) {
 
         this.clockModel.setSecondsLeft(this.clockModel.getSecondsLeft() - 1);
-        this.getView().tick(this.clockModel.getSecondsLeft());
+        this.view.tick(this.clockModel.getSecondsLeft());
 
         if (this.clockModel.getSecondsLeft() <= 0) {
 
@@ -68,7 +68,7 @@ public class TeaTimer implements EventHandler<ActionEvent> {
             final MediaPlayer player = new MediaPlayer(sound);
             player.play();
 
-            this.canvas.getChildren().clear();
+            view.onFinish();
         }
 
     }
@@ -80,7 +80,9 @@ public class TeaTimer implements EventHandler<ActionEvent> {
     public void setView(final ClockView view) {
         this.view = view;
         this.canvas.getChildren().clear();
-        this.canvas.getChildren().add((Node) this.getView());
+        this.view.setTotalTime(clockModel.getTotalSeconds());
+        this.canvas.getChildren().add((Node) this.view);
+        this.view.tick(clockModel.getSecondsLeft());
     }
 
 }

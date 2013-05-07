@@ -27,6 +27,9 @@ import javax.annotation.PostConstruct;
 import panelfx.PanelFX;
 import panelfx.sound.Sound;
 import panelfx.timer.TeaTimer;
+import panelfx.timer.views.AnalogClockView;
+import panelfx.timer.views.DigitalClockView;
+import panelfx.timer.views.ProgressBarView;
 
 public class PanelView {
 
@@ -87,8 +90,8 @@ public class PanelView {
         masterPane.setHgap(5);
 
         final FlowPane controllingPane = new FlowPane();
-        controllingPane.setMaxWidth(700);
-        controllingPane.setMinWidth(700);
+        controllingPane.setMaxWidth(WIDTH - 2 * PADDING_LEFT_RIGHT);
+        controllingPane.setMinWidth(WIDTH - 2 * PADDING_LEFT_RIGHT);
         final Image muteImage = new Image(this.getClass().getResourceAsStream("mute.png"));
         this.muteView = new ImageView(muteImage);
         this.muteView.setId("STOP");
@@ -280,10 +283,44 @@ public class PanelView {
         start.setOnAction(this.createStartButtonListener());
 
         final Pane clockView = new Pane();
+        clockView.setMinHeight(200);
         this.teaTimer = new TeaTimer(clockView);
 
         tabContent.getChildren().add(timeInputPane);
         tabContent.getChildren().add(clockView);
+
+        FlowPane controlButtons = new FlowPane();
+        tabContent.getChildren().add(controlButtons);
+
+        Button digital = new Button("Digital View");
+        digital.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent t) {
+                teaTimer.setView(new DigitalClockView());
+            }
+        }
+        );
+        controlButtons.getChildren().add(digital);
+
+        Button bar = new Button("Progressbar View");
+        bar.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent t) {
+                teaTimer.setView(new ProgressBarView());
+            }
+        }
+        );
+        controlButtons.getChildren().add(bar);
+
+        Button clock = new Button("Clock View");
+        clock.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent t) {
+                teaTimer.setView(new AnalogClockView());
+            }
+        }
+        );
+        controlButtons.getChildren().add(clock);
     }
 
     private EventHandler<ActionEvent> createStartButtonListener() {

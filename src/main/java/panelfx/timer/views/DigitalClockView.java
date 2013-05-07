@@ -15,7 +15,7 @@ import panelfx.timer.ClockView;
 
 /**
  * View for a clock. looking "digital"
- * 
+ *
  * @author ohlsen
  */
 public class DigitalClockView extends Pane implements ClockView {
@@ -26,48 +26,39 @@ public class DigitalClockView extends Pane implements ClockView {
 
     /** Creates new form DigitalClockView */
     public DigitalClockView() {
-
         this.secFormat.setMinimumIntegerDigits(2);
     }
 
     @Override
     public void tick(final int secsLeft) {
 
-        this.setSecondsLeft(secsLeft);
+        this.secondsLeft = secsLeft;
 
-        final int minutes = this.getSecondsLeft() / 60;
-        final int seconds = this.getSecondsLeft() % 60;
+        final int minutes = secondsLeft / 60;
+        final int seconds = secondsLeft % 60;
 
-        final Text text = new Text();
-        text.setFill(Color.BEIGE);
-        text.setFont(new Font(40));
-        text.setText(minutes + ":" + this.secFormat.format(seconds));
+        String text = minutes + ":" + this.secFormat.format(seconds);
 
         this.getChildren().clear();
-        this.getChildren().add(text);
+        this.getChildren().add(createLabel(text));
+    }
+
+    protected Text createLabel(String content) {
+        final Text text = new Text(0, 80, content);
+        text.setFill(Color.BEIGE);
+        text.setFont(new Font(80));
+        return text;
     }
 
     @Override
     public void setTotalTime(final int seconds) {
-
-        this.setSecondsTotal(seconds);
-        this.setSecondsLeft(seconds);
+        this.secondsTotal = seconds;
     }
 
-    public int getSecondsTotal() {
-        return this.secondsTotal;
-    }
-
-    public void setSecondsTotal(final int secondsTotal) {
-        this.secondsTotal = secondsTotal;
-    }
-
-    public int getSecondsLeft() {
-        return this.secondsLeft;
-    }
-
-    public void setSecondsLeft(final int secondsLeft) {
-        this.secondsLeft = secondsLeft;
+    @Override
+    public void onFinish() {
+        this.getChildren().clear();
+        this.getChildren().add(createLabel("Finished."));
     }
 
 }
