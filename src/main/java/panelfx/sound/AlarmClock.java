@@ -14,12 +14,20 @@ public class AlarmClock implements Runnable {
 
 	private final PlayingSounds playingSounds;
 
+	Timer timer;
+
 	public AlarmClock(final PlayingSounds playingSounds) {
 		super();
 		this.playingSounds = playingSounds;
 		this.hour = 10;
 		this.minute = 0;
 
+	}
+
+	public void stop() {
+		if (this.timer != null) {
+			this.timer.cancel();
+		}
 	}
 
 	@Override
@@ -48,10 +56,9 @@ public class AlarmClock implements Runnable {
 
 				System.out.println("First execution "
 						+ firstExecutionDate.toString());
-				final Timer timer = new Timer();
-				timer.schedule(new StandupSoundTimer(),
+				this.timer = new Timer();
+				this.timer.schedule(new StandupSoundTimer(),
 						firstExecutionDate.getTime(), oneDay);
-
 			}
 		} catch (final UnknownHostException e) {
 			System.out.println("no alarm clock: " + e.getMessage());
