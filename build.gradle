@@ -5,6 +5,14 @@ apply plugin: 'groovy'
 
 [compileJava, compileTestJava, compileGroovy, compileTestGroovy].each{ it.options.encoding = 'UTF-8' }
 
+/**
+ * Mix compilation groovy<-->java
+ * @see http://issues.gradle.org/browse/GRADLE-1190
+ */
+ sourceSets.main.java.srcDirs = []
+ sourceSets.main.groovy.srcDir 'src/main/java'
+
+
 dependencies {
 	compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.0.6'
 	compile group: 'org.codehaus.jackson', name : 'jackson-mapper-asl', version : '1.8.5'
