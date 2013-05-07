@@ -27,7 +27,7 @@ public class ProportionalPayoutStructureConfigTest {
 
 		final ObjectMapper mapper = new ObjectMapper();
 
-		// read from file, convert it to user class
+		// read from file, convert it to ProportionalPayoutStructure class
 		final List<ProportionalPayoutStructure> structures = mapper
 				.readValue(
 						ClasspathHelper.class

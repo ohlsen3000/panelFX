@@ -1,3 +1,4 @@
+[panelfx.poker.domain.model.ProportionalPayoutStructure@12eddc0, panelfx.poker.domain.model.ProportionalPayoutStructure@1e06dfc, panelfx.poker.domain.model.ProportionalPayoutStructure@154d4f9, panelfx.poker.domain.model.ProportionalPayoutStructure@6a2a2b, panelfx.poker.domain.model.ProportionalPayoutStructure@1f66f50, panelfx.poker.domain.model.ProportionalPayoutStructure@61947, panelfx.poker.domain.model.ProportionalPayoutStructure@6597d1, panelfx.poker.domain.model.ProportionalPayoutStructure@1d248b4, panelfx.poker.domain.model.ProportionalPayoutStructure@a34435]
 [ {
   "rankProportions" : [ {
     "proportion" : 1.0,
@@ -48,19 +49,19 @@
     "proportion" : 0.025,
     "rank" : 4
   }, {
-    "proportion" : 0,
+    "proportion" : 0.0,
     "rank" : 5
   } ],
   "name" : "STT_5"
 }, {
   "rankProportions" : [ {
-    "proportion" : 0.5750,
+    "proportion" : 0.575,
     "rank" : 1
   }, {
-    "proportion" : 0.2500,
+    "proportion" : 0.25,
     "rank" : 2
   }, {
-    "proportion" : 0.1250,
+    "proportion" : 0.125,
     "rank" : 3
   }, {
     "proportion" : 0.0375,
@@ -69,8 +70,122 @@
     "proportion" : 0.0125,
     "rank" : 5
   }, {
-    "proportion" : 0,
+    "proportion" : 0.0,
     "rank" : 6
   } ],
   "name" : "STT_6"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.55,
+    "rank" : 1
+  }, {
+    "proportion" : 0.25,
+    "rank" : 2
+  }, {
+    "proportion" : 0.125,
+    "rank" : 3
+  }, {
+    "proportion" : 0.045,
+    "rank" : 4
+  }, {
+    "proportion" : 0.02,
+    "rank" : 5
+  }, {
+    "proportion" : 0.01,
+    "rank" : 6
+  }, {
+    "proportion" : 0.0,
+    "rank" : 7
+  } ],
+  "name" : "STT_7"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.49,
+    "rank" : 1
+  }, {
+    "proportion" : 0.27,
+    "rank" : 2
+  }, {
+    "proportion" : 0.1525,
+    "rank" : 3
+  }, {
+    "proportion" : 0.045,
+    "rank" : 4
+  }, {
+    "proportion" : 0.0235,
+    "rank" : 5
+  }, {
+    "proportion" : 0.014,
+    "rank" : 6
+  }, {
+    "proportion" : 0.005,
+    "rank" : 7
+  }, {
+    "proportion" : 0.0,
+    "rank" : 8
+  } ],
+  "name" : "STT_8"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.45,
+    "rank" : 1
+  }, {
+    "proportion" : 0.27,
+    "rank" : 2
+  }, {
+    "proportion" : 0.18,
+    "rank" : 3
+  }, {
+    "proportion" : 0.045,
+    "rank" : 4
+  }, {
+    "proportion" : 0.027,
+    "rank" : 5
+  }, {
+    "proportion" : 0.018,
+    "rank" : 6
+  }, {
+    "proportion" : 0.0075,
+    "rank" : 7
+  }, {
+    "proportion" : 0.0025,
+    "rank" : 8
+  }, {
+    "proportion" : 0.0,
+    "rank" : 9
+  } ],
+  "name" : "STT_9"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.45,
+    "rank" : 1
+  }, {
+    "proportion" : 0.27,
+    "rank" : 2
+  }, {
+    "proportion" : 0.18,
+    "rank" : 3
+  }, {
+    "proportion" : 0.045,
+    "rank" : 4
+  }, {
+    "proportion" : 0.027,
+    "rank" : 5
+  }, {
+    "proportion" : 0.018,
+    "rank" : 6
+  }, {
+    "proportion" : 0.0075,
+    "rank" : 7
+  }, {
+    "proportion" : 0.0025,
+    "rank" : 8
+  }, {
+    "proportion" : 0.0,
+    "rank" : 9
+  }, {
+    "proportion" : 0.0,
+    "rank" : 10
+  } ],
+  "name" : "MTT_10"
 } ]
