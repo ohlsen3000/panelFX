@@ -1,0 +1,76 @@
+[ {
+  "rankProportions" : [ {
+    "proportion" : 1.0,
+    "rank" : 1
+  }, {
+    "proportion" : 0.0,
+    "rank" : 2
+  } ],
+  "name" : "HU"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.75,
+    "rank" : 1
+  }, {
+    "proportion" : 0.25,
+    "rank" : 2
+  }, {
+    "proportion" : 0.0,
+    "rank" : 3
+  } ],
+  "name" : "STT_3"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.65,
+    "rank" : 1
+  }, {
+    "proportion" : 0.25,
+    "rank" : 2
+  }, {
+    "proportion" : 0.1,
+    "rank" : 3
+  }, {
+    "proportion" : 0.0,
+    "rank" : 4
+  } ],
+  "name" : "STT_4"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.6,
+    "rank" : 1
+  }, {
+    "proportion" : 0.25,
+    "rank" : 2
+  }, {
+    "proportion" : 0.125,
+    "rank" : 3
+  }, {
+    "proportion" : 0.025,
+    "rank" : 4
+  }, {
+    "proportion" : 0,
+    "rank" : 5
+  } ],
+  "name" : "STT_5"
+}, {
+  "rankProportions" : [ {
+    "proportion" : 0.5750,
+    "rank" : 1
+  }, {
+    "proportion" : 0.2500,
+    "rank" : 2
+  }, {
+    "proportion" : 0.1250,
+    "rank" : 3
+  }, {
+    "proportion" : 0.0375,
+    "rank" : 4
+  }, {
+    "proportion" : 0.0125,
+    "rank" : 5
+  }, {
+    "proportion" : 0,
+    "rank" : 6
+  } ],
+  "name" : "STT_6"
+} ]
