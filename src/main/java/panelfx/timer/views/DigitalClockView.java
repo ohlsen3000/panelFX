@@ -8,6 +8,7 @@ package panelfx.timer.views;
 import java.text.NumberFormat;
 
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import panelfx.timer.ClockView;
@@ -27,13 +28,6 @@ public class DigitalClockView extends Pane implements ClockView {
     public DigitalClockView() {
 
         this.secFormat.setMinimumIntegerDigits(2);
-
-        final Text text = new Text();
-        text.setFont(new Font(20));
-        text.setText("Hallo Zeit");
-
-        this.getChildren().clear();
-        this.getChildren().add(text);
     }
 
     @Override
@@ -45,8 +39,9 @@ public class DigitalClockView extends Pane implements ClockView {
         final int seconds = this.getSecondsLeft() % 60;
 
         final Text text = new Text();
-        text.setFont(new Font(20));
-        text.setText(minutes + ":" + seconds);
+        text.setFill(Color.BEIGE);
+        text.setFont(new Font(40));
+        text.setText(minutes + ":" + this.secFormat.format(seconds));
 
         this.getChildren().clear();
         this.getChildren().add(text);

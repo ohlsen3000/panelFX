@@ -257,7 +257,7 @@ public class PanelView {
 
         final VBox tabContent = new VBox();
         tabContent.getStyleClass().add("wood-shifted");
-        tabContent.setSpacing(20);
+        tabContent.setSpacing(30);
         tabContent.setPadding(new Insets(20));
         this.timerTab.setContent(tabContent);
 
