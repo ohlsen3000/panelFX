@@ -18,7 +18,8 @@ public enum Sound {
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
 	BIEKER("Bieker", "bieker"), //
 	BILDSCHIRM("Bildschirm", "bildschirm"), //
-	BOING("Boing", "boing"), //
+	BOING("Boioioing", "boing"), //
+        BOING_SINGLE("Boing", "boing_single"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
 	CONVERTER("Konverter", "konverter"), //

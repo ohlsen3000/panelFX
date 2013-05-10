@@ -240,7 +240,7 @@ public class PanelView {
         final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
         tabContent.getChildren().add(laughing);
 
-        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING);
+        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING_SINGLE, Sound.BOING);
         tabContent.getChildren().add(comic);
 
         final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons, Sound.SAMETIME, Sound.DOD, Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
