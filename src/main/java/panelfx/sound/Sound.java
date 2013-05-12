@@ -3,7 +3,7 @@ package panelfx.sound;
 public enum Sound {
 
 	AAAAAAH("Aaaaaaah", "stoehner_fmr"), //
-	AAH("Aah", "aah_peanuts"),//
+	AAH("Aah", "aah_peanuts"), //
 	ABSTECHEN("Stech ihn ab", "abstechen"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
@@ -21,9 +21,10 @@ public enum Sound {
 	BILDSCHIRM("Bildschirm", "bildschirm"), //
 	BLAH_BLAH("Blah blah", "blah_blah_peanuts"), //
 	BOING("Boioioing", "boing"), //
-    BOING_SINGLE("Boing", "boing_single"), //
+	BOING_SINGLE("Boing", "boing_single"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
+	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
 	CONVERTER("Konverter", "konverter"), //
 	COOL("Cool", "cool"), //
 	CUBAGE("Cubage", "qbitch"), //
@@ -42,7 +43,7 @@ public enum Sound {
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALSCH("Falsch", "falsch"), //
-	FEIERABEND("Feierabend", "feierabend"),//
+	FEIERABEND("Feierabend", "feierabend"), //
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
