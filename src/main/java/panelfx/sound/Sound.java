@@ -3,6 +3,7 @@ package panelfx.sound;
 public enum Sound {
 
 	AAAAAAH("Aaaaaaah", "stoehner_fmr"), //
+	AAH("Aah", "aah_peanuts"),//
 	ABSTECHEN("Stech ihn ab", "abstechen"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
@@ -18,8 +19,9 @@ public enum Sound {
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
 	BIEKER("Bieker", "bieker"), //
 	BILDSCHIRM("Bildschirm", "bildschirm"), //
+	BLAH_BLAH("Blah blah", "blah_blah_peanuts"), //
 	BOING("Boioioing", "boing"), //
-        BOING_SINGLE("Boing", "boing_single"), //
+    BOING_SINGLE("Boing", "boing_single"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
 	CONVERTER("Konverter", "konverter"), //
@@ -52,8 +54,10 @@ public enum Sound {
 	GEBUNKERT("Gebunkert", "gebunkert"), //
 	GUDE_LAUNE("Gude Laune", "gude_laune"), //
 	GRAUEN("Geräusch des Grauens", "grauen"), //
+	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
+	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
-	HOEHOEHOEHOEHOE("Höhöhö höhöhö", "didi_hoehoehoehoehoe"), //
+	HOEHOEHOEHOEHOE("Didi", "didi_hoehoehoehoehoe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
@@ -68,6 +72,7 @@ public enum Sound {
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
+	MURMEL_LACHEN("Kriminalhund Murmel", "murmel_lachen"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
@@ -94,16 +99,20 @@ public enum Sound {
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
+	SCHROTTKERL("Schrottkerl", "schrottkerl_melodie"), //
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
 	SLAPSTICK("Slapstick", "hui"), //
+	SLIDE("Slide", "slide_peanuts"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
+	SNOOPY_LACHEN("Snoopy", "snoopy_lachen"), //
 	SO_NICHT("So nicht!", "sonicht"), //
 	SO_SICK("So sick!", "so_sick"), //
 	SORRY("Sorry", "sorry"), //
 	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"), //
 	STANDUP("Stand up", "standup"), //
 	STEELE2("Steele 2", "steele2"), //
+	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TANGO("Tango", "tango"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //

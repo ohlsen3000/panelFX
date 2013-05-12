@@ -211,7 +211,7 @@ public class PanelView {
         this.newbiesTab.setContent(tabContent);
 
         final FlowPane cubageTeamSounds = new ButtonGroup("Cubage Team (2010 - 2012)", this.soundButtons, Sound.SLAPSTICK, Sound.WAS_DU_GLAUBST_JOTHER,
-                Sound.FAHRRADKETTE);
+                Sound.FAHRRADKETTE, Sound.SCHROTTKERL);
         tabContent.getChildren().add(cubageTeamSounds);
 
         final FlowPane basteleckeSounds = new ButtonGroup("Bastelecke Team (2012 - present)", this.soundButtons, Sound.BIEKER, Sound.BALLAD);
@@ -237,10 +237,10 @@ public class PanelView {
         tabContent.getStyleClass().add("wood-shifted");
         this.newbiesTab.setContent(tabContent);
 
-        final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE);
+        final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE, Sound.SNOOPY_LACHEN, Sound.MURMEL_LACHEN);
         tabContent.getChildren().add(laughing);
 
-        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING_SINGLE, Sound.BOING);
+        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING_SINGLE, Sound.BOING, Sound.SWOOSH, Sound.SLIDE, Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN);
         tabContent.getChildren().add(comic);
 
         final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons, Sound.SAMETIME, Sound.DOD, Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
