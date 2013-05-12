@@ -67,6 +67,7 @@ public enum Sound {
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
 	KOTZEN("Kotzen", "kotzen"), //
+	LACHEN_PEANUTS("Peanuts", "lachen_peanuts"), //
 	LASS_SEIN("Lass es sein", "lass_es_sein"), //
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
@@ -100,6 +101,7 @@ public enum Sound {
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
 	SCHROTTKERL("Schrottkerl", "schrottkerl_melodie"), //
+	SCHUSS_PEANUTS("Schuss", "schuss_peanuts"), //
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
 	SLAPSTICK("Slapstick", "hui"), //

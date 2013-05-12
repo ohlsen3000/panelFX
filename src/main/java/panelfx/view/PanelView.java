@@ -237,10 +237,10 @@ public class PanelView {
         tabContent.getStyleClass().add("wood-shifted");
         this.newbiesTab.setContent(tabContent);
 
-        final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE, Sound.SNOOPY_LACHEN, Sound.MURMEL_LACHEN);
+        final FlowPane laughing = new ButtonGroup("Lachen", this.soundButtons, Sound.ERNIE_LACHEN, Sound.HOEHOEHOEHOEHOE, Sound.SNOOPY_LACHEN, Sound.LACHEN_PEANUTS, Sound.MURMEL_LACHEN);
         tabContent.getChildren().add(laughing);
 
-        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING_SINGLE, Sound.BOING, Sound.SWOOSH, Sound.SLIDE, Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN);
+        final FlowPane comic = new ButtonGroup("Zeichentrick", this.soundButtons, Sound.BOING_SINGLE, Sound.BOING, Sound.SWOOSH, Sound.SLIDE, Sound.SCHUSS_PEANUTS, Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN);
         tabContent.getChildren().add(comic);
 
         final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons, Sound.SAMETIME, Sound.DOD, Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
