@@ -45,7 +45,9 @@ public enum Sound {
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALSCH("Falsch", "falsch"), //
 	FEIERABEND("Feierabend", "feierabend"), //
+	FEIEREI("Feierei", "feierei"), //
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
+	FIVE_WEEKS("Five weeks", "five_weeks"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
@@ -54,7 +56,7 @@ public enum Sound {
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
 	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
 	GEBUNKERT("Gebunkert", "gebunkert"), //
-	GUDE_LAUNE("Gude Laune", "gude_laune"), //
+	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
@@ -64,6 +66,7 @@ public enum Sound {
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
 	IDEFIX_IT("IDE fix it", "idefix_it"), //
+	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
@@ -73,10 +76,13 @@ public enum Sound {
 	KONZEPT("Konzept", "konzept"), //
 	KOTZEN("Kotzen", "kotzen"), //
 	LACHEN_PEANUTS("Peanuts", "lachen_peanuts"), //
+	LALALALALALA("Lalalalalala", "lalalalalala"), //
 	LASS_SEIN("Lass es sein", "lass_es_sein"), //
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
+	LAUNE("123 Laune", "123_gude_laune"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
+	MESSAGE_LONG("Message long", "message_long"), //
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
@@ -86,6 +92,7 @@ public enum Sound {
 	NEIN_ULTZ("Neein", "nein"), //
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
+	OBERGEIL("Obergeil", "obergeil"), //
 	OEOEOEEY("Öööey", "oey"), //
 	OMINOES("Ominös", "ominoes"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //

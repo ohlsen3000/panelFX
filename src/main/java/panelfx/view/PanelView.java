@@ -258,8 +258,8 @@ public class PanelView {
 		tabContent.getChildren().add(basteleckeSounds);
 
 		final FlowPane shrinePanel = new ButtonGroup("The Shrine",
-				this.soundButtons, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI,
-				Sound.FEIERGEMEINDE);
+				this.soundButtons, Sound.LAUNE, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI,
+				Sound.MESSAGE_LONG, Sound.FEIEREI, Sound.JAJAJAJAJAJA, Sound.FEIERGEMEINDE, Sound.OBERGEIL);
 		tabContent.getChildren().add(shrinePanel);
 
 		final FlowPane mediamarktPanel = new ButtonGroup("Mediamarkt",
@@ -294,7 +294,7 @@ public class PanelView {
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
 				Sound.MIKROWELLE_FERTIG, Sound.SAMETIME, Sound.DOD,
-				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT);
+				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.FIVE_WEEKS, Sound.LALALALALALA);
 		tabContent.getChildren().add(misc);
 
 	}
