@@ -14,7 +14,7 @@ public enum Sound {
 	BALLAD("Ballad", "ballad"), //
 	BATTLE1("Battle 1", "eurobattle1"), //
 	BATTLE3("Battle 3", "eurobattle3"), //
-    BBBB_BENCH("B B B B Bench", "bbbb_bench"),//
+	BBBB_BENCH("B B B B Bench", "bbbb_bench"), //
 	BEEP("Beep", "beep"), //
 	BIDDE_IN_TROUBLE("bidde?", "bidde_veraengstigt"), //
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
@@ -74,6 +74,7 @@ public enum Sound {
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
+	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
@@ -91,10 +92,11 @@ public enum Sound {
 	QUIET("Quiet!", "quiet"), //
 	RASIERT("Rasiert", "rasiert"), //
 	REAL("For real?", "for_real"), //
-    RED_ALERT("Red Alert", "startrek_tos_redalert"),//
+	RED_ALERT("Red Alert", "startrek_tos_redalert"), //
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
 	REWE("Rewe", "rewe"), //
+	RICHTIG("Richtig", "richtig"), //
 	RICHTIG_GEPOKERT("Richtig gepokert", "richtig_gepokert"), //
 	RUEDIGER("Rüdiger", "ruediger"), //
 	SAMETIME("Sametime", "sametime"), //
@@ -120,7 +122,7 @@ public enum Sound {
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TANGO("Tango", "tango"), //
-    TRIBBLE("Tribble", "tribble"),//
+	TRIBBLE("Tribble", "tribble"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
@@ -133,6 +135,7 @@ public enum Sound {
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
 	WIDERPORST("Widerporst", "widerporst"), //
 	WIE_GEIL("Wie geil", "geil"), //
+	ZU_BLOED("Zu blöd", "zu_bloed"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
 	ZWEI_DINGE("Zwei Dinge", "zwei_dinge"), //
