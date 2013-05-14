@@ -244,10 +244,12 @@ public class PanelView {
 		this.newbiesTab.setContent(tabContent);
 
 		final FlowPane cubageTeamSounds = new ButtonGroup(
-				"Cubage Team (2010 - 2012)", this.soundButtons,
-				Sound.SLAPSTICK, Sound.RICHTIG, Sound.ZU_BLOED, Sound.TRIBBLE,
-				Sound.RED_ALERT, Sound.WAS_DU_GLAUBST_JOTHER,
-				Sound.FAHRRADKETTE, Sound.BBBB_BENCH, Sound.SCHROTTKERL);
+				"Cubage Team (2010 - 2012)", this.soundButtons, Sound.KANTINE,
+				Sound.HALT_SCHWIERIG, Sound.IDEFIX_IT,
+				Sound.PREFERRED_LANGUAGE, Sound.SLAPSTICK, Sound.RICHTIG,
+				Sound.ZU_BLOED, Sound.TRIBBLE, Sound.RED_ALERT,
+				Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE,
+				Sound.BBBB_BENCH, Sound.SCHROTTKERL);
 		tabContent.getChildren().add(cubageTeamSounds);
 
 		final FlowPane basteleckeSounds = new ButtonGroup(

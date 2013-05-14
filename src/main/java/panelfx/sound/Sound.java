@@ -57,14 +57,17 @@ public enum Sound {
 	GUDE_LAUNE("Gude Laune", "gude_laune"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
+	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
 	HOEHOEHOEHOEHOE("Didi", "didi_hoehoehoehoehoe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
+	IDEFIX_IT("IDE fix it", "idefix_it"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
+	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
@@ -86,6 +89,7 @@ public enum Sound {
 	OEOEOEEY("Öööey", "oey"), //
 	OMINOES("Ominös", "ominoes"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
+	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //
 	PURCHE("Purche", "purche"), //
 	PUSH_IT("Push it", "pushit"), //
 	QUEEN_TEN("Q T", "queen_ten"), //
