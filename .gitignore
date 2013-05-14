@@ -9,6 +9,9 @@ nbproject/private
 target
 nbproject/project.properties
 debug.keystore
+.idea
+*.iml
+
 
 
 

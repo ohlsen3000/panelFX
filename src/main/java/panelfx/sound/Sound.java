@@ -14,6 +14,7 @@ public enum Sound {
 	BALLAD("Ballad", "ballad"), //
 	BATTLE1("Battle 1", "eurobattle1"), //
 	BATTLE3("Battle 3", "eurobattle3"), //
+    BBBB_BENCH("B B B B Bench", "bbbb_bench"),//
 	BEEP("Beep", "beep"), //
 	BIDDE_IN_TROUBLE("bidde?", "bidde_veraengstigt"), //
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
@@ -54,7 +55,7 @@ public enum Sound {
 	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
 	GEBUNKERT("Gebunkert", "gebunkert"), //
 	GUDE_LAUNE("Gude Laune", "gude_laune"), //
-	GRAUEN("Geräusch des Grauens", "grauen"), //
+	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -74,7 +75,7 @@ public enum Sound {
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
 	LOKAL("Lokal", "lokal"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
-	MURMEL_LACHEN("Kriminalhund Murmel", "murmel_lachen"), //
+	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
@@ -90,6 +91,7 @@ public enum Sound {
 	QUIET("Quiet!", "quiet"), //
 	RASIERT("Rasiert", "rasiert"), //
 	REAL("For real?", "for_real"), //
+    RED_ALERT("Red Alert", "startrek_tos_redalert"),//
 	REMOTE("Remote", "remoot"), //
 	REVERT("Reewert", "reewert"), //
 	REWE("Rewe", "rewe"), //
@@ -101,7 +103,7 @@ public enum Sound {
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
-	SCHROTTKERL("Schrottkerl", "schrottkerl_melodie"), //
+	SCHROTTKERL("Schrotthändler", "schrottkerl_melodie"), //
 	SCHUSS_PEANUTS("Schuss", "schuss_peanuts"), //
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
@@ -118,6 +120,7 @@ public enum Sound {
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TANGO("Tango", "tango"), //
+    TRIBBLE("Tribble", "tribble"),//
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
