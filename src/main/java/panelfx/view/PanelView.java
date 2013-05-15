@@ -259,7 +259,7 @@ public class PanelView {
 
 		final FlowPane shrinePanel = new ButtonGroup("The Shrine",
 				this.soundButtons, Sound.LAUNE, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI,
-				Sound.MESSAGE_LONG, Sound.FEIEREI, Sound.JAJAJAJAJAJA, Sound.FEIERGEMEINDE, Sound.OBERGEIL);
+				Sound.MESSAGE_LONG, Sound.FEIEREI, Sound.JAJAJAJAJAJA, Sound.FEIERGEMEINDE, Sound.OBERGEIL, Sound.SUPERGEIL, Sound.SUPER, Sound.KOTZE);
 		tabContent.getChildren().add(shrinePanel);
 
 		final FlowPane mediamarktPanel = new ButtonGroup("Mediamarkt",

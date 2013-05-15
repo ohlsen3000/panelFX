@@ -74,6 +74,7 @@ public enum Sound {
 	KHAN("Khan", "khan"), //
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
+	KOTZE("Kotze", "kotze"), //
 	KOTZEN("Kotzen", "kotzen"), //
 	LACHEN_PEANUTS("Peanuts", "lachen_peanuts"), //
 	LALALALALALA("Lalalalalala", "lalalalalala"), //
@@ -130,6 +131,8 @@ public enum Sound {
 	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"), //
 	STANDUP("Stand up", "standup"), //
 	STEELE2("Steele 2", "steele2"), //
+	SUPER("Super", "super"), //
+	SUPERGEIL("Supergeil", "supergeil"), //
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TANGO("Tango", "tango"), //
