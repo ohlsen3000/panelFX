@@ -36,6 +36,7 @@ public enum Sound {
 	DOORBELL("Klingel 1. OG", "klingel"), //
 	DU_BEISST("Du beißt", "du_beisst"), //
 	EEHM("Eehm", "eehm"), //
+	EINFACH("Einfach", "einfach"), //
 	EINMAL_WAS("1 mal was", "was"), //
 	ERBAERMLICH("Erbärmlich", "erbaermlich"), //
 	ER_SIE("Er / Sie", "er_sie"), //
