@@ -57,6 +57,7 @@ public enum Sound {
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
 	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
 	GEBUNKERT("Gebunkert", "gebunkert"), //
+    GROSSEN_GEIST("großen Geist", "grossen_geist"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //

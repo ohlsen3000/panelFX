@@ -294,7 +294,8 @@ public class PanelView {
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
 				Sound.MIKROWELLE_FERTIG, Sound.SAMETIME, Sound.DOD,
-				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.FIVE_WEEKS, Sound.LALALALALALA);
+				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.FIVE_WEEKS, Sound.LALALALALALA,
+                Sound.GROSSEN_GEIST);
 		tabContent.getChildren().add(misc);
 
 	}
