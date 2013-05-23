@@ -193,7 +193,8 @@ public class PanelView {
 		final FlowPane pokerPane = new ButtonGroup("Poker-Filme",
 				this.soundButtons, Sound.NICHT_GESCHOBEN, Sound.LASS_SEIN,
 				Sound.DU_BEISST, Sound.RICHTIG_GEPOKERT, Sound.QUEEN_TEN,
-				Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK);
+				Sound.REAL, Sound.FREAKING_IDIOTS, Sound.SO_SICK,
+                Sound.THATS_BAD, Sound.ASS_BESCHWOERUNG, Sound.JUBEL_ELTON, Sound.JETZT_PARTY_ELTON);
 
 		tabContent.getChildren().add(pokerPane);
 
@@ -248,6 +249,7 @@ public class PanelView {
 				Sound.HALT_SCHWIERIG, Sound.IDEFIX_IT,
 				Sound.PREFERRED_LANGUAGE, Sound.SLAPSTICK, Sound.RICHTIG,
 				Sound.ZU_BLOED, Sound.TRIBBLE, Sound.RED_ALERT,
+                Sound.PARDON, Sound.PAS_COMME_CA,
 				Sound.WAS_DU_GLAUBST_JOTHER, Sound.FAHRRADKETTE,
 				Sound.BBBB_BENCH, Sound.SCHROTTKERL);
 		tabContent.getChildren().add(cubageTeamSounds);
@@ -293,7 +295,7 @@ public class PanelView {
 		tabContent.getChildren().add(comic);
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
-				Sound.MIKROWELLE_FERTIG, Sound.SAMETIME, Sound.DOD,
+				Sound.MIKROWELLE_FERTIG, Sound.LEAF_BLOWER_MAXI_SINGLE, Sound.LEAF_BLOWER_SINGLE_EDIT, Sound.SAMETIME, Sound.DOD,
 				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.FIVE_WEEKS, Sound.LALALALALALA,
                 Sound.GROSSEN_GEIST);
 		tabContent.getChildren().add(misc);

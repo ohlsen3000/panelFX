@@ -9,6 +9,7 @@ public enum Sound {
 	ALTOBELLI("Altobelli", "altobelli"), //
 	ANNEE_NE("Annee-ne", "aneene"), //
 	ANSTEHT("Ich sag dir", "ansteht"), //
+    ASS_BESCHWOERUNG("Ass Ass Ass", "as_beschwoerung"),//
 	ASSERT("Essort", "essort"), //
 	BAEM("Bäm", "baehm"), //
 	BALLAD("Ballad", "ballad"), //
@@ -71,6 +72,8 @@ public enum Sound {
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
+    JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
+    JUBEL_ELTON("Brülljubel", "elton_jubel"),//
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
@@ -84,6 +87,8 @@ public enum Sound {
 	LAUGHING_DIYER("Höhöhö", "ddr"), //
 	LAUNE("123 Laune", "123_gude_laune"), //
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
+    LEAF_BLOWER_MAXI_SINGLE("Laubbläser maxi", "leaf_blower_maxi_version"),//
+    LEAF_BLOWER_SINGLE_EDIT("Laubbläser edit", "leaf_blower_single_edit"),//
 	LOKAL("Lokal", "lokal"), //
 	MESSAGE_LONG("Message long", "message_long"), //
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
@@ -98,6 +103,8 @@ public enum Sound {
 	OBERGEIL("Obergeil", "obergeil"), //
 	OEOEOEEY("Öööey", "oey"), //
 	OMINOES("Ominös", "ominoes"), //
+    PARDON("Pardon?", "pardon"), //
+    PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
 	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //
 	PURCHE("Purche", "purche"), //
@@ -138,6 +145,7 @@ public enum Sound {
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TANGO("Tango", "tango"), //
+    THATS_BAD("That's bad", "thats_bad"),//
 	TRIBBLE("Tribble", "tribble"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
