@@ -225,7 +225,7 @@ public class PanelView {
 				"Didi und die Rache der Enterbten", this.soundButtons,
 				Sound.WEITERMACHEN, Sound.RUEDIGER, Sound.OMINOES,
 				Sound.KEINE_TRICKS, Sound.VERSAGER, Sound.MUELLTONNE,
-				Sound.PFEIFENWICHS, Sound.FRAGE);
+				Sound.PFEIFENWICHS, Sound.FRAGE, Sound.HUUST, Sound.PAUSE, Sound.MEERRETTICH, Sound.FEHLER_FINDEN);
 
 		tabContent.getChildren().add(revengeOfTheDispossessedPane);
 

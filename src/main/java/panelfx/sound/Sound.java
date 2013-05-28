@@ -46,6 +46,7 @@ public enum Sound {
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALSCH("Falsch", "falsch"), //
+	FEHLER_FINDEN("Fehler finden", "fehler_finden"),//
 	FEIERABEND("Feierabend", "feierabend"), //
 	FEIEREI("Feierei", "feierei"), //
 	FEIERGEMEINDE("Feiergemeinde", "feiergemeinde"), //
@@ -68,6 +69,7 @@ public enum Sound {
 	HOEHOEHOEHOEHOE("Didi", "didi_hoehoehoehoehoe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
+	HUUST("Huust", "hust_titus"),//
 	IDEFIX_IT("IDE fix it", "idefix_it"), //
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
@@ -90,6 +92,7 @@ public enum Sound {
     LEAF_BLOWER_MAXI_SINGLE("Laubbläser maxi", "leaf_blower_maxi_version"),//
     LEAF_BLOWER_SINGLE_EDIT("Laubbläser edit", "leaf_blower_single_edit"),//
 	LOKAL("Lokal", "lokal"), //
+	MEERRETTICH("Meerrettich", "meerrettich"),//
 	MESSAGE_LONG("Message long", "message_long"), //
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
@@ -105,6 +108,7 @@ public enum Sound {
 	OMINOES("Ominös", "ominoes"), //
     PARDON("Pardon?", "pardon"), //
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
+    PAUSE("Pause", "pause"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
 	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //
 	PURCHE("Purche", "purche"), //
