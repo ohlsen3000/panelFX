@@ -5,6 +5,8 @@ public enum Sound {
 	AAAAAAH("Aaaaaaah", "stoehner_fmr"), //
 	AAH("Aah", "aah_peanuts"), //
 	ABSTECHEN("Stech ihn ab", "abstechen"), //
+	ABSOLUT_INKOMMENSURABEL("Absolut inkommensurabel", "absolut_inkommensurabel"), //
+	ABSOLUT_UNCOOL("Absolut uncool", "absolut_uncool"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
 	ANNEE_NE("Annee-ne", "aneene"), //
@@ -35,6 +37,8 @@ public enum Sound {
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
+	DRAMA_BUTTON("Drama-Button", "drama_button"), //
+	DRAMATIC("Dramatisch", "dramatic"), //
 	DU_BEISST("Du beißt", "du_beisst"), //
 	EEHM("Eehm", "eehm"), //
 	EINFACH("Einfach", "einfach"), //
@@ -61,6 +65,7 @@ public enum Sound {
 	GEBUNKERT("Gebunkert", "gebunkert"), //
     GROSSEN_GEIST("großen Geist", "grossen_geist"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
+	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
@@ -124,6 +129,7 @@ public enum Sound {
 	RICHTIG("Richtig", "richtig"), //
 	RICHTIG_GEPOKERT("Richtig gepokert", "richtig_gepokert"), //
 	RUEDIGER("Rüdiger", "ruediger"), //
+	SAD_TROMBONE("Sad trombone", "sad_trombone"), //
 	SAMETIME("Sametime", "sametime"), //
 	SCHAFSKAESE("Schafskäse", "schafskaese"), //
 	SCHEISE("Scheise", "scheise"), //
@@ -153,6 +159,7 @@ public enum Sound {
 	TRIBBLE("Tribble", "tribble"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
+	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
 	WAS_DENN("Was denn", "wasdenn"), // //
 	WAS_DU_GLAUBST_JOTHER("Das ist das", "dasist"), //

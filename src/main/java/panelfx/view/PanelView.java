@@ -41,7 +41,8 @@ public class PanelView {
 	private ImageView muteView;
 	private TabPane tabPane;
 	private Tab primaryTab;
-	private Tab movieTab;
+	private Tab movieTab1;
+	private Tab movieTab2;
 	private Tab newbiesTab;
 	private Tab timerTab;
 	private TeaTimer teaTimer;
@@ -112,7 +113,8 @@ public class PanelView {
 		masterPane.getChildren().add(this.tabPane);
 
 		createPrimaryTab();
-		createMovieTab();
+		createMovieTab1();
+		createMovieTab2();
 		createClassicsTab();
 		createSoundsTab();
 		createTimerTab();
@@ -171,18 +173,18 @@ public class PanelView {
 		tabContent.getChildren().add(paneJoeHanson);
 	}
 
-	private void createMovieTab() {
+	private void createMovieTab1() {
 
-		this.movieTab = new Tab("Filmzitate");
-		this.movieTab.setClosable(false);
-		this.tabPane.getTabs().add(this.movieTab);
+		this.movieTab1 = new Tab("Filmzitate #1");
+		this.movieTab1.setClosable(false);
+		this.tabPane.getTabs().add(this.movieTab1);
 
 		final FlowPane tabContent = new FlowPane();
 		tabContent.setPadding(new Insets(10, 0, 0, 0));
 		tabContent.setVgap(5);
 		tabContent.setHgap(5);
 		tabContent.getStyleClass().add("wood-shifted");
-		this.movieTab.setContent(tabContent);
+		this.movieTab1.setContent(tabContent);
 
 		final FlowPane panePulpFiction = new ButtonGroup("Pulp Fiction",
 				this.soundButtons, Sound.WAS_JETZT, Sound.EINMAL_WAS,
@@ -229,6 +231,26 @@ public class PanelView {
 
 		tabContent.getChildren().add(revengeOfTheDispossessedPane);
 
+	}
+	
+	private void createMovieTab2() {
+		this.movieTab2 = new Tab("Filmzitate #2");
+		this.movieTab2.setClosable(false);
+		this.tabPane.getTabs().add(this.movieTab2);
+
+		final FlowPane tabContent = new FlowPane();
+		tabContent.setPadding(new Insets(10, 0, 0, 0));
+		tabContent.setVgap(5);
+		tabContent.setHgap(5);
+		tabContent.getStyleClass().add("wood-shifted");
+		this.movieTab2.setContent(tabContent);
+
+		final FlowPane paneBillAndTed = new ButtonGroup("Bill & Ted",
+				this.soundButtons, Sound.VOLLE_KANNE, Sound.GRANATENSTARK,
+				Sound.ABSOLUT_UNCOOL, Sound.ABSOLUT_INKOMMENSURABEL);
+
+		tabContent.getChildren().add(paneBillAndTed);
+		
 	}
 
 	private void createClassicsTab() {
@@ -291,8 +313,12 @@ public class PanelView {
 		final FlowPane comic = new ButtonGroup("Zeichentrick",
 				this.soundButtons, Sound.BOING_SINGLE, Sound.BOING,
 				Sound.SWOOSH, Sound.SLIDE, Sound.SCHUSS_PEANUTS,
-				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN);
+				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN, Sound.SAD_TROMBONE);
 		tabContent.getChildren().add(comic);
+		
+		final FlowPane tension = new ButtonGroup("Spannung",
+				this.soundButtons, Sound.DRAMA_BUTTON, Sound.DRAMATIC);
+		tabContent.getChildren().add(tension);
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
 				Sound.MIKROWELLE_FERTIG, Sound.LEAF_BLOWER_MAXI_SINGLE, Sound.LEAF_BLOWER_SINGLE_EDIT, Sound.SAMETIME, Sound.DOD,
