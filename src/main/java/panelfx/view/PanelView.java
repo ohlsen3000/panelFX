@@ -313,11 +313,11 @@ public class PanelView {
 		final FlowPane comic = new ButtonGroup("Zeichentrick",
 				this.soundButtons, Sound.BOING_SINGLE, Sound.BOING,
 				Sound.SWOOSH, Sound.SLIDE, Sound.SCHUSS_PEANUTS,
-				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN, Sound.SAD_TROMBONE);
+				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN, Sound.OINK, Sound.SAD_TROMBONE);
 		tabContent.getChildren().add(comic);
 		
 		final FlowPane tension = new ButtonGroup("Spannung",
-				this.soundButtons, Sound.DRAMA_BUTTON, Sound.DRAMATIC);
+				this.soundButtons, Sound.DRAMA_BUTTON, Sound.DRAMATIC, Sound.WWM);
 		tabContent.getChildren().add(tension);
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,

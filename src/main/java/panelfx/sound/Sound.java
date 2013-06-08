@@ -38,7 +38,7 @@ public enum Sound {
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
 	DRAMA_BUTTON("Drama-Button", "drama_button"), //
-	DRAMATIC("Dramatisch", "dramatic"), //
+	DRAMATIC("Frankenstein Junior", "dramatic"), //
 	DU_BEISST("Du beißt", "du_beisst"), //
 	EEHM("Eehm", "eehm"), //
 	EINFACH("Einfach", "einfach"), //
@@ -110,6 +110,7 @@ public enum Sound {
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OBERGEIL("Obergeil", "obergeil"), //
 	OEOEOEEY("Öööey", "oey"), //
+	OINK("Oink", "oink"), //
 	OMINOES("Ominös", "ominoes"), //
     PARDON("Pardon?", "pardon"), //
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
@@ -170,6 +171,7 @@ public enum Sound {
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
 	WIDERPORST("Widerporst", "widerporst"), //
 	WIE_GEIL("Wie geil", "geil"), //
+	WWM("WWM", "wwm_success"), //
 	ZU_BLOED("Zu blöd", "zu_bloed"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
