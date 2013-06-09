@@ -77,6 +77,7 @@ public enum Sound {
 	HUUST("Huust", "hust_titus"),//
 	IDEFIX_IT("IDE fix it", "idefix_it"), //
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
+	JABBA_LACHEN("Jabba", "jabba_lachen"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
@@ -158,6 +159,7 @@ public enum Sound {
 	TANGO("Tango", "tango"), //
     THATS_BAD("That's bad", "thats_bad"),//
 	TRIBBLE("Tribble", "tribble"), //
+	TROMMELWIRBEL("Trommelwirbel", "drumroll"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
 	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //
