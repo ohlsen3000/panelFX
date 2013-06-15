@@ -49,6 +49,7 @@ public enum Sound {
 	FAHRRADKETTE("Hätte, hätte", "fahrradkette"), //
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
+	FALLE("Falle", "falle_gesehen"), //
 	FALSCH("Falsch", "falsch"), //
 	FEHLER_FINDEN("Fehler finden", "fehler_finden"),//
 	FEIERABEND("Feierabend", "feierabend"), //
@@ -117,7 +118,9 @@ public enum Sound {
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
     PAUSE("Pause", "pause"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
+	PLAN("Plan", "plan"), //
 	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //
+	PROTONENUMKEHR("Protonenumkehr", "totale_protonenumkehr"), //
 	PURCHE("Purche", "purche"), //
 	PUSH_IT("Push it", "pushit"), //
 	QUEEN_TEN("Q T", "queen_ten"), //
@@ -137,11 +140,13 @@ public enum Sound {
 	SCHEISE("Scheise", "scheise"), //
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
+	SCHLUESSELMEISTER("Schlüsselmeister", "schluesselmeister"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
 	SCHROTTKERL("Schrotthändler", "schrottkerl_melodie"), //
 	SCHUSS_PEANUTS("Schuss", "schuss_peanuts"), //
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
+	SICHERHEITSTIP("Sicherheitstip", "sicherheitstip"), //
 	SLAPSTICK("Slapstick", "hui"), //
 	SLIDE("Slide", "slide_peanuts"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
@@ -152,10 +157,12 @@ public enum Sound {
 	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"), //
 	STANDUP("Stand up", "standup"), //
 	STEELE2("Steele 2", "steele2"), //
+	STROEME_KREUZEN("Ströme kreuzen", "stroeme_kreuzen"), //
 	SUPER("Super", "super"), //
 	SUPERGEIL("Supergeil", "supergeil"), //
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
+	TALENT("Talent", "talent"), //
 	TANGO("Tango", "tango"), //
     THATS_BAD("That's bad", "thats_bad"),//
 	TRIBBLE("Tribble", "tribble"), //
@@ -177,6 +184,7 @@ public enum Sound {
 	ZU_BLOED("Zu blöd", "zu_bloed"), //
 	ZUR_LIEFERUNG("Zur Lieferung", "lieferung"), //
 	ZUR_SEITE("Zur Seite", "butch"), //
+	ZUUL("Zuul", "zuul"), //
 	ZWEI_DINGE("Zwei Dinge", "zwei_dinge"), //
 	ZWEIHUNDERT_PULS("200 Puls", "200puls") //
 	;

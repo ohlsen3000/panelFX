@@ -251,6 +251,11 @@ public class PanelView {
 
 		tabContent.getChildren().add(paneBillAndTed);
 		
+		final FlowPane paneGhostbusters = new ButtonGroup("Ghostbusters",
+				this.soundButtons, Sound.STROEME_KREUZEN, Sound.FALLE, Sound.PROTONENUMKEHR, Sound.SICHERHEITSTIP, Sound.PLAN, Sound.TALENT, Sound.SCHLUESSELMEISTER, Sound.ZUUL);
+
+		tabContent.getChildren().add(paneGhostbusters);
+		
 	}
 
 	private void createClassicsTab() {
