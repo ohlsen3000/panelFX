@@ -7,6 +7,7 @@ public enum Sound {
 	ABSTECHEN("Stech ihn ab", "abstechen"), //
 	ABSOLUT_INKOMMENSURABEL("Absolut inkommensurabel", "absolut_inkommensurabel"), //
 	ABSOLUT_UNCOOL("Absolut uncool", "absolut_uncool"), //
+	ABSOLUT_UNTRIUMPHAL("Absolut Untriumphal", "absolut_untriumphal"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
 	ANNEE_NE("Annee-ne", "aneene"), //
@@ -26,6 +27,7 @@ public enum Sound {
 	BLAH_BLAH("Blah blah", "blah_blah_peanuts"), //
 	BOING("Boioioing", "boing"), //
 	BOING_SINGLE("Boing", "boing_single"), //
+	BUGBUSTERS_THEME("BugBusters", "bugbusters_theme"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
@@ -105,9 +107,11 @@ public enum Sound {
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
+	NED_ARBEIDE("Ned arbeide", "ned_arbeide"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
+    NICH("Nich?", "nich_keann"),//
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OBERGEIL("Obergeil", "obergeil"), //
@@ -126,6 +130,7 @@ public enum Sound {
 	QUEEN_TEN("Q T", "queen_ten"), //
 	QUIET("Quiet!", "quiet"), //
 	RASIERT("Rasiert", "rasiert"), //
+	RAUS("Raus!", "raus"), //
 	REAL("For real?", "for_real"), //
 	RED_ALERT("Red Alert", "startrek_tos_redalert"), //
 	REMOTE("Remote", "remoot"), //
@@ -151,15 +156,18 @@ public enum Sound {
 	SLIDE("Slide", "slide_peanuts"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
 	SNOOPY_LACHEN("Snoopy", "snoopy_lachen"), //
-	SO_NICHT("So nicht!", "sonicht"), //
+	SO_NICHT("Jother: So nicht!", "sonicht"), //
+    SO_NICHT_KEANN("Kéann: So nicht!", "so_nicht_keann"), //
 	SO_SICK("So sick!", "so_sick"), //
 	SORRY("Sorry", "sorry"), //
 	SPIEL_LERNEN("Spiel lernen", "erst_noch_lernen"), //
 	STANDUP("Stand up", "standup"), //
+	STANDUP_METAL("Bastelecke", "standup_metal"), //
 	STEELE2("Steele 2", "steele2"), //
 	STROEME_KREUZEN("Ströme kreuzen", "stroeme_kreuzen"), //
 	SUPER("Super", "super"), //
 	SUPERGEIL("Supergeil", "supergeil"), //
+	SUPER_INGO("Super, Ingo!", "super_ingo1"),//
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
 	TACH("Tach", "tachzusammen"), //
 	TALENT("Talent", "talent"), //
@@ -172,8 +180,8 @@ public enum Sound {
 	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
 	WAS_DENN("Was denn", "wasdenn"), // //
-	WAS_DU_GLAUBST_JOTHER("Das ist das", "dasist"), //
-	WAS_DU_GLAUBST_MAROHDE("Was Du glaubst", "was_du_glaubst"), //
+	WAS_DU_GLAUBST_JOTHER("J: Das ist das", "dasist"), //
+	WAS_DU_GLAUBST_MAROHDE("M: Das ist das", "was_du_glaubst"), //
 	WAS_JETZT("Was jetzt?", "wasjetzt"), //
 	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
