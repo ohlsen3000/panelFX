@@ -323,7 +323,7 @@ public class PanelView {
 		final FlowPane comic = new ButtonGroup("Zeichentrick",
 				this.soundButtons, Sound.BOING_SINGLE, Sound.BOING,
 				Sound.SWOOSH, Sound.SLIDE, Sound.SCHUSS_PEANUTS,
-				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN, Sound.OINK, Sound.SAD_TROMBONE);
+				Sound.BLAH_BLAH, Sound.HIGH_PITCH, Sound.AAH, Sound.HAEMMERN, Sound.OINK, Sound.SAD_TROMBONE, Sound.KLIMPER_MAUS, Sound.SCHNUEFF_MAUS, Sound.TROET_ELEFANT);
 		tabContent.getChildren().add(comic);
 		
 		final FlowPane tension = new ButtonGroup("Spannung",
@@ -332,8 +332,7 @@ public class PanelView {
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
 				Sound.MIKROWELLE_FERTIG, Sound.LEAF_BLOWER_MAXI_SINGLE, Sound.LEAF_BLOWER_SINGLE_EDIT, Sound.SAMETIME, Sound.DOD,
-				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.FIVE_WEEKS, Sound.LALALALALALA,
-                Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.BUGBUSTERS_THEME, Sound.STANDUP_METAL);
+				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.WHAZZUP, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.BENNY_HILL, Sound.MAUS, Sound.WICKIE, Sound.PAULCHEN_PANTHER, Sound.BUGBUSTERS_THEME, Sound.STANDUP_METAL);
 		tabContent.getChildren().add(misc);
 
 	}

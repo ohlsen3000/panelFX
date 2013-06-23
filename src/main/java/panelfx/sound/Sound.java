@@ -20,6 +20,7 @@ public enum Sound {
 	BATTLE3("Battle 3", "eurobattle3"), //
 	BBBB_BENCH("B B B B Bench", "bbbb_bench"), //
 	BEEP("Beep", "beep"), //
+	BENNY_HILL("Benny Hill", "benny_hill"), //
 	BIDDE_IN_TROUBLE("bidde?", "bidde_veraengstigt"), //
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
 	BIEKER("Bieker", "bieker"), //
@@ -88,6 +89,7 @@ public enum Sound {
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
+	KLIMPER_MAUS("Klimper", "klimper_klimper"), //
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
 	KOTZE("Kotze", "kotze"), //
@@ -101,6 +103,7 @@ public enum Sound {
     LEAF_BLOWER_MAXI_SINGLE("Laubbläser maxi", "leaf_blower_maxi_version"),//
     LEAF_BLOWER_SINGLE_EDIT("Laubbläser edit", "leaf_blower_single_edit"),//
 	LOKAL("Lokal", "lokal"), //
+	MAUS("Maus", "sendung_mit_der_maus"), //
 	MEERRETTICH("Meerrettich", "meerrettich"),//
 	MESSAGE_LONG("Message long", "message_long"), //
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
@@ -120,6 +123,7 @@ public enum Sound {
 	OMINOES("Ominös", "ominoes"), //
     PARDON("Pardon?", "pardon"), //
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
+    PAULCHEN_PANTHER("Paulchen Panther", "paulchen_panther"), //
     PAUSE("Pause", "pause"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
 	PLAN("Plan", "plan"), //
@@ -147,6 +151,7 @@ public enum Sound {
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
 	SCHLUESSELMEISTER("Schlüsselmeister", "schluesselmeister"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
+	SCHNUEFF_MAUS("Schnüff", "schnueff_schnueff"), //
 	SCHROTTKERL("Schrotthändler", "schrottkerl_melodie"), //
 	SCHUSS_PEANUTS("Schuss", "schuss_peanuts"), //
 	SENSE("Sense", "sense"), //
@@ -174,6 +179,7 @@ public enum Sound {
 	TANGO("Tango", "tango"), //
     THATS_BAD("That's bad", "thats_bad"),//
 	TRIBBLE("Tribble", "tribble"), //
+	TROET_ELEFANT("Tröt", "troet_troet"), //
 	TROMMELWIRBEL("Trommelwirbel", "drumroll"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
@@ -186,6 +192,8 @@ public enum Sound {
 	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
+	WHAZZUP("Whazzup", "whazzup"), //
+	WICKIE("Wickie", "wickie"), //
 	WIDERPORST("Widerporst", "widerporst"), //
 	WIE_GEIL("Wie geil", "geil"), //
 	WWM("WWM", "wwm_success"), //
