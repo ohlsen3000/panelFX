@@ -261,6 +261,10 @@ public class PanelView {
 
 		tabContent.getChildren().add(paneNoMercy);
 		
+		final FlowPane paneMadame = new ButtonGroup("Scharfe Kurven für Madame",
+				this.soundButtons, Sound.MUSKATNUSS, Sound.HERR_MUELLER);
+
+		tabContent.getChildren().add(paneMadame);
 	}
 
 	private void createClassicsTab() {

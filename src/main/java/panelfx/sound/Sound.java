@@ -73,6 +73,7 @@ public enum Sound {
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
+	HERR_MUELLER("Herr Müller", "herr_mueller"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
 	HOEHOEHOEHOEHOE("Didi", "didi_hoehoehoehoehoe"), //
@@ -109,6 +110,7 @@ public enum Sound {
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
+	MUSKATNUSS("Muskatnuss", "muskatnuss"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NED_ARBEIDE("Ned arbeide", "ned_arbeide"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
