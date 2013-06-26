@@ -13,6 +13,7 @@ public enum Sound {
 	ANNEE_NE("Annee-ne", "aneene"), //
 	ANSTEHT("Ich sag dir", "ansteht"), //
     ASS_BESCHWOERUNG("Ass Ass Ass", "as_beschwoerung"),//
+    ASSAULT("Precinct 13", "assault"),//
 	ASSERT("Essort", "essort"), //
 	BAEM("Bäm", "baehm"), //
 	BALLAD("Ballad", "ballad"), //
@@ -103,7 +104,9 @@ public enum Sound {
 	LAUSCHANGRIFF("Listener", "lauschangriff"), //
     LEAF_BLOWER_MAXI_SINGLE("Laubbläser maxi", "leaf_blower_maxi_version"),//
     LEAF_BLOWER_SINGLE_EDIT("Laubbläser edit", "leaf_blower_single_edit"),//
+    LETZTER_TANGO("Letzter Tango", "letzter_tango"),
 	LOKAL("Lokal", "lokal"), //
+	LOST("Lost", "lost"), //
 	MAUS("Maus", "sendung_mit_der_maus"), //
 	MEERRETTICH("Meerrettich", "meerrettich"),//
 	MESSAGE_LONG("Message long", "message_long"), //
@@ -193,6 +196,7 @@ public enum Sound {
 	WAS_JETZT("Was jetzt?", "wasjetzt"), //
 	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
+	WESTERN("Western von gestern", "western_von_gestern"), //
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
 	WHAZZUP("Whazzup", "whazzup"), //
 	WICKIE("Wickie", "wickie"), //

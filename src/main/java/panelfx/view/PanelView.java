@@ -45,6 +45,7 @@ public class PanelView {
 	private Tab movieTab2;
 	private Tab newbiesTab;
 	private Tab timerTab;
+	private Tab soundtrackTab;
 	private TeaTimer teaTimer;
 	private TextField minutes;
 	private TextField seconds;
@@ -117,6 +118,7 @@ public class PanelView {
 		createMovieTab2();
 		createClassicsTab();
 		createSoundsTab();
+		createSoundtrackTab();
 		createTimerTab();
 
 		this.scene = new Scene(masterPane);
@@ -336,9 +338,37 @@ public class PanelView {
 
 		final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
 				Sound.MIKROWELLE_FERTIG, Sound.LEAF_BLOWER_MAXI_SINGLE, Sound.LEAF_BLOWER_SINGLE_EDIT, Sound.SAMETIME, Sound.DOD,
-				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.WHAZZUP, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.BENNY_HILL, Sound.MAUS, Sound.WICKIE, Sound.PAULCHEN_PANTHER, Sound.BUGBUSTERS_THEME, Sound.STANDUP_METAL);
+				Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.WHAZZUP);
 		tabContent.getChildren().add(misc);
 
+	}
+	
+	private void createSoundtrackTab() {
+		this.soundtrackTab = new Tab("Soundtrack");
+		this.soundtrackTab.setClosable(false);
+		this.tabPane.getTabs().add(this.soundtrackTab);
+
+		final FlowPane tabContent = new FlowPane();
+		tabContent.setPadding(new Insets(10, 0, 0, 0));
+		tabContent.setVgap(5);
+		tabContent.setHgap(5);
+		tabContent.getStyleClass().add("wood-shifted");
+		this.soundtrackTab.setContent(tabContent);
+
+		final FlowPane paneFilm = new ButtonGroup("Film",
+				this.soundButtons, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.LETZTER_TANGO, Sound.ASSAULT);
+
+		tabContent.getChildren().add(paneFilm);
+		
+		final FlowPane paneTelevision = new ButtonGroup("Fernsehen",
+				this.soundButtons, Sound.BENNY_HILL, Sound.LOST, Sound.MAUS, Sound.PAULCHEN_PANTHER, Sound.WESTERN, Sound.WICKIE);
+
+		tabContent.getChildren().add(paneTelevision);
+		
+		final FlowPane paneStandUp = new ButtonGroup("Stand-up",
+				this.soundButtons, Sound.STANDUP_METAL, Sound.BUGBUSTERS_THEME);
+
+		tabContent.getChildren().add(paneStandUp);
 	}
 
 	private void createTimerTab() {
