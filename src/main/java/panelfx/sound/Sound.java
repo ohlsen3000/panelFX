@@ -37,6 +37,7 @@ public enum Sound {
 	COOL("Cool", "cool"), //
 	CUBAGE("Cubage", "qbitch"), //
 	DANKOEOE("Danköö", "dankoe"), //
+    DATENWUST("Datenwust", "datenwust"),//
 	DELETE("Delete", "delate"), //
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
@@ -44,6 +45,7 @@ public enum Sound {
 	DRAMA_BUTTON("Drama-Button", "drama_button"), //
 	DRAMATIC("Frankenstein Junior", "dramatic"), //
 	DU_BEISST("Du beißt", "du_beisst"), //
+    DU_WILLST_WAS("Du willst was??", "du_willst_was"),//
 	EEHM("Eehm", "eehm"), //
 	EINFACH("Einfach", "einfach"), //
 	EINMAL_WAS("1 mal was", "was"), //
@@ -55,6 +57,29 @@ public enum Sound {
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALLE("Falle", "falle_gesehen"), //
 	FALSCH("Falsch", "falsch"), //
+    FANTASY_CALL_TOSCH("Tosch", "fantasy_call_tosch"),//
+    FANTASY_NAME_ALERG("Dor Alerg", "fantasy_name_alerg"),//
+    FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
+    FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
+    FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
+    FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
+    FANTASY_NAME_FRANN("Dor Frann", "fantasy_name_frann"),//
+    FANTASY_NAME_GAIVO("Dor Gaivo", "fantasy_name_gaivo"),//
+    FANTASY_NAME_JOTHER("Dor Jother", "fantasy_name_jother"),//
+    FANTASY_NAME_JUEDA("Dor Jüda", "fantasy_name_jueda"),//
+    FANTASY_NAME_MALTERS("Dor Malters", "fantasy_name_malters"),//
+    FANTASY_NAME_MARGA("Dor Marga", "fantasy_name_marga"),//
+    FANTASY_NAME_MARING("Dor Maring", "fantasy_name_maring"),//
+    FANTASY_CALL_MATTI("Dor Matti", "fantasy_name_matti"),//
+    FANTASY_NAME_MAUTH("Dor Mauth", "fantasy_name_mauth"),//
+    FANTASY_NAME_PUETT("Dor Pütt", "fantasy_name_puett"),//
+    FANTASY_NAME_SASCHER("Dor Sascher", "fantasy_name_sascher"),//
+    FANTASY_NAME_SEIER("Dor Seier", "fantasy_name_seier"),//
+    FANTASY_NAME_SESKE("Dor Seske", "fantasy_name_seske"),//
+    FANTASY_NAME_TIANN("Dor Tiann", "fantasy_name_tiann"),//
+    FANTASY_NAME_TOTZ("Dor Totz", "fantasy_name_totz"),//
+    FANTASY_NAME_UDITZ("Dor Uditz", "fantasy_name_uditz"),//
+    FANTASY_NAME_ULTZ("Dor Ultz", "fantasy_name_ultz"),//
 	FEHLER_FINDEN("Fehler finden", "fehler_finden"),//
 	FEIERABEND("Feierabend", "feierabend"), //
 	FEIEREI("Feierei", "feierei"), //
