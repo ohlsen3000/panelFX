@@ -2,6 +2,7 @@ package panelfx.view;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.PostConstruct;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -21,9 +22,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import javax.annotation.PostConstruct;
-
 import panelfx.PanelFX;
 import panelfx.SimpleAccessDecisionManager;
 import panelfx.sound.Sound;
@@ -399,10 +397,34 @@ public class PanelView {
 
             tabContent.getChildren().add(productFraggle);
 
+
+            final FlowPane paneDelphinarium = new ButtonGroup("Déjà Vu (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_PUETT, Sound.FANTASY_NAME_SEIER, Sound.FANTASY_NAME_MALTERS, Sound.FANTASY_NAME_UDITZ, Sound.FANTASY_NAME_FRANN, Sound.FANTASY_CALL_MATTI);
+
+            tabContent.getChildren().add(paneDelphinarium);
+
             final FlowPane paneBastelecke = new ButtonGroup("Bastelecke (Name'em)",
                     this.soundButtons, Sound.FANTASY_NAME_FRALLER, Sound.FANTASY_NAME_ULTZ, Sound.FANTASY_NAME_JOTHER, Sound.FANTASY_NAME_JUEDA);
 
             tabContent.getChildren().add(paneBastelecke);
+
+
+            final FlowPane paneKatana = new ButtonGroup("Katana (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_ALERG, Sound.FANTASY_NAME_CHRILLNER, Sound.FANTASY_NAME_BEYER);
+
+            tabContent.getChildren().add(paneKatana);
+
+
+            final FlowPane paneKihon = new ButtonGroup("Kihon (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_MARGA, Sound.FANTASY_NAME_TIANN, Sound.FANTASY_NAME_ANANN, Sound.FANTASY_NAME_SESKE, Sound.FANTASY_NAME_MARING);
+
+            tabContent.getChildren().add(paneKihon);
+
+
+            final FlowPane paneBugBusters = new ButtonGroup("Bug Busters (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_SASCHER, Sound.FANTASY_NAME_GAIVO, Sound.FANTASY_NAME_MAUTH, Sound.FANTASY_NAME_TOTZ);
+
+            tabContent.getChildren().add(paneBugBusters);
         }
 
     }
