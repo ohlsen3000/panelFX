@@ -285,7 +285,8 @@ public class PanelView {
         this.newbiesTab.setContent(tabContent);
 
         final FlowPane cubageTeamSounds = new ButtonGroup(
-                "Cubage Team (2010 - 2012)", this.soundButtons, Sound.SO_NICHT_KEANN, Sound.NICH, Sound.KANTINE,
+                "Cubage Team (2010 - 2012)", this.soundButtons, //
+                Sound.SO_NICHT_KEANN, Sound.NICH, Sound.KANTINE,
                 Sound.HALT_SCHWIERIG, Sound.IDEFIX_IT,
                 Sound.PREFERRED_LANGUAGE, Sound.SLAPSTICK, Sound.RICHTIG,
                 Sound.ZU_BLOED, Sound.TRIBBLE, Sound.RED_ALERT,
@@ -348,6 +349,17 @@ public class PanelView {
                 Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.WHAZZUP);
         tabContent.getChildren().add(misc);
 
+
+        final FlowPane nature = new ButtonGroup("Natur", this.soundButtons,//
+                Sound.COW_MOO,//
+                Sound.ANIMAL_HORSE,//
+                Sound.ANIMAL_GIBBON,//
+                Sound.ANIMAL_BUDGIE_SINGLE,//
+                Sound.ANIMAL_BUDGIE_MAXI,//
+                Sound.ANIMAL_WOODPECKER_FOREST,//
+                Sound.ANIMAL_BLACKBIRD);//
+        tabContent.getChildren().add(nature);
+
     }
 
     private void createSoundtrackTab() {
@@ -376,6 +388,13 @@ public class PanelView {
                 this.soundButtons, Sound.STANDUP_METAL, Sound.BUGBUSTERS_THEME);
 
         tabContent.getChildren().add(paneStandUp);
+
+
+        final FlowPane companyJingles = new ButtonGroup("Company Jingles",
+                this.soundButtons, //
+                Sound.COMPANY_LYNCH_FROST_PRODUCTIONS);
+
+        tabContent.getChildren().add(companyJingles);
     }
 
     private void createFantasyTab() {

@@ -42,6 +42,7 @@ public enum Sound {
     COMPANY_LYNCH_FROST_PRODUCTIONS("Lynch/Frost", "jingle_lynch_frost"),//
 	CONVERTER("Konverter", "konverter"), //
 	COOL("Cool", "cool"), //
+    COW_MOO("Muh", "cow_moo"),//
 	CUBAGE("Cubage", "qbitch"), //
 	DANKOEOE("Danköö", "dankoe"), //
     DATENWUST("Datenwust", "datenwust"),//
