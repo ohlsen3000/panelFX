@@ -10,6 +10,12 @@ public enum Sound {
 	ABSOLUT_UNTRIUMPHAL("Absolut Untriumphal", "absolut_untriumphal"), //
 	ALARM("Alarm", "alarm"), //
 	ALTOBELLI("Altobelli", "altobelli"), //
+    ANIMAL_BLACKBIRD("Amsel", "freesound_34074_blackbird"),//
+    ANIMAL_BUDGIE_SINGLE("Sittich Tschilp", "sittich_tschirp4"),//
+    ANIMAL_BUDGIE_MAXI("Sittich Maxi", "sittich_tschirp11"),//
+    ANIMAL_GIBBON("Gibbon", "freesound_147958_gibbon"),//
+    ANIMAL_HORSE("Pferd", "freesound_165243_diabolic_horse"),//
+    ANIMAL_WOODPECKER_FOREST("Specht im Wald", "freesound_114021_forest"),//
 	ANNEE_NE("Annee-ne", "aneene"), //
 	ANSTEHT("Ich sag dir", "ansteht"), //
     ASS_BESCHWOERUNG("Ass Ass Ass", "as_beschwoerung"),//
@@ -33,6 +39,7 @@ public enum Sound {
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
+    COMPANY_LYNCH_FROST_PRODUCTIONS("Lynch/Frost", "jingle_lynch_frost"),//
 	CONVERTER("Konverter", "konverter"), //
 	COOL("Cool", "cool"), //
 	CUBAGE("Cubage", "qbitch"), //
