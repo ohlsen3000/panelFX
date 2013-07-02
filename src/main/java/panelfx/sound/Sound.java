@@ -70,11 +70,15 @@ public enum Sound {
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
     FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
+    FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
+    FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
     FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
     FANTASY_NAME_FRANN("Dor Frann", "fantasy_name_frann"),//
     FANTASY_NAME_GAIVO("Dor Gaivo", "fantasy_name_gaivo"),//
+    FANTASY_NAME_GUIDOLF("Dor Guidolf", "fantasy_name_guidolf"),//
     FANTASY_NAME_JOTHER("Dor Jother", "fantasy_name_jother"),//
     FANTASY_NAME_JUEDA("Dor Jüda", "fantasy_name_jueda"),//
+    FANTASY_NAME_KEANN("Dor Kéann", "fantasy_name_keann"),//
     FANTASY_NAME_MALTERS("Dor Malters", "fantasy_name_malters"),//
     FANTASY_NAME_MARGA("Dor Marga", "fantasy_name_marga"),//
     FANTASY_NAME_MARING("Dor Maring", "fantasy_name_maring"),//
