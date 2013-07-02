@@ -422,6 +422,11 @@ public class PanelView {
             tabContent.getChildren().add(productFraggle);
 
 
+            final FlowPane paneBugBusters = new ButtonGroup("Bug Busters (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_SASCHER, Sound.FANTASY_NAME_GAIVO, Sound.FANTASY_NAME_MAUTH, Sound.FANTASY_NAME_TOTZ);
+
+            tabContent.getChildren().add(paneBugBusters);
+
             final FlowPane paneDelphinarium = new ButtonGroup("Déjà Vu (Name'em)",
                     this.soundButtons,
                     Sound.FANTASY_NAME_PUETT,//
@@ -477,7 +482,11 @@ public class PanelView {
                     Sound.FANTASY_NAME_TOTZ,//
                     Sound.FANTASY_CALL_TOTZ);
 
-            tabContent.getChildren().add(paneBugBusters);
+
+            final FlowPane paneAllIn = new ButtonGroup("All In (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_KEANN, Sound.FANTASY_NAME_DAMPS, Sound.FANTASY_NAME_GUIDOLF, Sound.FANTASY_NAME_DANG);
+
+            tabContent.getChildren().add(paneAllIn);
         }
 
     }
