@@ -65,7 +65,21 @@ public enum Sound {
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALLE("Falle", "falle_gesehen"), //
 	FALSCH("Falsch", "falsch"), //
-    FANTASY_CALL_TOSCH("Tosch", "fantasy_call_tosch"),//
+    FANTASY_CALL_ALERG("Alerg!", "fantasy_call_alerg"),//
+    FANTASY_CALL_BEYER("Beyer!", "fantasy_call_beyer"),//
+    FANTASY_CALL_CALS("Cals!", "fantasy_call_cals"),//
+    FANTASY_CALL_CHRILLNER("Chrillner!", "fantasy_call_chrillner"),//
+    FANTASY_CALL_DIYER("Diyer!", "fantasy_call_diyer"),//
+    FANTASY_CALL_FRALLER("Fraller!", "fantasy_call_fraller"),//
+    FANTASY_CALL_GAIVO("Gaivo!", "fantasy_call_gaivo"),//
+    FANTASY_CALL_GUIDOLF("Guidolf!", "fantasy_call_guidolf"),//
+    FANTASY_CALL_JOTHER("Jother!", "fantasy_call_jother"),//
+    FANTASY_CALL_JUEDA("Jüda!", "fantasy_call_jueda"),//
+    FANTASY_CALL_JOENDER("Jönder!", "fantasy_call_joender"),//
+    FANTASY_CALL_MAUTH("Mauth!", "fantasy_call_mauth"),//
+    FANTASY_CALL_SASCHER("Sascher!", "fantasy_call_sascher"),//
+    FANTASY_CALL_TOSCH("Tosch!", "fantasy_call_tosch"),//
+    FANTASY_CALL_TOTZ("Totz!", "fantasy_call_totz"),//
     FANTASY_NAME_ALERG("Dor Alerg", "fantasy_name_alerg"),//
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
