@@ -421,9 +421,16 @@ public class PanelView {
 
             tabContent.getChildren().add(productFraggle);
 
-
-            final FlowPane paneBugBusters = new ButtonGroup("Bug Busters (Name'em)",
-                    this.soundButtons, Sound.FANTASY_NAME_SASCHER, Sound.FANTASY_NAME_GAIVO, Sound.FANTASY_NAME_MAUTH, Sound.FANTASY_NAME_TOTZ);
+            final FlowPane paneBugBusters = new ButtonGroup("Bug Busters (Name'em/ Call'em)",
+                    this.soundButtons,
+                    Sound.FANTASY_NAME_SASCHER,//
+                    Sound.FANTASY_CALL_SASCHER, //
+                    Sound.FANTASY_NAME_GAIVO, //
+                    Sound.FANTASY_CALL_GAIVO,//
+                    Sound.FANTASY_NAME_MAUTH,//
+                    Sound.FANTASY_CALL_MAUTH,//
+                    Sound.FANTASY_NAME_TOTZ,//
+                    Sound.FANTASY_CALL_TOTZ);
 
             tabContent.getChildren().add(paneBugBusters);
 
@@ -469,18 +476,6 @@ public class PanelView {
                     this.soundButtons, Sound.FANTASY_NAME_MARGA, Sound.FANTASY_NAME_TIANN, Sound.FANTASY_NAME_ANANN, Sound.FANTASY_NAME_SESKE, Sound.FANTASY_NAME_MARING);
 
             tabContent.getChildren().add(paneKihon);
-
-
-            final FlowPane paneBugBusters = new ButtonGroup("Bug Busters (Name'em/ Call'em)",
-                    this.soundButtons,
-                    Sound.FANTASY_NAME_SASCHER,//
-                    Sound.FANTASY_CALL_SASCHER, //
-                    Sound.FANTASY_NAME_GAIVO, //
-                    Sound.FANTASY_CALL_GAIVO,//
-                    Sound.FANTASY_NAME_MAUTH,//
-                    Sound.FANTASY_CALL_MAUTH,//
-                    Sound.FANTASY_NAME_TOTZ,//
-                    Sound.FANTASY_CALL_TOTZ);
 
 
             final FlowPane paneAllIn = new ButtonGroup("All In (Name'em)",
