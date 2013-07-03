@@ -115,7 +115,7 @@ public enum Sound {
 	FRAGE("Frage", "frage"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
-	FUNKTIONAL_KAPUTT("Funktional kaputt", "funktional_kaputt"), //
+	FUNKTIONAL_KAPUTT("Isset kaputt", "funktional_kaputt"), //
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
 	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
 	GEBUNKERT("Gebunkert", "gebunkert"), //
