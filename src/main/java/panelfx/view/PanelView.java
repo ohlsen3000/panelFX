@@ -345,8 +345,18 @@ public class PanelView {
         tabContent.getChildren().add(tension);
 
         final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
-                Sound.MIKROWELLE_FERTIG, Sound.LEAF_BLOWER_MAXI_SINGLE, Sound.LEAF_BLOWER_SINGLE_EDIT, Sound.SAMETIME, Sound.DOD,
-                Sound.GRAUEN, Sound.BEEP, Sound.FUNKTIONAL_KAPUTT, Sound.GROSSEN_GEIST, Sound.SUPER_INGO, Sound.WHAZZUP);
+                Sound.MIKROWELLE_FERTIG, //
+                Sound.LEAF_BLOWER_MAXI_SINGLE, //
+                Sound.LEAF_BLOWER_SINGLE_EDIT, //
+                Sound.SAMETIME,//
+                Sound.TIMES_UP, //
+                Sound.DOD,//
+                Sound.GRAUEN,//
+                Sound.BEEP,//
+                Sound.FUNKTIONAL_KAPUTT,//
+                Sound.GROSSEN_GEIST,//
+                Sound.SUPER_INGO,//
+                Sound.WHAZZUP);
         tabContent.getChildren().add(misc);
 
 
@@ -380,7 +390,14 @@ public class PanelView {
         tabContent.getChildren().add(paneFilm);
 
         final FlowPane paneTelevision = new ButtonGroup("Fernsehen",
-                this.soundButtons, Sound.BENNY_HILL, Sound.LOST, Sound.MAUS, Sound.PAULCHEN_PANTHER, Sound.WESTERN, Sound.WICKIE);
+                this.soundButtons,//
+                Sound.BENNY_HILL,//
+                Sound.LOST,//
+                Sound.MAUS, //
+                Sound.PAULCHEN_PANTHER,//
+                Sound.WESTERN, //
+                Sound.WICKIE, //
+                Sound.JOLODA_SCHIENEN);
 
         tabContent.getChildren().add(paneTelevision);
 

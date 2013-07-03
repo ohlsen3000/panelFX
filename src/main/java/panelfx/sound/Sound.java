@@ -138,6 +138,7 @@ public enum Sound {
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
+    JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
@@ -198,6 +199,8 @@ public enum Sound {
 	REWE("Rewe", "rewe"), //
 	RICHTIG("Richtig", "richtig"), //
 	RICHTIG_GEPOKERT("Richtig gepokert", "richtig_gepokert"), //
+    RUDI_DAS_ALLERLETZTE("Das Allerletzte", "das_allerletzte"),//
+    RUDI_SO_EINEN_SCHEISS("So einen Sch*", "so_einen_scheiss"),//
 	RUEDIGER("Rüdiger", "ruediger"), //
 	SAD_TROMBONE("Sad trombone", "sad_trombone"), //
 	SAMETIME("Sametime", "sametime"), //
@@ -234,6 +237,7 @@ public enum Sound {
 	TALENT("Talent", "talent"), //
 	TANGO("Tango", "tango"), //
     THATS_BAD("That's bad", "thats_bad"),//
+    TIMES_UP("Time!", "ps_time"),//
 	TRIBBLE("Tribble", "tribble"), //
 	TROET_ELEFANT("Tröt", "troet_troet"), //
 	TROMMELWIRBEL("Trommelwirbel", "drumroll"), //
