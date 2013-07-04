@@ -364,10 +364,12 @@ public class PanelView {
                 Sound.COW_MOO,//
                 Sound.ANIMAL_HORSE,//
                 Sound.ANIMAL_GIBBON,//
+                Sound.ANIMAL_MONKEY,//
                 Sound.ANIMAL_BUDGIE_SINGLE,//
                 Sound.ANIMAL_BUDGIE_MAXI,//
                 Sound.ANIMAL_WOODPECKER_FOREST,//
-                Sound.ANIMAL_BLACKBIRD);//
+                Sound.ANIMAL_BLACKBIRD,//
+                Sound.ANIMAL_MAGPIE );//
         tabContent.getChildren().add(nature);
 
     }
@@ -431,8 +433,11 @@ public class PanelView {
             final FlowPane productFraggle = new ButtonGroup("PM & Artichekten & Koord (Call'em)",
                     this.soundButtons, //
                     Sound.FANTASY_CALL_TOSCH,//
+                    Sound.FANTASY_NAME_CALS,//
                     Sound.FANTASY_CALL_CALS,//
+                    Sound.FANTASY_NAME_DIYER,//
                     Sound.FANTASY_CALL_DIYER,//
+                    Sound.FANTASY_NAME_JOENDER,//
                     Sound.FANTASY_CALL_JOENDER //
             );
 
@@ -496,7 +501,10 @@ public class PanelView {
 
 
             final FlowPane paneAllIn = new ButtonGroup("All In (Name'em)",
-                    this.soundButtons, Sound.FANTASY_NAME_KEANN, Sound.FANTASY_NAME_DAMPS, Sound.FANTASY_NAME_GUIDOLF, Sound.FANTASY_NAME_DANG);
+                    this.soundButtons, Sound.FANTASY_NAME_KEANN, Sound.FANTASY_NAME_DAMPS,  //
+                    Sound.FANTASY_NAME_GUIDOLF, //
+                    Sound.FANTASY_CALL_GUIDOLF,//
+                    Sound.FANTASY_NAME_DANG);
 
             tabContent.getChildren().add(paneAllIn);
         }
