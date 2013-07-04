@@ -273,7 +273,7 @@ public class PanelView {
 
     private void createClassicsTab() {
 
-        this.newbiesTab = new Tab("Klassiker");
+        this.newbiesTab = new Tab("TC Klassiker");
         this.newbiesTab.setClosable(false);
         this.tabPane.getTabs().add(this.newbiesTab);
 
