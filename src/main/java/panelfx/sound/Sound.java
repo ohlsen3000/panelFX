@@ -13,6 +13,7 @@ public enum Sound {
     ANIMAL_BLACKBIRD("Amsel", "freesound_34074_blackbird"),//
     ANIMAL_BUDGIE_SINGLE("Sittich Tschilp", "sittich_tschirp4"),//
     ANIMAL_BUDGIE_MAXI("Sittich Maxi", "sittich_tschirp11"),//
+    ANIMAL_DYING_DUCK("Ente \u271D", "dying_duck"), //
     ANIMAL_GIBBON("Gibbon", "freesound_147958_gibbon"),//
     ANIMAL_HORSE("Pferd", "freesound_165243_diabolic_horse"),//
     ANIMAL_MAGPIE("Elster", "freesound_19925_magpie"),//
@@ -35,12 +36,15 @@ public enum Sound {
 	BIEKER("Bieker", "bieker"), //
 	BILDSCHIRM("Bildschirm", "bildschirm"), //
 	BLAH_BLAH("Blah blah", "blah_blah_peanuts"), //
+	BLUTORGEL("Blutorgel", "blutorgel"), //
+	BOAH_GEIL("Boah geil", "boah_geil"), //
 	BOING("Boioioing", "boing"), //
 	BOING_SINGLE("Boing", "boing_single"), //
 	BUGBUSTERS_THEME("BugBusters", "bugbusters_theme"), //
 	BULLSHIT("Bullshit", "bullshit"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
+	COMPUTER_SAGT_NEIN("Computer: Nein", "computer_sagt_nein"), //
     COMPANY_LYNCH_FROST_PRODUCTIONS("Lynch/Frost", "jingle_lynch_frost"),//
 	CONVERTER("Konverter", "konverter"), //
 	COOL("Cool", "cool"), //
@@ -120,16 +124,20 @@ public enum Sound {
 	FRAGE("Frage", "frage"), //
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
+	FREUNDE_DER_SONNE("Freunde d Sonne", "freunde_der_sonne"), //
 	FUNKTIONAL_KAPUTT("Isset kaputt", "funktional_kaputt"), //
 	GANZ_KLAR("Ganz klar", "ganzklar"), //
 	GAR_NICHT("Geht gar nicht", "geht_gar_nicht"), //
 	GEBUNKERT("Gebunkert", "gebunkert"), //
+    GEWITTER("Gewitter", "gewitter"), //
+    GEWITTER_FRAGE("Gewitter?", "gewitter_frage"),//
     GROSSEN_GEIST("großen Geist", "grossen_geist"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
+	HALT_STOP("Halt stop", "andreas_halt"), //
 	HERR_MUELLER("Herr Müller", "herr_mueller"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -143,11 +151,13 @@ public enum Sound {
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
+    JETZT_RED_ICH("Jetzt red ich", "andreas_jetzt_red_ich"), //
     JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
+	KITT("K.I.T.T.", "kitt_scanner"), //
 	KLIMPER_MAUS("Klimper", "klimper_klimper"), //
 	KNARZ("Knarz", "knarz_equalized"), //
 	KONZEPT("Konzept", "konzept"), //
@@ -171,13 +181,17 @@ public enum Sound {
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
 	MUSKATNUSS("Muskatnuss", "muskatnuss"), //
+	MUTIGE_ENTSCHEIDUNG("Mutige Entsch.", "mutige_entscheidung"), //
+    NACKTBADEN("Nacktbaden", "nacktbaden"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NED_ARBEIDE("Ned arbeide", "ned_arbeide"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
+	NEUSS("Neuss?", "neuss"), //
     NICH("Nich?", "nich_keann"),//
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
+	NIX_VERSTEHEN("Nix verstehen", "nix_verstehen"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OBERGEIL("Obergeil", "obergeil"), //
 	OEOEOEEY("Öööey", "oey"), //
@@ -204,6 +218,7 @@ public enum Sound {
 	REWE("Rewe", "rewe"), //
 	RICHTIG("Richtig", "richtig"), //
 	RICHTIG_GEPOKERT("Richtig gepokert", "richtig_gepokert"), //
+	ROTES_PFERD("Katana", "das_rote_pferd"), //
     RUDI_DAS_ALLERLETZTE("Das Allerletzte", "das_allerletzte"),//
     RUDI_SO_EINEN_SCHEISS("So einen Sch*", "so_einen_scheiss"),//
 	RUEDIGER("Rüdiger", "ruediger"), //
@@ -214,6 +229,7 @@ public enum Sound {
 	SCHEISS_LAUNE("Scheiß Laune", "laune"), //
 	SCHLAEGEREI("Schlägerei", "schlaegerei"), //
 	SCHLUESSELMEISTER("Schlüsselmeister", "schluesselmeister"), //
+	SCHNAUZE("Schnauze", "andreas_schnauze"), //
 	SCHNAUZE_VOLL("Schnauze voll", "schnauze_voll"), //
 	SCHNUEFF_MAUS("Schnüff", "schnueff_schnueff"), //
 	SCHROTTKERL("Schrotthändler", "schrottkerl_melodie"), //
@@ -246,6 +262,7 @@ public enum Sound {
 	TRIBBLE("Tribble", "tribble"), //
 	TROET_ELEFANT("Tröt", "troet_troet"), //
 	TROMMELWIRBEL("Trommelwirbel", "drumroll"), //
+	UNNORMAL("Unnormal", "unnormal"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
 	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //

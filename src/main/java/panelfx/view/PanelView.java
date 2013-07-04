@@ -43,6 +43,7 @@ public class PanelView {
     private Tab movieTab1;
     private Tab movieTab2;
     private Tab newbiesTab;
+    private Tab mediaTab;
     private Tab timerTab;
     private Tab soundtrackTab;
     private Tab fantasyTab;
@@ -119,6 +120,7 @@ public class PanelView {
         createMovieTab1();
         createMovieTab2();
         createClassicsTab();
+        createMediaTab();
         createSoundsTab();
         createSoundtrackTab();
         createFantasyTab();
@@ -270,6 +272,46 @@ public class PanelView {
 
         tabContent.getChildren().add(paneMadame);
     }
+    
+    private void createMediaTab() {
+        this.mediaTab = new Tab("Medien");
+        this.mediaTab.setClosable(false);
+        this.tabPane.getTabs().add(this.mediaTab);
+
+        final FlowPane tabContent = new FlowPane();
+        tabContent.setPadding(new Insets(10, 0, 0, 0));
+        tabContent.setVgap(5);
+        tabContent.setHgap(5);
+        tabContent.getStyleClass().add("wood-shifted");
+        this.mediaTab.setContent(tabContent);
+        
+        final FlowPane shrinePanel = new ButtonGroup("The Shrine",
+                this.soundButtons, Sound.LAUNE, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI,
+                Sound.MESSAGE_LONG, Sound.FEIEREI, Sound.JAJAJAJAJAJA, Sound.FEIERGEMEINDE, Sound.OBERGEIL, Sound.SUPERGEIL, Sound.SUPER, Sound.EINFACH, Sound.KOTZE);
+        tabContent.getChildren().add(shrinePanel);
+
+        final FlowPane mediamarktPanel = new ButtonGroup("Mediamarkt",
+                this.soundButtons, Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM,
+                Sound.SCHEISE);
+        tabContent.getChildren().add(mediamarktPanel);
+        
+        final FlowPane commercialPanel = new ButtonGroup("Reklame",
+                this.soundButtons, Sound.SUPER_INGO, Sound.WHAZZUP);
+        tabContent.getChildren().add(commercialPanel);
+
+        final FlowPane realityPanel = new ButtonGroup("Reality-TV",
+                this.soundButtons, Sound.HALT_STOP, Sound.JETZT_RED_ICH, Sound.SCHNAUZE, Sound.NACKTBADEN, Sound.BOAH_GEIL, Sound.UNNORMAL);
+        tabContent.getChildren().add(realityPanel);
+        
+        final FlowPane sportsPanel = new ButtonGroup("Sport",
+                this.soundButtons, Sound.FREUNDE_DER_SONNE);
+        tabContent.getChildren().add(sportsPanel);
+        
+        final FlowPane comedyPanel = new ButtonGroup("Comedy",
+                this.soundButtons, Sound.COMPUTER_SAGT_NEIN, Sound.GEWITTER, Sound.NIX_VERSTEHEN, Sound.NEUSS, Sound.GEWITTER_FRAGE);
+        tabContent.getChildren().add(comedyPanel);
+
+    }
 
     private void createClassicsTab() {
 
@@ -300,19 +342,9 @@ public class PanelView {
                 Sound.BIEKER, Sound.BALLAD, Sound.JEOPARDY);
         tabContent.getChildren().add(basteleckeSounds);
 
-        final FlowPane shrinePanel = new ButtonGroup("The Shrine",
-                this.soundButtons, Sound.LAUNE, Sound.GUDE_LAUNE, Sound.SCHLAEGEREI,
-                Sound.MESSAGE_LONG, Sound.FEIEREI, Sound.JAJAJAJAJAJA, Sound.FEIERGEMEINDE, Sound.OBERGEIL, Sound.SUPERGEIL, Sound.SUPER, Sound.EINFACH, Sound.KOTZE);
-        tabContent.getChildren().add(shrinePanel);
-
-        final FlowPane mediamarktPanel = new ButtonGroup("Mediamarkt",
-                this.soundButtons, Sound.ZWEIHUNDERT_PULS, Sound.BILDSCHIRM,
-                Sound.SCHEISE);
-        tabContent.getChildren().add(mediamarktPanel);
-
         final FlowPane gescheitertPane = new ButtonGroup("Gescheitert",
                 this.soundButtons, Sound.DU_WILLST_WAS, Sound.DATENWUST,
-                Sound.FAIL, Sound.FAIL_SATANIC);
+                Sound.FAIL, Sound.FAIL_SATANIC, Sound.MUTIGE_ENTSCHEIDUNG);
         tabContent.getChildren().add(gescheitertPane);
     }
 
@@ -341,7 +373,7 @@ public class PanelView {
         tabContent.getChildren().add(comic);
 
         final FlowPane tension = new ButtonGroup("Spannung",
-                this.soundButtons, Sound.DRAMA_BUTTON, Sound.DRAMATIC, Sound.WWM, Sound.TROMMELWIRBEL);
+                this.soundButtons, Sound.DRAMA_BUTTON, Sound.DRAMATIC, Sound.BLUTORGEL, Sound.WWM, Sound.TROMMELWIRBEL);
         tabContent.getChildren().add(tension);
 
         final FlowPane misc = new ButtonGroup("Sonstiges", this.soundButtons,
@@ -355,8 +387,7 @@ public class PanelView {
                 Sound.BEEP,//
                 Sound.FUNKTIONAL_KAPUTT,//
                 Sound.GROSSEN_GEIST,//
-                Sound.SUPER_INGO,//
-                Sound.WHAZZUP);
+                Sound.KITT);
         tabContent.getChildren().add(misc);
 
 
@@ -369,7 +400,9 @@ public class PanelView {
                 Sound.ANIMAL_BUDGIE_MAXI,//
                 Sound.ANIMAL_WOODPECKER_FOREST,//
                 Sound.ANIMAL_BLACKBIRD,//
-                Sound.ANIMAL_MAGPIE );//
+                Sound.ANIMAL_MAGPIE,
+                Sound.ANIMAL_DYING_DUCK);//
+        
         tabContent.getChildren().add(nature);
 
     }
@@ -404,7 +437,7 @@ public class PanelView {
         tabContent.getChildren().add(paneTelevision);
 
         final FlowPane paneStandUp = new ButtonGroup("Stand-up",
-                this.soundButtons, Sound.STANDUP_METAL, Sound.BUGBUSTERS_THEME);
+                this.soundButtons, Sound.STANDUP_METAL, Sound.BUGBUSTERS_THEME, Sound.ROTES_PFERD);
 
         tabContent.getChildren().add(paneStandUp);
 
