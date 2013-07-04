@@ -179,7 +179,7 @@ public class PanelView {
 
     private void createMovieTab1() {
 
-        this.movieTab1 = new Tab("Filmzitate #1");
+        this.movieTab1 = new Tab("Film #1");
         this.movieTab1.setClosable(false);
         this.tabPane.getTabs().add(this.movieTab1);
 
@@ -238,7 +238,7 @@ public class PanelView {
     }
 
     private void createMovieTab2() {
-        this.movieTab2 = new Tab("Filmzitate #2");
+        this.movieTab2 = new Tab("Film #2");
         this.movieTab2.setClosable(false);
         this.tabPane.getTabs().add(this.movieTab2);
 
