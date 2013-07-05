@@ -34,4 +34,13 @@ public class SimpleAccessDecisionManager {
          }
        return false;
     }
+
+    public boolean hasCriticalSoundAcceess(){
+        for (Person person : this.fantasyNameAccess){
+            if (person.getHostName().equals(this.hostname)){
+                return true;
+            }
+        }
+        return false;
+    }
 }

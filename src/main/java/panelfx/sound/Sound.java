@@ -42,6 +42,7 @@ public enum Sound {
 	BOING_SINGLE("Boing", "boing_single"), //
 	BUGBUSTERS_THEME("BugBusters", "bugbusters_theme"), //
 	BULLSHIT("Bullshit", "bullshit"), //
+    CALS_ANFORDERUNG("Anforderung", "cals_explizite_anforderung"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
 	COMPUTER_SAGT_NEIN("Computer: Nein", "computer_sagt_nein"), //
@@ -135,6 +136,10 @@ public enum Sound {
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
+    GUTIS_AAH("Aaah", "gutis_aah", true),//
+    GUTIS_JA("Ja", "gutis_ja", true),//
+    GUTIS_NICHT_NUR_MIR("Nichtnurmir", "gutis_nicht_nur_mir", true),//
+    GUTIS_TABELLE("Tabelle", "gutis_tabelle", true),//
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
 	HALT_STOP("Halt stop", "andreas_halt"), //
@@ -254,7 +259,8 @@ public enum Sound {
 	SUPERGEIL("Supergeil", "supergeil"), //
 	SUPER_INGO("Super, Ingo!", "super_ingo1"),//
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
-	TACH("Tach", "tachzusammen"), //
+    TABELLEN_VERSTAENDNIS("Task Force Live", "tabellen_verstaendnis", true),//
+	TACH("Tach", "tachzusammen", true), //
 	TALENT("Talent", "talent"), //
 	TANGO("Tango", "tango"), //
     THATS_BAD("That's bad", "thats_bad"),//
@@ -290,11 +296,16 @@ public enum Sound {
 
 	private String label;
 	private String filename;
+    private boolean critical;
 
-	private Sound(final String label, final String filename) {
-		this.label = label;
-		this.filename = filename;
-	}
+    private Sound(final String label, final String filename, boolean critical) {
+        this.critical = critical;
+        this.label = label;
+        this.filename = filename;
+    }
+    private Sound(final String label, final String filename) {
+        this(label, filename, false);
+    }
 
 	public String getLabel() {
 		return this.label;
@@ -304,4 +315,7 @@ public enum Sound {
 		return this.filename;
 	}
 
+    public boolean isCritical() {
+        return critical;
+    }
 }
