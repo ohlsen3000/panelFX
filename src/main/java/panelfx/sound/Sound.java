@@ -123,6 +123,10 @@ public enum Sound {
 	FIVE_WEEKS("Five weeks", "five_weeks"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
+    FRALLER_BIS_GLEICH("Bis gleich", "fraller_bis_gleich"),//
+    FRALLER_JA_BESTAETIGUNG("Jaha", "fraller_ja_bestaetigung"),//
+    FRALLER_JA_GENAU("Ja, genau", "fraller_ja_genau"),//
+    FRALLER_HALLO("Hallo", "fraller_halloo"),//
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
 	FREUNDE_DER_SONNE("Freunde d Sonne", "freunde_der_sonne"), //
@@ -136,10 +140,6 @@ public enum Sound {
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
-    GUTIS_AAH("Aaah", "gutis_aah", true),//
-    GUTIS_JA("Ja", "gutis_ja", true),//
-    GUTIS_NICHT_NUR_MIR("Nichtnurmir", "gutis_nicht_nur_mir", true),//
-    GUTIS_TABELLE("Tabelle", "gutis_tabelle", true),//
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
 	HALT_STOP("Halt stop", "andreas_halt"), //
@@ -259,7 +259,6 @@ public enum Sound {
 	SUPERGEIL("Supergeil", "supergeil"), //
 	SUPER_INGO("Super, Ingo!", "super_ingo1"),//
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
-    TABELLEN_VERSTAENDNIS("Task Force Live", "tabellen_verstaendnis", true),//
 	TACH("Tach", "tachzusammen", true), //
 	TALENT("Talent", "talent"), //
 	TANGO("Tango", "tango"), //

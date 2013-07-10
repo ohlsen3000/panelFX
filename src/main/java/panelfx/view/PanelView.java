@@ -155,18 +155,30 @@ public class PanelView {
 
         tabContent.getChildren().add(paneBastelecke);
 
-        final FlowPane paneFrank = new ButtonGroup("Frank", this.soundButtons,
-                Sound.NEIN_FRALLER, Sound.AAAAAAH, Sound.FALSCH,
-                Sound.DANKOEOE, Sound.BULLSHIT, Sound.KOTZEN, Sound.HUST,
-                Sound.FRANK_MUELLER, Sound.ZUR_LIEFERUNG, Sound.SCHAFSKAESE,
-                Sound.STEELE2);
+        final FlowPane paneFrank = new ButtonGroup("Fraller", this.soundButtons,
+                Sound.NEIN_FRALLER, //
+                Sound.AAAAAAH, //
+                Sound.FALSCH,//
+                Sound.FRALLER_HALLO, //
+                Sound.DANKOEOE, //
+                Sound.BULLSHIT, //
+                Sound.KOTZEN, //
+                Sound.HUST, //
+                Sound.FRANK_MUELLER, //
+                Sound.ZUR_LIEFERUNG,//
+                Sound.SCHAFSKAESE,//
+                Sound.FRALLER_JA_BESTAETIGUNG,//
+                Sound.FRALLER_JA_GENAU,//
+                Sound.STEELE2, //
+                Sound.FRALLER_BIS_GLEICH //
+                );
 
         tabContent.getChildren().add(paneFrank);
 
         final FlowPane bSides = new ButtonGroup("Misc", this.soundButtons,
                 Sound.COFFEE_MAKER_BASTELECKE,
                 Sound.COFFEE, Sound.REMOTE, Sound.DELETE, Sound.SNAPHOT,
-                Sound.KHAN, Sound.ASSERT, Sound.WIE_GEIL, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR,
+                Sound.KHAN, Sound.WIE_GEIL, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR,
                 Sound.ALTOBELLI, Sound.TACH, Sound.WAS_DENN, Sound.NJAEH,
                 Sound.QUIET);
 
@@ -337,7 +349,11 @@ public class PanelView {
                 Sound.ZU_BLOED, Sound.TRIBBLE, Sound.RED_ALERT,
                 Sound.PARDON, Sound.PAS_COMME_CA, Sound.WAS_DU_GLAUBST_MAROHDE,
                 Sound.FAHRRADKETTE,
-                Sound.BBBB_BENCH, Sound.HORHOR, Sound.SCHROTTKERL);
+                Sound.BBBB_BENCH, //
+                Sound.HORHOR, //
+                Sound.SCHROTTKERL,//
+                Sound.ASSERT //
+        );
         tabContent.getChildren().add(cubageTeamSounds);
 
         final FlowPane basteleckeSounds = new ButtonGroup(
@@ -351,13 +367,7 @@ public class PanelView {
                 Sound.FAIL, //
                 Sound.FAIL_SATANIC, //
                 Sound.DU_WILLST_WAS,//
-                Sound.CALS_ANFORDERUNG,//
-                Sound.GUTIS_JA,//
-                Sound.GUTIS_NICHT_NUR_MIR, //
-                Sound.GUTIS_AAH, //
-                Sound.GUTIS_TABELLE,//
-                Sound.TABELLEN_VERSTAENDNIS);
-
+                Sound.CALS_ANFORDERUNG);
     }
 
     private void createSoundsTab() {
