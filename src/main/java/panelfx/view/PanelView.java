@@ -310,6 +310,13 @@ public class PanelView {
                 Sound.SCHEISE);
         tabContent.getChildren().add(mediamarktPanel);
 
+
+        final FlowPane reklame = new ButtonGroup("Reklame",
+                this.soundButtons, Sound.NESQUICK, Sound.OVOMALTINE,//
+                Sound.WHAZZUP,//
+                Sound.SUPER_INGO);
+        tabContent.getChildren().add(reklame);
+
         final FlowPane gescheitertPane = new ButtonGroup("Gescheitert",
                 this.soundButtons, Sound.DU_WILLST_WAS, Sound.DATENWUST,
                 Sound.FAIL, Sound.FAIL_SATANIC);
@@ -354,9 +361,7 @@ public class PanelView {
                 Sound.GRAUEN,//
                 Sound.BEEP,//
                 Sound.FUNKTIONAL_KAPUTT,//
-                Sound.GROSSEN_GEIST,//
-                Sound.SUPER_INGO,//
-                Sound.WHAZZUP);
+                Sound.GROSSEN_GEIST);
         tabContent.getChildren().add(misc);
 
 
@@ -507,6 +512,12 @@ public class PanelView {
                     Sound.FANTASY_NAME_DANG);
 
             tabContent.getChildren().add(paneAllIn);
+
+
+            final FlowPane paneQuastan = new ButtonGroup("Quastan (Name'em)",
+                    this.soundButtons, Sound.FANTASY_NAME_CHRIKA, Sound.FANTASY_NAME_DIGER);
+
+            tabContent.getChildren().add(paneQuastan);
         }
 
     }

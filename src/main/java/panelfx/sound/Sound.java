@@ -86,9 +86,11 @@ public enum Sound {
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
     FANTASY_NAME_CALS("Dor Cals", "fantasy_name_cals"),//
+    FANTASY_NAME_CHRIKA("Dor Chrika", "fantasy_name_chrika"),//
     FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
     FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
     FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
+    FANTASY_NAME_DIGER("Dor Diger", "fantasy_name_diger"),//
     FANTASY_NAME_DIYER("Dor Diyer", "fantasy_name_diyer"),//
     FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
     FANTASY_NAME_FRANN("Dor Frann", "fantasy_name_frann"),//
@@ -130,6 +132,7 @@ public enum Sound {
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
+    HERIBERT_UNGLAUBLICH("Unglaublich", "heribert_unglaublich"), //
 	HERR_MUELLER("Herr Müller", "herr_mueller"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -145,6 +148,8 @@ public enum Sound {
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
     JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
+    KALLE_KANN_NICHT_SEIN("Kann nicht sein", "kalle_das_kann_nicht_sein"),//
+    KALLE_SKANDAL("Skandal", "kalle_skandal"),//
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
@@ -176,6 +181,7 @@ public enum Sound {
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
+    NESQUICK("Nesquick", "nesquick_werbung"),//
     NICH("Nich?", "nich_keann"),//
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
@@ -183,6 +189,7 @@ public enum Sound {
 	OEOEOEEY("Öööey", "oey"), //
 	OINK("Oink", "oink"), //
 	OMINOES("Ominös", "ominoes"), //
+    OVOMALTINE("Ovomaltine", "ovomaltine_werbung"), //
     PARDON("Pardon?", "pardon"), //
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
     PAULCHEN_PANTHER("Paulchen Panther", "paulchen_panther"), //
