@@ -310,7 +310,11 @@ public class PanelView {
         tabContent.getChildren().add(mediamarktPanel);
         
         final FlowPane commercialPanel = new ButtonGroup("Reklame",
-                this.soundButtons, Sound.SUPER_INGO, Sound.WHAZZUP);
+                this.soundButtons,//
+                Sound.OVOMALTINE,//
+                Sound.NESQUICK,//
+                Sound.SUPER_INGO,//
+                Sound.WHAZZUP);
         tabContent.getChildren().add(commercialPanel);
 
         final FlowPane realityPanel = new ButtonGroup("Reality-TV",
@@ -368,13 +372,6 @@ public class PanelView {
                 Sound.FAIL_SATANIC, //
                 Sound.DU_WILLST_WAS,//
                 Sound.CALS_ANFORDERUNG);
-
-        final FlowPane reklame = new ButtonGroup("Reklame",
-                this.soundButtons, Sound.NESQUICK, Sound.OVOMALTINE,//
-                Sound.WHAZZUP,//
-                Sound.SUPER_INGO);
-        tabContent.getChildren().add(reklame);
-
     }
 
     private void createSoundsTab() {
@@ -415,8 +412,8 @@ public class PanelView {
                 Sound.GRAUEN,//
                 Sound.BEEP,//
                 Sound.FUNKTIONAL_KAPUTT,//
-                Sound.GROSSEN_GEIST);
-                Sound.SUPER_INGO,//
+                Sound.GROSSEN_GEIST,//
+                Sound.KITT);
         tabContent.getChildren().add(misc);
 
 

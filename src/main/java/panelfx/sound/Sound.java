@@ -144,6 +144,7 @@ public enum Sound {
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
+    HALT_STOP("Halt stop", "andreas_halt"), //
     HERIBERT_UNGLAUBLICH("Unglaublich", "heribert_unglaublich"), //
 	HERR_MUELLER("Herr Müller", "herr_mueller"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
