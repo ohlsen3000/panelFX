@@ -31,6 +31,15 @@ public enum Sound {
 	BBBB_BENCH("B B B B Bench", "bbbb_bench"), //
 	BEEP("Beep", "beep"), //
 	BENNY_HILL("Benny Hill", "benny_hill"), //
+    BEYER_DU_SO("Du so", "beyer_du_so"),//
+    BEYER_ICH_SO("Ich so", "beyer_ich_so"),//
+    BEYER_IHR_SO("Ihr so", "beyer_ihr_so"),//
+    BEYER_ER_SO("Er so", "beyer_er_so"),//
+    BEYER_LACHEN("Beyer lacht", "beyer_lachen"),//
+    BEYER_PIROLETA("Piroleta", "beyer_piroleta"),//
+    BEYER_SCHMECKT("Hmm schmeckt", "beyer_hmm_schmeckt"),//
+    BEYER_SIE_SO("Sie so", "beyer_sie_so"),//
+    BEYER_WIR_SO("Wir so", "beyer_wir_so"),//
 	BIDDE_IN_TROUBLE("bidde?", "bidde_veraengstigt"), //
 	BIDDE_QUESTIONING("BIDDE?", "bidde_fragend"), //
 	BIEKER("Bieker", "bieker"), //
@@ -76,6 +85,7 @@ public enum Sound {
     FANTASY_CALL_BEYER("Beyer!", "fantasy_call_beyer"),//
     FANTASY_CALL_CALS("Cals!", "fantasy_call_cals"),//
     FANTASY_CALL_CHRILLNER("Chrillner!", "fantasy_call_chrillner"),//
+    FANTASY_CALL_DATHER("Dather!", "fantasy_call_dather"),//
     FANTASY_CALL_DIYER("Diyer!", "fantasy_call_diyer"),//
     FANTASY_CALL_FRALLER("Fraller!", "fantasy_call_fraller"),//
     FANTASY_CALL_GAIVO("Gaivo!", "fantasy_call_gaivo"),//
@@ -83,10 +93,14 @@ public enum Sound {
     FANTASY_CALL_JOTHER("Jother!", "fantasy_call_jother"),//
     FANTASY_CALL_JUEDA("Jüda!", "fantasy_call_jueda"),//
     FANTASY_CALL_JOENDER("Jönder!", "fantasy_call_joender"),//
+    FANTASY_CALL_KEANN("Kéann!", "fantasy_call_keann"),//
     FANTASY_CALL_MAUTH("Mauth!", "fantasy_call_mauth"),//
+    FANTASY_CALL_PUETT("Pütt!", "fantasy_call_puett"),//
     FANTASY_CALL_SASCHER("Sascher!", "fantasy_call_sascher"),//
+    FANTASY_CALL_SEIER("Seier!", "fantasy_call_seier"),//
     FANTASY_CALL_TOSCH("Tosch!", "fantasy_call_tosch"),//
     FANTASY_CALL_TOTZ("Totz!", "fantasy_call_totz"),//
+    FANTASY_CALL_ULTZ("Ultz!", "fantasy_call_ultz"),//
     FANTASY_NAME_ALERG("Dor Alerg", "fantasy_name_alerg"),//
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
@@ -167,6 +181,7 @@ public enum Sound {
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
+    KIHON_SPIEL_GOLF("Kihon Golf", "golf_treffer"),//
 	KITT("K.I.T.T.", "kitt_scanner"), //
 	KLIMPER_MAUS("Klimper", "klimper_klimper"), //
 	KNARZ("Knarz", "knarz_equalized"), //
@@ -184,6 +199,7 @@ public enum Sound {
     LETZTER_TANGO("Letzter Tango", "letzter_tango"),
 	LOKAL("Lokal", "lokal"), //
 	LOST("Lost", "lost"), //
+    LOST_SYSTEM_FAILURE("System failure", "lost_system_failure"),//
 	MAUS("Maus", "sendung_mit_der_maus"), //
 	MEERRETTICH("Meerrettich", "meerrettich"),//
 	MESSAGE_LONG("Message long", "message_long"), //
@@ -215,6 +231,7 @@ public enum Sound {
     PAUSE("Pause", "pause"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
 	PLAN("Plan", "plan"), //
+    POKERBRAT_MISTAKE("Mistake", "hellmuth_mistake"), //
 	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //
 	PROTONENUMKEHR("Protonenumkehr", "totale_protonenumkehr"), //
 	PURCHE("Purche", "purche"), //
