@@ -91,9 +91,11 @@ public enum Sound {
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
     FANTASY_NAME_CALS("Dor Cals", "fantasy_name_cals"),//
+    FANTASY_NAME_CHRIKA("Dor Chrika", "fantasy_name_chrika"),//
     FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
     FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
     FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
+    FANTASY_NAME_DIGER("Dor Diger", "fantasy_name_diger"),//
     FANTASY_NAME_DIYER("Dor Diyer", "fantasy_name_diyer"),//
     FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
     FANTASY_NAME_FRANN("Dor Frann", "fantasy_name_frann"),//
@@ -123,6 +125,10 @@ public enum Sound {
 	FIVE_WEEKS("Five weeks", "five_weeks"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
+    FRALLER_BIS_GLEICH("Bis gleich", "fraller_bis_gleich"),//
+    FRALLER_JA_BESTAETIGUNG("Jaha", "fraller_ja_bestaetigung"),//
+    FRALLER_JA_GENAU("Ja, genau", "fraller_ja_genau"),//
+    FRALLER_HALLO("Hallo", "fraller_halloo"),//
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
 	FREUNDE_DER_SONNE("Freunde d Sonne", "freunde_der_sonne"), //
@@ -136,13 +142,10 @@ public enum Sound {
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
-    GUTIS_AAH("Aaah", "gutis_aah", true),//
-    GUTIS_JA("Ja", "gutis_ja", true),//
-    GUTIS_NICHT_NUR_MIR("Nichtnurmir", "gutis_nicht_nur_mir", true),//
-    GUTIS_TABELLE("Tabelle", "gutis_tabelle", true),//
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
-	HALT_STOP("Halt stop", "andreas_halt"), //
+    HALT_STOP("Halt stop", "andreas_halt"), //
+    HERIBERT_UNGLAUBLICH("Unglaublich", "heribert_unglaublich"), //
 	HERR_MUELLER("Herr Müller", "herr_mueller"), //
 	HIGH_PITCH("High pitch", "high_pitch_peanuts"), //
 	HILFE("Hilfe", "hilfe"), //
@@ -159,6 +162,8 @@ public enum Sound {
     JETZT_RED_ICH("Jetzt red ich", "andreas_jetzt_red_ich"), //
     JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
+    KALLE_KANN_NICHT_SEIN("Kann nicht sein", "kalle_das_kann_nicht_sein"),//
+    KALLE_SKANDAL("Skandal", "kalle_skandal"),//
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
@@ -193,6 +198,7 @@ public enum Sound {
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
 	NEIN_MANN("Nein Mann", "neinmann"), //
 	NEIN_ULTZ("Neein", "nein"), //
+    NESQUICK("Nesquick", "nesquick_werbung"),//
 	NEUSS("Neuss?", "neuss"), //
     NICH("Nich?", "nich_keann"),//
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
@@ -202,6 +208,7 @@ public enum Sound {
 	OEOEOEEY("Öööey", "oey"), //
 	OINK("Oink", "oink"), //
 	OMINOES("Ominös", "ominoes"), //
+    OVOMALTINE("Ovomaltine", "ovomaltine_werbung"), //
     PARDON("Pardon?", "pardon"), //
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
     PAULCHEN_PANTHER("Paulchen Panther", "paulchen_panther"), //
@@ -259,7 +266,6 @@ public enum Sound {
 	SUPERGEIL("Supergeil", "supergeil"), //
 	SUPER_INGO("Super, Ingo!", "super_ingo1"),//
 	SWOOSH("Swoosh", "swoosh_peanuts"), //
-    TABELLEN_VERSTAENDNIS("Task Force Live", "tabellen_verstaendnis", true),//
 	TACH("Tach", "tachzusammen", true), //
 	TALENT("Talent", "talent"), //
 	TANGO("Tango", "tango"), //
