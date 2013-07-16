@@ -104,14 +104,17 @@ public enum Sound {
     FANTASY_CALL_TOSCH("Tosch!", "fantasy_call_tosch"),//
     FANTASY_CALL_TOTZ("Totz!", "fantasy_call_totz"),//
     FANTASY_CALL_ULTZ("Ultz!", "fantasy_call_ultz"),//
+    FANTASY_NAME_ALEIP("Dor Aleip", "fantasy_name_aleip"),//
     FANTASY_NAME_ALERG("Dor Alerg", "fantasy_name_alerg"),//
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
     FANTASY_NAME_CALS("Dor Cals", "fantasy_name_cals"),//
     FANTASY_NAME_CHRIKA("Dor Chrika", "fantasy_name_chrika"),//
     FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
+    FANTASY_NAME_DAGENS("Dor Dagens", "fantasy_name_dagens"),//
     FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
     FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
+    FANTASY_NAME_DENKE("Dor Denke", "fantasy_name_denke"),//
     FANTASY_NAME_DIGER("Dor Diger", "fantasy_name_diger"),//
     FANTASY_NAME_DIYER("Dor Diyer", "fantasy_name_diyer"),//
     FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
@@ -131,6 +134,7 @@ public enum Sound {
     FANTASY_NAME_SASCHER("Dor Sascher", "fantasy_name_sascher"),//
     FANTASY_NAME_SEIER("Dor Seier", "fantasy_name_seier"),//
     FANTASY_NAME_SESKE("Dor Seske", "fantasy_name_seske"),//
+    FANTASY_NAME_SVANN("Dor Svann", "fantasy_name_svann"),//
     FANTASY_NAME_TIANN("Dor Tiann", "fantasy_name_tiann"),//
     FANTASY_NAME_TOTZ("Dor Totz", "fantasy_name_totz"),//
     FANTASY_NAME_UDITZ("Dor Uditz", "fantasy_name_uditz"),//
@@ -215,6 +219,7 @@ public enum Sound {
 	MIKROWELLE_FERTIG("Mikrowelle fertig", "microwave_beep"), //
 	MUELLTONNE("Mülltonne", "muelltonne"), //
 	MURMEL_LACHEN("Krimi Murmel", "murmel_lachen"), //
+    MUSE_UNSUSTAINABLE("Unsustainable", "muse_unsustainable"),//
 	MUSKATNUSS("Muskatnuss", "muskatnuss"), //
 	MUTIGE_ENTSCHEIDUNG("Mutige Entsch.", "mutige_entscheidung"), //
     NACKTBADEN("Nacktbaden", "nacktbaden"), //
@@ -308,6 +313,7 @@ public enum Sound {
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
 	VERSTANDEN_HARTMAN("Verstanden?", "maden"), //
+    VERTIGO("Vertigo", "vertigo"), //
 	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
     VORMERKEN_HARTMAN("Vormerken", "vormerken_hartman"), //

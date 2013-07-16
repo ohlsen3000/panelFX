@@ -497,9 +497,8 @@ public class PanelView {
         this.soundtrackTab.setContent(tabContent);
 
         final FlowPane paneFilm = new ButtonGroup("Film",
-                this.soundButtons, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.LETZTER_TANGO,
+                this.soundButtons, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.LETZTER_TANGO, Sound.VERTIGO,
                 Sound.ASSAULT, Sound.HALLOWEEN, Sound.EXORCIST);
-
         tabContent.getChildren().add(paneFilm);
 
         final FlowPane paneTelevision = new ButtonGroup("Fernsehen",
@@ -530,9 +529,11 @@ public class PanelView {
                 this.soundButtons, //
                 Sound.JEDU_V_MAGADAN, //
                 Sound.MAGADAN_REFRAIN,//
-                Sound.PENN_IN_DER_BAHN);
+                Sound.PENN_IN_DER_BAHN,
+				Sound.MUSE_UNSUSTAINABLE);
 
-        tabContent.getChildren().add(musicSnippets);
+
+        tabContent.getChildren().add(musikSchnipsel);
     }
 
     private void createFantasyTab_1() {
@@ -639,6 +640,14 @@ public class PanelView {
             tabContent.getChildren().add(productFraggle);
 
 
+            final FlowPane tuxFraggles = new ButtonGroup("Tux",
+                    this.soundButtons, //
+                    Sound.FANTASY_NAME_ALEIP,//
+                    Sound.FANTASY_NAME_DAGENS //
+            );
+
+            tabContent.getChildren().add(tuxFraggles);
+
             final FlowPane paneAllIn = new ButtonGroup("All In (Name'em)",
                     this.soundButtons,
                     Sound.FANTASY_NAME_KEANN, //
@@ -652,13 +661,20 @@ public class PanelView {
 
 
             final FlowPane paneQuastan = new ButtonGroup("Quastan (Name'em)",
-                    this.soundButtons, Sound.FANTASY_NAME_CHRIKA, Sound.FANTASY_NAME_DIGER);
+                    this.soundButtons,
+                    Sound.FANTASY_NAME_CHRIKA,//
+                    Sound.FANTASY_NAME_DENKE,//
+                    Sound.FANTASY_NAME_DIGER //
+            );
 
             tabContent.getChildren().add(paneQuastan);
 
 
             final FlowPane paneTCO = new ButtonGroup("TCO",
-                    this.soundButtons, Sound.FANTASY_CALL_DATHER);
+                    this.soundButtons, //
+                    Sound.FANTASY_CALL_DATHER, //
+                    Sound.FANTASY_NAME_SVANN //
+            );
 
             tabContent.getChildren().add(paneTCO);
         }
