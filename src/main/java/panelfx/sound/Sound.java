@@ -51,6 +51,7 @@ public enum Sound {
 	BOING_SINGLE("Boing", "boing_single"), //
 	BUGBUSTERS_THEME("BugBusters", "bugbusters_theme"), //
 	BULLSHIT("Bullshit", "bullshit"), //
+	BULLSHIT_HARTMAN("Bullshit!", "bullshit_hartman"), //
     CALS_ANFORDERUNG("Anforderung", "cals_explizite_anforderung"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
@@ -61,6 +62,7 @@ public enum Sound {
     COW_MOO("Muh", "cow_moo"),//
 	CUBAGE("Cubage", "qbitch"), //
 	DANKOEOE("Danköö", "dankoe"), //
+    DAS_REICHT("Das reicht!", "das_reicht_hartman"), //
     DATENWUST("Datenwust", "datenwust"),//
 	DELETE("Delete", "delate"), //
 	DOD("DoD", "dod"), //
@@ -76,6 +78,7 @@ public enum Sound {
 	ERBAERMLICH("Erbärmlich", "erbaermlich"), //
 	ER_SIE("Er / Sie", "er_sie"), //
 	ERNIE_LACHEN("Ernie", "ernie_lachen"), //
+	EXORCIST("Exorzist", "exorcist"), //
 	FAHRRADKETTE("Hätte, hätte", "fahrradkette"), //
 	FAIL("Fail", "gesch_reiner"), //
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
@@ -157,6 +160,7 @@ public enum Sound {
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
 	HAEMMERN("Hämmern", "handcraft_sound_peanuts"), //
+	HALLOWEEN("Halloween", "halloween"), //
 	HALT_SCHWIERIG("Halt schwierig", "ist_halt_schwierig"), //
     HALT_STOP("Halt stop", "andreas_halt"), //
     HERIBERT_UNGLAUBLICH("Unglaublich", "heribert_unglaublich"), //
@@ -171,13 +175,16 @@ public enum Sound {
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
 	JABBA_LACHEN("Jabba", "jabba_lachen"), //
 	JA_NATUERLICH("Ja, natürlich", "ja_natuerlich"), //
+	JEDU_V_MAGADAN("Еду в Магадан!", "jedu_v_magadan"), //
 	JEOPARDY("Jeopardy", "jeopardy"), //
+	JESUS_MARIA("Jesus, Maria!", "jesus_maria"), //
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
     JETZT_RED_ICH("Jetzt red ich", "andreas_jetzt_red_ich"), //
     JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
     KALLE_KANN_NICHT_SEIN("Kann nicht sein", "kalle_das_kann_nicht_sein"),//
     KALLE_SKANDAL("Skandal", "kalle_skandal"),//
+    KAFFEE_GETRUNKEN("Kaffee getrunken", "andreas_kaffee"), //
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //
@@ -197,9 +204,11 @@ public enum Sound {
     LEAF_BLOWER_MAXI_SINGLE("Laubbläser maxi", "leaf_blower_maxi_version"),//
     LEAF_BLOWER_SINGLE_EDIT("Laubbläser edit", "leaf_blower_single_edit"),//
     LETZTER_TANGO("Letzter Tango", "letzter_tango"),
+    LISTE("Liste", "liste_hartman"), //
 	LOKAL("Lokal", "lokal"), //
 	LOST("Lost", "lost"), //
     LOST_SYSTEM_FAILURE("System failure", "lost_system_failure"),//
+    MAGADAN_REFRAIN("Магадан рефрен", "magadan_refrain"), //
 	MAUS("Maus", "sendung_mit_der_maus"), //
 	MEERRETTICH("Meerrettich", "meerrettich"),//
 	MESSAGE_LONG("Message long", "message_long"), //
@@ -209,6 +218,7 @@ public enum Sound {
 	MUSKATNUSS("Muskatnuss", "muskatnuss"), //
 	MUTIGE_ENTSCHEIDUNG("Mutige Entsch.", "mutige_entscheidung"), //
     NACKTBADEN("Nacktbaden", "nacktbaden"), //
+    NAME_HARTMAN("Name?", "saftsack"), //
 	NASSER_SACK("Nasser Sack", "nasser_sack"), //
 	NED_ARBEIDE("Ned arbeide", "ned_arbeide"), //
 	NEIN_FRALLER("Neeein", "nein_fmr"), //
@@ -217,6 +227,7 @@ public enum Sound {
     NESQUICK("Nesquick", "nesquick_werbung"),//
 	NEUSS("Neuss?", "neuss"), //
     NICH("Nich?", "nich_keann"),//
+    NICHT_GELACHT("Nicht gelacht!", "hier_wird_nicht_gelacht"), //
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
 	NIX_VERSTEHEN("Nix verstehen", "nix_verstehen"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
@@ -229,6 +240,7 @@ public enum Sound {
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
     PAULCHEN_PANTHER("Paulchen Panther", "paulchen_panther"), //
     PAUSE("Pause", "pause"), //
+    PENN_IN_DER_BAHN("Penn in der Bahn", "penn_der_bahn"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
 	PLAN("Plan", "plan"), //
     POKERBRAT_MISTAKE("Mistake", "hellmuth_mistake"), //
@@ -266,6 +278,7 @@ public enum Sound {
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
 	SICHERHEITSTIP("Sicherheitstip", "sicherheitstip"), //
+	SIR_JAWOHL_SIR("Sir!", "sir_jawohl_sir"), //
 	SLAPSTICK("Slapstick", "hui"), //
 	SLIDE("Slide", "slide_peanuts"), //
 	SNAPHOT("Snapshoot", "snapshoot"), //
@@ -294,16 +307,23 @@ public enum Sound {
 	UNNORMAL("Unnormal", "unnormal"), //
 	VERABSCHIEDEN("Verabschieden", "verabschieden"), //
 	VERSAGER("Versager", "versager"), //
+	VERSTANDEN_HARTMAN("Verstanden?", "maden"), //
 	VOLLE_KANNE("Volle Kanne", "volle_kanne"), //
 	VORLETZTES_SPIEL("Vorletztes Spiel", "vorletztes_spiel"), //
+    VORMERKEN_HARTMAN("Vormerken", "vormerken_hartman"), //
+    WACHBEFEHL_HARTMAN("6. Wachbefehl?", "wachbefehl"), //
 	WAS_DENN("Was denn", "wasdenn"), // //
 	WAS_DU_GLAUBST_JOTHER("J: Das ist das", "dasist"), //
 	WAS_DU_GLAUBST_MAROHDE("M: Das ist das", "was_du_glaubst"), //
 	WAS_JETZT("Was jetzt?", "wasjetzt"), //
+	WAS_SAGEN("Was sagen?", "was_sagen"), //
+	WAS_ZUM_TEUFEL("Was zum Teufel?", "was_zum_teufel"), //
 	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
 	WESTERN("Western von gestern", "western_von_gestern"), //
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
+    WER("Wer?", "wer_hartman"), //
+    WER_ZUM_TEUFEL("Wer zum Teufel?", "teufel_hartman"), //
 	WHAZZUP("Whazzup", "whazzup"), //
 	WICKIE("Wickie", "wickie"), //
 	WIDERPORST("Widerporst", "widerporst"), //
