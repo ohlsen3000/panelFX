@@ -533,7 +533,7 @@ public class PanelView {
 				Sound.MUSE_UNSUSTAINABLE);
 
 
-        tabContent.getChildren().add(musikSchnipsel);
+        tabContent.getChildren().add(musicSnippets);
     }
 
     private void createFantasyTab_1() {
