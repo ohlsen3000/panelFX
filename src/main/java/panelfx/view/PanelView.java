@@ -285,6 +285,22 @@ public class PanelView {
                 this.soundButtons, Sound.STROEME_KREUZEN, Sound.FALLE, Sound.PROTONENUMKEHR, Sound.SICHERHEITSTIP, Sound.PLAN, Sound.TALENT, Sound.SCHLUESSELMEISTER, Sound.ZUUL);
 
         tabContent.getChildren().add(paneGhostbusters);
+        final FlowPane paneFullMetalJacket = new ButtonGroup("Full Metal Jacket",
+        this.soundButtons, Sound.SIR_JAWOHL_SIR, //
+        Sound.BULLSHIT_HARTMAN, //
+        Sound.JESUS_MARIA, //
+        Sound.DAS_REICHT, //
+        Sound.NICHT_GELACHT, //
+        Sound.VERSTANDEN_HARTMAN, //
+        Sound.WER, //
+        Sound.WER_ZUM_TEUFEL,//
+        Sound.NAME_HARTMAN, //
+        Sound.LISTE, //
+        Sound.VORMERKEN_HARTMAN, //
+        Sound.WAS_ZUM_TEUFEL, //
+        Sound.WAS_SAGEN, //
+        Sound.WACHBEFEHL_HARTMAN);
+        tabContent.getChildren().add(paneFullMetalJacket);
 
         final FlowPane paneNoMercy = new ButtonGroup("Kein Pardon",
                 this.soundButtons, Sound.NED_ARBEIDE, Sound.RAUS);
@@ -335,7 +351,7 @@ public class PanelView {
         tabContent.getChildren().add(commercialPanel);
 
         final FlowPane realityPanel = new ButtonGroup("Reality-TV",
-                this.soundButtons, Sound.HALT_STOP, Sound.JETZT_RED_ICH, Sound.SCHNAUZE, Sound.NACKTBADEN, Sound.BOAH_GEIL, Sound.UNNORMAL);
+                this.soundButtons, Sound.HALT_STOP, Sound.JETZT_RED_ICH, Sound.KAFFEE_GETRUNKEN, Sound.SCHNAUZE, Sound.NACKTBADEN, Sound.BOAH_GEIL, Sound.UNNORMAL);
         tabContent.getChildren().add(realityPanel);
         
         createButtonGroup(tabContent, "Sport",//
@@ -481,12 +497,8 @@ public class PanelView {
         this.soundtrackTab.setContent(tabContent);
 
         final FlowPane paneFilm = new ButtonGroup("Film",
-                this.soundButtons,
-                Sound.FIVE_WEEKS,//
-                Sound.VERTIGO, //
-                Sound.LALALALALALA,
-                Sound.LETZTER_TANGO, Sound.ASSAULT);
-
+                this.soundButtons, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.LETZTER_TANGO, Sound.VERTIGO,
+                Sound.ASSAULT, Sound.HALLOWEEN, Sound.EXORCIST);
         tabContent.getChildren().add(paneFilm);
 
         final FlowPane paneTelevision = new ButtonGroup("Fernsehen",
@@ -512,13 +524,16 @@ public class PanelView {
                 Sound.COMPANY_LYNCH_FROST_PRODUCTIONS);
 
         tabContent.getChildren().add(companyJingles);
-
-
-        final FlowPane musikSchnipsel = new ButtonGroup("Musikschnipsel",
+        
+        final FlowPane musicSnippets = new ButtonGroup("Musikschnippsel",
                 this.soundButtons, //
-                Sound.MUSE_UNSUSTAINABLE);
+                Sound.JEDU_V_MAGADAN, //
+                Sound.MAGADAN_REFRAIN,//
+                Sound.PENN_IN_DER_BAHN,
+				Sound.MUSE_UNSUSTAINABLE);
 
-        tabContent.getChildren().add(musikSchnipsel);
+
+        tabContent.getChildren().add(musicSnippets);
     }
 
     private void createFantasyTab_1() {
