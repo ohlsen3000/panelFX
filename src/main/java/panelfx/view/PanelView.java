@@ -628,10 +628,21 @@ public class PanelView {
             final FlowPane tuxFraggles = new ButtonGroup("Tux",
                     this.soundButtons, //
                     Sound.FANTASY_NAME_ALEIP,//
-                    Sound.FANTASY_NAME_DAGENS //
+                    Sound.FANTASY_NAME_DAGENS, //
+                    Sound.FANTASY_NAME_JUANN //
             );
 
             tabContent.getChildren().add(tuxFraggles);
+
+
+            final FlowPane bitFraggles = new ButtonGroup("BIT",
+                    this.soundButtons, //
+                    Sound.FANTASY_NAME_TORKE,//
+                    Sound.FANTASY_NAME_PATANN //
+            );
+
+            tabContent.getChildren().add(bitFraggles);
+
 
             final FlowPane paneAllIn = new ButtonGroup("All In (Name'em)",
                     this.soundButtons,
@@ -657,8 +668,10 @@ public class PanelView {
 
             final FlowPane paneTCO = new ButtonGroup("TCO",
                     this.soundButtons, //
+                    Sound.FANTASY_NAME_DATHER, //
                     Sound.FANTASY_CALL_DATHER, //
-                    Sound.FANTASY_NAME_SVANN //
+                    Sound.FANTASY_NAME_SVANN, //
+                    Sound.FANTASY_NAME_ACHOMM
             );
 
             tabContent.getChildren().add(paneTCO);

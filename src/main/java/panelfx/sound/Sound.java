@@ -101,6 +101,7 @@ public enum Sound {
     FANTASY_CALL_TOSCH("Tosch!", "fantasy_call_tosch"),//
     FANTASY_CALL_TOTZ("Totz!", "fantasy_call_totz"),//
     FANTASY_CALL_ULTZ("Ultz!", "fantasy_call_ultz"),//
+    FANTASY_NAME_ACHOMM("Dor Achomm", "fantasy_name_achomm"),//
     FANTASY_NAME_ALEIP("Dor Aleip", "fantasy_name_aleip"),//
     FANTASY_NAME_ALERG("Dor Alerg", "fantasy_name_alerg"),//
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
@@ -111,6 +112,7 @@ public enum Sound {
     FANTASY_NAME_DAGENS("Dor Dagens", "fantasy_name_dagens"),//
     FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
     FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
+    FANTASY_NAME_DATHER("Dor Dather", "fantasy_name_dather"),//
     FANTASY_NAME_DENKE("Dor Denke", "fantasy_name_denke"),//
     FANTASY_NAME_DIGER("Dor Diger", "fantasy_name_diger"),//
     FANTASY_NAME_DIYER("Dor Diyer", "fantasy_name_diyer"),//
@@ -120,6 +122,7 @@ public enum Sound {
     FANTASY_NAME_GUIDOLF("Dor Guidolf", "fantasy_name_guidolf"),//
     FANTASY_NAME_JOENDER("Dor Jönder", "fantasy_name_joender"),//
     FANTASY_NAME_JOTHER("Dor Jother", "fantasy_name_jother"),//
+    FANTASY_NAME_JUANN("Dor Juann", "fantasy_name_juann"),//
     FANTASY_NAME_JUEDA("Dor Jüda", "fantasy_name_jueda"),//
     FANTASY_NAME_KEANN("Dor Kéann", "fantasy_name_keann"),//
     FANTASY_NAME_MALTERS("Dor Malters", "fantasy_name_malters"),//
@@ -127,12 +130,14 @@ public enum Sound {
     FANTASY_NAME_MARING("Dor Maring", "fantasy_name_maring"),//
     FANTASY_CALL_MATTI("Dor Matti", "fantasy_name_matti"),//
     FANTASY_NAME_MAUTH("Dor Mauth", "fantasy_name_mauth"),//
+    FANTASY_NAME_PATANN("Dor Patann", "fantasy_name_patann"),//
     FANTASY_NAME_PUETT("Dor Pütt", "fantasy_name_puett"),//
     FANTASY_NAME_SASCHER("Dor Sascher", "fantasy_name_sascher"),//
     FANTASY_NAME_SEIER("Dor Seier", "fantasy_name_seier"),//
     FANTASY_NAME_SESKE("Dor Seske", "fantasy_name_seske"),//
     FANTASY_NAME_SVANN("Dor Svann", "fantasy_name_svann"),//
     FANTASY_NAME_TIANN("Dor Tiann", "fantasy_name_tiann"),//
+    FANTASY_NAME_TORKE("Dor Torke", "fantasy_name_torke"),//
     FANTASY_NAME_TOTZ("Dor Totz", "fantasy_name_totz"),//
     FANTASY_NAME_UDITZ("Dor Uditz", "fantasy_name_uditz"),//
     FANTASY_NAME_ULTZ("Dor Ultz", "fantasy_name_ultz"),//
