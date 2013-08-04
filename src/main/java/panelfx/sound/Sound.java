@@ -75,6 +75,9 @@ public enum Sound {
 	EEHM("Eehm", "eehm"), //
 	EINFACH("Einfach", "einfach"), //
 	EINMAL_WAS("1 mal was", "was"), //
+	EMT_BACON("Bacon", "emt_bacon"), //
+	EMT_BLAST("Boom", "emt_blast"), //
+	EMT_MEOW("Meow", "emt_meow"), //
 	ERBAERMLICH("Erbärmlich", "erbaermlich"), //
 	ER_SIE("Er / Sie", "er_sie"), //
 	ERNIE_LACHEN("Ernie", "ernie_lachen"), //

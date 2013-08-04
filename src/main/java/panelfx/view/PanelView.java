@@ -364,6 +364,13 @@ public class PanelView {
                 this.soundButtons, Sound.COMPUTER_SAGT_NEIN, Sound.GEWITTER, Sound.NIX_VERSTEHEN, Sound.NEUSS, Sound.GEWITTER_FRAGE);
         tabContent.getChildren().add(comedyPanel);
 
+        final FlowPane emtPanel = new ButtonGroup("Epic Mealtime",
+                this.soundButtons,//
+                Sound.EMT_MEOW,//
+                Sound.EMT_BACON,//
+                Sound.EMT_BLAST);
+        tabContent.getChildren().add(emtPanel);
+
     }
 
     private void createClassicsTab() {
