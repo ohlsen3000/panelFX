@@ -165,6 +165,8 @@ public enum Sound {
     GEWITTER("Gewitter", "gewitter"), //
     GEWITTER_FRAGE("Gewitter?", "gewitter_frage"),//
     GROSSEN_GEIST("großen Geist", "grossen_geist"),//
+    GUTIS_AHH("Aha!", "gutis_aah"),//
+    GUTIS_JA("Ja!", "gutis_ja"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
