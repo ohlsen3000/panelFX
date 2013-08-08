@@ -51,7 +51,12 @@ public enum Sound {
 	BOING_SINGLE("Boing", "boing_single"), //
 	BUGBUSTERS_THEME("BugBusters", "bugbusters_theme"), //
 	BULLSHIT("Bullshit", "bullshit"), //
-	BULLSHIT_HARTMAN("Bullshit!", "bullshit_hartman"), //
+	BULLSHIT_HARTMAN("Bullshit!", "bullshit_hartman"),//
+    C64_ELITE("Elite", "c64_elite"),//
+    C64_UPNDOWN_INTRO("Up'n Down Intro", "c64_upndown"),//
+    C64_UPNDOWN_HISCORES("Up'n D Hiscore", "c64_upndown_hiscores"),//
+    C64_UPNDOWN_GAMING("Up'n D Game", "c64_upndown_gaming"),//
+    C64_UPNDOWN_GAMEOVER("Up'n D Over", "c64_upndown_gameover"), //
     CALS_ANFORDERUNG("Anforderung", "cals_explizite_anforderung"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
@@ -290,6 +295,10 @@ public enum Sound {
 	SCHNUEFF_MAUS("Schnüff", "schnueff_schnueff"), //
 	SCHROTTKERL("Schrotthändler", "schrottkerl_melodie"), //
 	SCHUSS_PEANUTS("Schuss", "schuss_peanuts"), //
+    SEIHRING_ABO("Abo", "seihring_abo"),//
+    SEIHRING_IRRE("Irre", "seihring_irre"),//
+    SEIHRING_ULTRAFLACH("Ultraflach", "seihring_ultraflach"),//
+    SEIHRING_WIE_GEIL("ist das denn?", "seihring_wie_geil_ist_das_denn"),//
 	SENSE("Sense", "sense"), //
 	SEPPL("Seppl", "seppl"), //
 	SICHERHEITSTIP("Sicherheitstip", "sicherheitstip"), //
