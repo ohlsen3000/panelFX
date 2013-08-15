@@ -175,7 +175,6 @@ public class PanelView {
                 );
 
         tabContent.getChildren().add(paneFrank);
-***
 
         createButtonGroup(tabContent, "Misc",//
                 Sound.COFFEE_MAKER_BASTELECKE, //
