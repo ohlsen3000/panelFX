@@ -70,6 +70,7 @@ public enum Sound {
     DAS_REICHT("Das reicht!", "das_reicht_hartman"), //
     DATENWUST("Datenwust", "datenwust"),//
 	DELETE("Delete", "delate"), //
+    DENKE_HUST("Denke Hust", "denke_hust"), //
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //

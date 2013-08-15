@@ -175,20 +175,26 @@ public class PanelView {
                 );
 
         tabContent.getChildren().add(paneFrank);
+***
 
-        final FlowPane bSides = new ButtonGroup("Misc", this.soundButtons,
-                Sound.COFFEE_MAKER_BASTELECKE,
-                Sound.COFFEE, Sound.REMOTE, Sound.DELETE, Sound.SNAPHOT,
-                Sound.KHAN, Sound.WIE_GEIL, Sound.LAUGHING_DIYER, Sound.GANZ_KLAR,
+        createButtonGroup(tabContent, "Misc",//
+                Sound.COFFEE_MAKER_BASTELECKE, //
+                Sound.COFFEE, //
+                Sound.REMOTE, //
+                Sound.DELETE, //
+                Sound.SNAPHOT, //
+                Sound.WIE_GEIL, //
+                Sound.LAUGHING_DIYER, //
+                Sound.GANZ_KLAR, //
                 Sound.ALTOBELLI, //
-                Sound.TACH,
-                Sound.WAS_DENN,
-                Sound.NJAEH,
-                Sound.QUIET,
                 Sound.FUNKTIONAL_KAPUTT,//
-                Sound.GROSSEN_GEIST);
-
-        tabContent.getChildren().add(bSides);
+                Sound.GROSSEN_GEIST, //
+                Sound.TACH, //
+                Sound.WAS_DENN, //
+                Sound.NJAEH, //
+                Sound.QUIET,  //
+                Sound.DENKE_HUST  //
+        );
 
         final FlowPane paneJoeHanson = new ButtonGroup("Jother",
                 this.soundButtons, Sound.BIDDE_QUESTIONING,
@@ -402,7 +408,9 @@ public class PanelView {
                 Sound.HALT_SCHWIERIG, Sound.IDEFIX_IT,
                 Sound.PREFERRED_LANGUAGE, Sound.SLAPSTICK, Sound.RICHTIG,
                 Sound.ZU_BLOED, Sound.TRIBBLE, Sound.RED_ALERT,
-                Sound.PARDON, Sound.PAS_COMME_CA, Sound.WAS_DU_GLAUBST_MAROHDE,
+                Sound.PARDON, Sound.PAS_COMME_CA,
+                Sound.KHAN, //
+                Sound.WAS_DU_GLAUBST_MAROHDE,
                 Sound.FAHRRADKETTE,
                 Sound.BBBB_BENCH, //
                 Sound.HORHOR, //
