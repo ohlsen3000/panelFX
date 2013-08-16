@@ -93,11 +93,14 @@ public enum Sound {
 	FAIL_SATANIC("Fail Satanic", "gescheitert_satan"), //
 	FALLE("Falle", "falle_gesehen"), //
 	FALSCH("Falsch", "falsch"), //
+    FANTASY_CALL_ALEIP("Aleip!", "fantasy_call_aleip"),//
     FANTASY_CALL_ALERG("Alerg!", "fantasy_call_alerg"),//
     FANTASY_CALL_BEYER("Beyer!", "fantasy_call_beyer"),//
     FANTASY_CALL_CALS("Cals!", "fantasy_call_cals"),//
+    FANTASY_CALL_DAGENS("Dagens!", "fantasy_call_dagens"),//
     FANTASY_CALL_CHRILLNER("Chrillner!", "fantasy_call_chrillner"),//
     FANTASY_CALL_DATHER("Dather!", "fantasy_call_dather"),//
+    FANTASY_CALL_DENKE("Denke!", "fantasy_call_denke"),//
     FANTASY_CALL_DIYER("Diyer!", "fantasy_call_diyer"),//
     FANTASY_CALL_FRALLER("Fraller!", "fantasy_call_fraller"),//
     FANTASY_CALL_GAIVO("Gaivo!", "fantasy_call_gaivo"),//
@@ -107,6 +110,7 @@ public enum Sound {
     FANTASY_CALL_JOENDER("Jönder!", "fantasy_call_joender"),//
     FANTASY_CALL_KEANN("Kéann!", "fantasy_call_keann"),//
     FANTASY_CALL_MAUTH("Mauth!", "fantasy_call_mauth"),//
+    FANTASY_CALL_PATANN("Patann!", "fantasy_call_patann"),//
     FANTASY_CALL_PUETT("Pütt!", "fantasy_call_puett"),//
     FANTASY_CALL_SASCHER("Sascher!", "fantasy_call_sascher"),//
     FANTASY_CALL_SEIER("Seier!", "fantasy_call_seier"),//

@@ -1,11 +1,5 @@
 package panelfx.view;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import javax.annotation.PostConstruct;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -31,6 +25,12 @@ import panelfx.timer.TeaTimer;
 import panelfx.timer.views.AnalogClockView;
 import panelfx.timer.views.DigitalClockView;
 import panelfx.timer.views.ProgressBarView;
+
+import javax.annotation.PostConstruct;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class PanelView {
 
@@ -175,7 +175,6 @@ public class PanelView {
                 );
 
         tabContent.getChildren().add(paneFrank);
-***
 
         createButtonGroup(tabContent, "Misc",//
                 Sound.COFFEE_MAKER_BASTELECKE, //
@@ -632,9 +631,11 @@ public class PanelView {
                     Sound.FANTASY_NAME_DIGER //
             );
 
-            createButtonGroup(tabContent,"Tux", //
+            createButtonGroup(tabContent,"UX", //
                     Sound.FANTASY_NAME_ALEIP, //
+                    Sound.FANTASY_CALL_ALEIP,//
                     Sound.FANTASY_NAME_DAGENS, //
+                    Sound.FANTASY_CALL_DAGENS,//
                     Sound.FANTASY_NAME_JUANN //
             );
 
@@ -666,7 +667,8 @@ public class PanelView {
                     Sound.FANTASY_CALL_JOTHER,//
                     Sound.FANTASY_NAME_JUEDA,//
                     Sound.FANTASY_CALL_JUEDA, //
-                    Sound.FANTASY_NAME_DENKE //
+                    Sound.FANTASY_NAME_DENKE, //
+                    Sound.FANTASY_CALL_DENKE//
             );
 
             createButtonGroup(tabContent,"PM & Artichekten & Koord", //
@@ -681,7 +683,8 @@ public class PanelView {
 
             createButtonGroup(tabContent,"BIT", //
                     Sound.FANTASY_NAME_TORKE,//
-                    Sound.FANTASY_NAME_PATANN //
+                    Sound.FANTASY_NAME_PATANN, //
+                    Sound.FANTASY_CALL_PATANN//
             );
 
             createButtonGroup(tabContent,"All In (Name'em)", //
