@@ -147,14 +147,24 @@ public class PanelView {
         tabContent.getStyleClass().add("wood-shifted");
         this.primaryTab.setContent(tabContent);
 
-        final FlowPane paneBastelecke = new ButtonGroup("Bastelecke",
-                this.soundButtons, Sound.STANDUP, Sound.CUBAGE, Sound.BATTLE1,
-                Sound.BATTLE3, Sound.DOORBELL, Sound.ALARM, Sound.PUSH_IT,
-                Sound.OEOEOEEY, Sound.LAUSCHANGRIFF, Sound.FOG, Sound.BAEM,
-                Sound.ERBAERMLICH, Sound.NEIN_ULTZ, Sound.HILFE,
-                Sound.COOL, Sound.KNARZ, Sound.SORRY);
-
-        tabContent.getChildren().add(paneBastelecke);
+        createButtonGroup(tabContent, "Bastelecke",//
+                Sound.STANDUP, //
+                Sound.CUBAGE, //
+                Sound.BATTLE1, //
+                Sound.BATTLE3, //
+                Sound.DOORBELL_2ND_FLOOR, //
+                Sound.ALARM, //
+                Sound.PUSH_IT, //
+                Sound.OEOEOEEY, //
+                Sound.LAUSCHANGRIFF, //
+                Sound.BAEM, //
+                Sound.ERBAERMLICH, //
+                Sound.NEIN_ULTZ, //
+                Sound.HILFE, //
+                Sound.COOL, //
+                Sound.KNARZ, //
+                Sound.SORRY  //
+        );
 
         final FlowPane paneFrank = new ButtonGroup("Fraller", this.soundButtons,
                 Sound.NEIN_FRALLER, //
@@ -172,7 +182,7 @@ public class PanelView {
                 Sound.FRALLER_JA_GENAU,//
                 Sound.STEELE2, //
                 Sound.FRALLER_BIS_GLEICH //
-                );
+        );
 
         tabContent.getChildren().add(paneFrank);
 
@@ -180,19 +190,19 @@ public class PanelView {
                 Sound.COFFEE_MAKER_BASTELECKE, //
                 Sound.COFFEE, //
                 Sound.REMOTE, //
-                Sound.DELETE, //
-                Sound.SNAPHOT, //
                 Sound.WIE_GEIL, //
                 Sound.LAUGHING_DIYER, //
+                Sound.ALERG_LACHEN, //
+                Sound.ALERG_GROSSARTIG, //
                 Sound.GANZ_KLAR, //
                 Sound.ALTOBELLI, //
                 Sound.FUNKTIONAL_KAPUTT,//
                 Sound.GROSSEN_GEIST, //
-                Sound.TACH, //
                 Sound.WAS_DENN, //
                 Sound.NJAEH, //
                 Sound.QUIET,  //
-                Sound.DENKE_HUST  //
+                Sound.DENKE_HUST, //
+                Sound.TACH //
         );
 
         final FlowPane paneJoeHanson = new ButtonGroup("Jother",
@@ -292,20 +302,20 @@ public class PanelView {
 
         tabContent.getChildren().add(paneGhostbusters);
         final FlowPane paneFullMetalJacket = new ButtonGroup("Full Metal Jacket",
-        this.soundButtons, Sound.SIR_JAWOHL_SIR, //
-        Sound.BULLSHIT_HARTMAN, //
-        Sound.JESUS_MARIA, //
-        Sound.DAS_REICHT, //
-        Sound.NICHT_GELACHT, //
-        Sound.VERSTANDEN_HARTMAN, //
-        Sound.WER, //
-        Sound.WER_ZUM_TEUFEL,//
-        Sound.NAME_HARTMAN, //
-        Sound.LISTE, //
-        Sound.VORMERKEN_HARTMAN, //
-        Sound.WAS_ZUM_TEUFEL, //
-        Sound.WAS_SAGEN, //
-        Sound.WACHBEFEHL_HARTMAN);
+                this.soundButtons, Sound.SIR_JAWOHL_SIR, //
+                Sound.BULLSHIT_HARTMAN, //
+                Sound.JESUS_MARIA, //
+                Sound.DAS_REICHT, //
+                Sound.NICHT_GELACHT, //
+                Sound.VERSTANDEN_HARTMAN, //
+                Sound.WER, //
+                Sound.WER_ZUM_TEUFEL,//
+                Sound.NAME_HARTMAN, //
+                Sound.LISTE, //
+                Sound.VORMERKEN_HARTMAN, //
+                Sound.WAS_ZUM_TEUFEL, //
+                Sound.WAS_SAGEN, //
+                Sound.WACHBEFEHL_HARTMAN);
         tabContent.getChildren().add(paneFullMetalJacket);
 
         final FlowPane paneNoMercy = new ButtonGroup("Kein Pardon",
@@ -418,10 +428,12 @@ public class PanelView {
         );
         tabContent.getChildren().add(cubageTeamSounds);
 
-        final FlowPane basteleckeSounds = new ButtonGroup(
-                "Bastelecke Team (2012 - present)", this.soundButtons,
-                Sound.BIEKER, Sound.BALLAD, Sound.JEOPARDY);
-        tabContent.getChildren().add(basteleckeSounds);
+        createButtonGroup(tabContent, "Bastelecke Team (2012 - present)",
+                Sound.BIEKER,//
+                Sound.BALLAD,//
+                Sound.JEOPARDY,//
+                Sound.DOORBELL //
+        );
 
 
         final FlowPane katanaSounds = new ButtonGroup(
@@ -437,6 +449,8 @@ public class PanelView {
         tabContent.getChildren().add(katanaSounds);
 
         createButtonGroup(tabContent, "Gescheitert", //
+                Sound.DELETE, //
+                Sound.SNAPHOT, //
                 Sound.DATENWUST,//
                 Sound.MUTIGE_ENTSCHEIDUNG,//
                 Sound.FAIL, //
@@ -521,10 +535,17 @@ public class PanelView {
         tabContent.getStyleClass().add("wood-shifted");
         this.soundtrackTab.setContent(tabContent);
 
-        final FlowPane paneFilm = new ButtonGroup("Film",
-                this.soundButtons, Sound.FIVE_WEEKS, Sound.LALALALALALA, Sound.LETZTER_TANGO, Sound.VERTIGO,
-                Sound.ASSAULT, Sound.HALLOWEEN, Sound.EXORCIST);
-        tabContent.getChildren().add(paneFilm);
+
+        createButtonGroup(tabContent, "Film",
+                Sound.FIVE_WEEKS, //
+                Sound.VERTIGO, //
+                Sound.ASSAULT, //
+                Sound.LALALALALALA,  //
+                Sound.FOG, //
+                Sound.LETZTER_TANGO, //
+                Sound.HALLOWEEN, //
+                Sound.EXORCIST  //
+        );
 
         final FlowPane paneTelevision = new ButtonGroup("Fernsehen",
                 this.soundButtons,//
@@ -567,7 +588,7 @@ public class PanelView {
                 Sound.JEDU_V_MAGADAN, //
                 Sound.MAGADAN_REFRAIN,//
                 Sound.PENN_IN_DER_BAHN,
-				Sound.MUSE_UNSUSTAINABLE);
+                Sound.MUSE_UNSUSTAINABLE);
 
 
         tabContent.getChildren().add(musicSnippets);
@@ -587,7 +608,7 @@ public class PanelView {
             tabContent.getStyleClass().add("wood-shifted");
             this.fantasyTab.setContent(tabContent);
 
-            createButtonGroup(tabContent,"Bug Busters (Name'em/ Call'em)",
+            createButtonGroup(tabContent, "Bug Busters (Name'em/ Call'em)",
                     Sound.FANTASY_NAME_SASCHER,//
                     Sound.FANTASY_CALL_SASCHER, //
                     Sound.FANTASY_NAME_GAIVO, //
@@ -598,7 +619,7 @@ public class PanelView {
                     Sound.FANTASY_CALL_TOTZ //
             );
 
-            createButtonGroup(tabContent,"Déjà Vu (Name'em)",
+            createButtonGroup(tabContent, "Déjà Vu (Name'em)",
                     Sound.FANTASY_NAME_PUETT,//
                     Sound.FANTASY_CALL_PUETT, //
                     Sound.FANTASY_NAME_SEIER,//
@@ -606,10 +627,10 @@ public class PanelView {
                     Sound.FANTASY_NAME_MALTERS,//
                     Sound.FANTASY_NAME_UDITZ,//
                     Sound.FANTASY_NAME_FRANN,//
-                    Sound.FANTASY_CALL_MATTI //
+                    Sound.FANTASY_NAME_MATTI //
             );
 
-            createButtonGroup(tabContent,"Katana (Name'em/ Call'em)",
+            createButtonGroup(tabContent, "Katana (Name'em/ Call'em)",
                     Sound.FANTASY_NAME_ALERG,  //
                     Sound.FANTASY_CALL_ALERG,//
                     Sound.FANTASY_NAME_CHRILLNER, //
@@ -618,7 +639,7 @@ public class PanelView {
                     Sound.FANTASY_CALL_BEYER //
             );
 
-            createButtonGroup(tabContent,"Kihon (Name'em)",
+            createButtonGroup(tabContent, "Kihon (Name'em)",
                     Sound.FANTASY_NAME_MARGA, //
                     Sound.FANTASY_NAME_TIANN, //
                     Sound.FANTASY_NAME_ANANN, //
@@ -626,17 +647,18 @@ public class PanelView {
                     Sound.FANTASY_NAME_MARING //
             );
 
-            createButtonGroup(tabContent,"Quastan (Name'em)", //
+            createButtonGroup(tabContent, "Quastan (Name'em)", //
                     Sound.FANTASY_NAME_CHRIKA, //
                     Sound.FANTASY_NAME_DIGER //
             );
 
-            createButtonGroup(tabContent,"UX", //
+            createButtonGroup(tabContent, "UX", //
                     Sound.FANTASY_NAME_ALEIP, //
                     Sound.FANTASY_CALL_ALEIP,//
                     Sound.FANTASY_NAME_DAGENS, //
                     Sound.FANTASY_CALL_DAGENS,//
-                    Sound.FANTASY_NAME_JUANN //
+                    Sound.FANTASY_NAME_JUANN, //
+                    Sound.FANTASY_NAME_SANDER //
             );
 
         }
@@ -658,7 +680,7 @@ public class PanelView {
             tabContent.getStyleClass().add("wood-shifted");
             this.fantasyTab.setContent(tabContent);
 
-            createButtonGroup(tabContent,"Bastelecke (Name'em/ Call'em)", //
+            createButtonGroup(tabContent, "Bastelecke (Name'em/ Call'em)", //
                     Sound.FANTASY_NAME_FRALLER,//
                     Sound.FANTASY_CALL_FRALLER,//
                     Sound.FANTASY_NAME_ULTZ, //
@@ -671,7 +693,8 @@ public class PanelView {
                     Sound.FANTASY_CALL_DENKE//
             );
 
-            createButtonGroup(tabContent,"PM & Artichekten & Koord", //
+            createButtonGroup(tabContent, "PM & Artichekten & Koord", //
+                    Sound.FANTASY_NAME_TOSCH,//
                     Sound.FANTASY_CALL_TOSCH,//
                     Sound.FANTASY_NAME_CALS,//
                     Sound.FANTASY_CALL_CALS,//
@@ -681,21 +704,22 @@ public class PanelView {
                     Sound.FANTASY_CALL_JOENDER //
             );
 
-            createButtonGroup(tabContent,"BIT", //
+            createButtonGroup(tabContent, "BIT", //
                     Sound.FANTASY_NAME_TORKE,//
                     Sound.FANTASY_NAME_PATANN, //
                     Sound.FANTASY_CALL_PATANN//
             );
 
-            createButtonGroup(tabContent,"All In (Name'em)", //
+            createButtonGroup(tabContent, "All In (Name'em)", //
                     Sound.FANTASY_NAME_KEANN, //
                     Sound.FANTASY_CALL_KEANN, //
                     Sound.FANTASY_NAME_DAMPS,  //
                     Sound.FANTASY_NAME_GUIDOLF, //
                     Sound.FANTASY_CALL_GUIDOLF,//
-                    Sound.FANTASY_NAME_DANG //
+                    Sound.FANTASY_NAME_DANG, //
+                    Sound.FANTASY_NAME_MICHNY //
             );
-            createButtonGroup(tabContent,"TCO (Name'em)", //
+            createButtonGroup(tabContent, "TCO (Name'em)", //
                     Sound.FANTASY_NAME_DATHER, //
                     Sound.FANTASY_CALL_DATHER, //
                     Sound.FANTASY_NAME_SVANN, //
@@ -705,20 +729,20 @@ public class PanelView {
     }
 
 
-    private void createButtonGroup(FlowPane parentTabContent, String text, Sound... sounds){
+    private void createButtonGroup(FlowPane parentTabContent, String text, Sound... sounds) {
 
         List<Sound> authorisedSounds = new ArrayList<>();
-        for (Sound sound : sounds){
+        for (Sound sound : sounds) {
 
-            if (!sound.isCritical() || this.accessDecisionManager.hasCriticalSoundAcceess()){
+            if (!sound.isCritical() || this.accessDecisionManager.hasCriticalSoundAcceess()) {
                 authorisedSounds.add(sound);
             }
         }
 
-        if (!authorisedSounds.isEmpty()){
+        if (!authorisedSounds.isEmpty()) {
             final FlowPane buttonGroupPane = new ButtonGroup(text,
                     this.soundButtons,
-                    authorisedSounds.toArray(new Sound[]{}) );
+                    authorisedSounds.toArray(new Sound[]{}));
             parentTabContent.getChildren().add(buttonGroupPane);
         }
     }

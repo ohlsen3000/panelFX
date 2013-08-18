@@ -9,6 +9,8 @@ public enum Sound {
 	ABSOLUT_UNCOOL("Absolut uncool", "absolut_uncool"), //
 	ABSOLUT_UNTRIUMPHAL("Absolut Untriumphal", "absolut_untriumphal"), //
 	ALARM("Alarm", "alarm"), //
+    ALERG_LACHEN("Alerg lacht", "alerg_lachen"),//
+    ALERG_GROSSARTIG("Großartig", "alerg_grossartig"),//
 	ALTOBELLI("Altobelli", "altobelli"), //
     ANIMAL_BLACKBIRD("Amsel", "freesound_34074_blackbird"),//
     ANIMAL_BUDGIE_SINGLE("Sittich Tschilp", "sittich_tschirp4"),//
@@ -74,6 +76,7 @@ public enum Sound {
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
+    DOORBELL_2ND_FLOOR("Klingel 2. OG", "klingel_2_og"), //
 	DRAMA_BUTTON("Drama-Button", "drama_button"), //
 	DRAMATIC("Frankenstein Junior", "dramatic"), //
 	DU_BEISST("Du beißt", "du_beisst"), //
@@ -144,16 +147,19 @@ public enum Sound {
     FANTASY_NAME_MALTERS("Dor Malters", "fantasy_name_malters"),//
     FANTASY_NAME_MARGA("Dor Marga", "fantasy_name_marga"),//
     FANTASY_NAME_MARING("Dor Maring", "fantasy_name_maring"),//
-    FANTASY_CALL_MATTI("Dor Matti", "fantasy_name_matti"),//
+    FANTASY_NAME_MATTI("Dor Matti", "fantasy_name_matti"),//
     FANTASY_NAME_MAUTH("Dor Mauth", "fantasy_name_mauth"),//
+    FANTASY_NAME_MICHNY("Dor Michny", "fantasy_name_michny"),//
     FANTASY_NAME_PATANN("Dor Patann", "fantasy_name_patann"),//
     FANTASY_NAME_PUETT("Dor Pütt", "fantasy_name_puett"),//
+    FANTASY_NAME_SANDER("De Sander", "fantasy_name_sander"),//
     FANTASY_NAME_SASCHER("Dor Sascher", "fantasy_name_sascher"),//
     FANTASY_NAME_SEIER("Dor Seier", "fantasy_name_seier"),//
     FANTASY_NAME_SESKE("Dor Seske", "fantasy_name_seske"),//
     FANTASY_NAME_SVANN("Dor Svann", "fantasy_name_svann"),//
     FANTASY_NAME_TIANN("Dor Tiann", "fantasy_name_tiann"),//
     FANTASY_NAME_TORKE("Dor Torke", "fantasy_name_torke"),//
+    FANTASY_NAME_TOSCH("Dor Tosch", "fantasy_name_tosch"),//
     FANTASY_NAME_TOTZ("Dor Totz", "fantasy_name_totz"),//
     FANTASY_NAME_UDITZ("Dor Uditz", "fantasy_name_uditz"),//
     FANTASY_NAME_ULTZ("Dor Ultz", "fantasy_name_ultz"),//
