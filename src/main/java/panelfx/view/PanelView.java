@@ -503,6 +503,7 @@ public class PanelView {
                 Sound.KIHON_SPIEL_GOLF, //
                 Sound.GRAUEN,//
                 Sound.BEEP,//
+                Sound.HUST_SCOTCH, //
                 Sound.KITT);
         tabContent.getChildren().add(misc);
 
@@ -566,7 +567,9 @@ public class PanelView {
                 Sound.C64_UPNDOWN_INTRO,//
                 Sound.C64_UPNDOWN_GAMING,//
                 Sound.C64_UPNDOWN_GAMEOVER,//
-                Sound.C64_UPNDOWN_HISCORES);
+                Sound.C64_UPNDOWN_HISCORES, //
+                Sound.C64_SUMMER_GAMES_HISCORES //
+                );
 
         tabContent.getChildren().add(c64Pane);
 

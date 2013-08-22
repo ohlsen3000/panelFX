@@ -55,6 +55,7 @@ public enum Sound {
 	BULLSHIT("Bullshit", "bullshit"), //
 	BULLSHIT_HARTMAN("Bullshit!", "bullshit_hartman"),//
     C64_ELITE("Elite", "c64_elite"),//
+    C64_SUMMER_GAMES_HISCORES("SmmerGms HiSc", "c64_summergames_hiscores"),//
     C64_UPNDOWN_INTRO("Up'n Down Intro", "c64_upndown"),//
     C64_UPNDOWN_HISCORES("Up'n D Hiscore", "c64_upndown_hiscores"),//
     C64_UPNDOWN_GAMING("Up'n D Game", "c64_upndown_gaming"),//
@@ -200,6 +201,7 @@ public enum Sound {
 	HOEHOEHOEHOEHOE("Didi", "didi_hoehoehoehoehoe"), //
 	HORHOR("HorHorHor", "kevin"), //
 	HUST("Hust", "hust"), //
+    HUST_SCOTCH("Hust Scotch", "hust_scotch"), //
 	HUUST("Huust", "hust_titus"),//
 	IDEFIX_IT("IDE fix it", "idefix_it"), //
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
