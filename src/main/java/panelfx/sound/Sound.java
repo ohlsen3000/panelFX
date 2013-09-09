@@ -188,7 +188,7 @@ public enum Sound {
     GUTIS_AHH("Aha!", "gutis_aah"),//
     GUTIS_JA("Ja!", "gutis_ja"),//
     GUTIS_DATENMODELL("Datenmodell", "gutis_datenmodell"),//
-    GUTIS_DEMENTSPRECHEND("Dementsprechend", "gutis_dementsprechend"),//
+    GUTIS_DEMENTSPRECHEND("Dementspr.", "gutis_dementsprechend"),//
     GUTIS_KLAR_GESAGT("Klar gesagt", "gutis_ganz_klar_gesagt"),//
     GUTIS_WASUACHIMMER("Wasauchimmer", "gutis_was_auch_immer"),//
     GUTIS_JETZT_BLEIBT("Jetzt bleibt", "gutis_jetzt_bleibt"),//
@@ -361,13 +361,13 @@ public enum Sound {
 	WAS_DU_GLAUBST_MAROHDE("M: Das ist das", "was_du_glaubst"), //
 	WAS_JETZT("Was jetzt?", "wasjetzt"), //
 	WAS_SAGEN("Was sagen?", "was_sagen"), //
-	WAS_ZUM_TEUFEL("Was zum Teufel?", "was_zum_teufel"), //
+	WAS_ZUM_TEUFEL("Was z. Teufel?", "was_zum_teufel"), //
 	WEIBSVOLK("Weibsvolk", "weibsvolk"), //
 	WEISST_DUS("Weißt Du's?", "weisstdus"), //
 	WESTERN("Western von gestern", "western_von_gestern"), //
 	WEITERMACHEN("Weitermachen", "weitermachen"), //
     WER("Wer?", "wer_hartman"), //
-    WER_ZUM_TEUFEL("Wer zum Teufel?", "teufel_hartman"), //
+    WER_ZUM_TEUFEL("Wer z. Teufel?", "teufel_hartman"), //
 	WHAZZUP("Whazzup", "whazzup"), //
 	WICKIE("Wickie", "wickie"), //
 	WIDERPORST("Widerporst", "widerporst"), //
