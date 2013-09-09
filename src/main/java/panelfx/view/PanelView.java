@@ -367,7 +367,20 @@ public class PanelView {
         tabContent.getChildren().add(commercialPanel);
 
         final FlowPane realityPanel = new ButtonGroup("Reality-TV",
-                this.soundButtons, Sound.HALT_STOP, Sound.JETZT_RED_ICH, Sound.KAFFEE_GETRUNKEN, Sound.SCHNAUZE, Sound.NACKTBADEN, Sound.BOAH_GEIL, Sound.UNNORMAL);
+                this.soundButtons, //
+                Sound.HALT_STOP, //
+                Sound.JETZT_RED_ICH, //
+                Sound.KAFFEE_GETRUNKEN,//
+                Sound.SCHNAUZE, //
+                Sound.NACKTBADEN, //
+                Sound.BOAH_GEIL, //
+                Sound.UNNORMAL, //
+                Sound.ARBEIT,//
+                Sound.KEINE_LUST,//
+                Sound.JETZT_REICHTS,//
+                Sound.NICHTSKOENNER,//
+                Sound.BANDMASS//
+                );
         tabContent.getChildren().add(realityPanel);
 
         createButtonGroup(tabContent, "Sport",//
@@ -385,7 +398,8 @@ public class PanelView {
                 Sound.SEIHRING_IRRE,//
                 Sound.SEIHRING_ULTRAFLACH,//
                 Sound.SEIHRING_ABO,//
-                Sound.SEIHRING_WIE_GEIL //
+                Sound.SEIHRING_WIE_GEIL, //
+                Sound.DENNIS_DUEP
         );
         tabContent.getChildren().add(comedyPanel);
 

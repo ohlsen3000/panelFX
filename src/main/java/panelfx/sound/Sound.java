@@ -23,11 +23,13 @@ public enum Sound {
     ANIMAL_WOODPECKER_FOREST("Specht im Wald", "freesound_114021_forest"),//
 	ANNEE_NE("Annee-ne", "aneene"), //
 	ANSTEHT("Ich sag dir", "ansteht"), //
+	  ARBEIT("Arbeit", "nicht_der_arbeit_nachkommen"), //
     ASS_BESCHWOERUNG("Ass Ass Ass", "as_beschwoerung"),//
     ASSAULT("Precinct 13", "assault"),//
 	ASSERT("Essort", "essort"), //
 	BAEM("Bäm", "baehm"), //
 	BALLAD("Ballad", "ballad"), //
+	BANDMASS("Bandmaß", "bandmass"), //
 	BATTLE1("Battle 1", "eurobattle1"), //
 	BATTLE3("Battle 3", "eurobattle3"), //
 	BBBB_BENCH("B B B B Bench", "bbbb_bench"), //
@@ -74,6 +76,7 @@ public enum Sound {
     DATENWUST("Datenwust", "datenwust"),//
 	DELETE("Delete", "delate"), //
     DENKE_HUST("Denke Hust", "denke_hust"), //
+    DENNIS_DUEP("Dennis Düp", "dennis_düp"), //
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
@@ -218,10 +221,12 @@ public enum Sound {
 	JESUS_MARIA("Jesus, Maria!", "jesus_maria"), //
     JETZT_PARTY_ELTON("Jetzt geht...", "party_elton") ,//
     JETZT_RED_ICH("Jetzt red ich", "andreas_jetzt_red_ich"), //
+    JETZT_REICHTS("Jetzt reicht's", "jetzt_reichts_mir_langsam"), //
     JOLODA_SCHIENEN("Joloda", "joloda"),//
     JUBEL_ELTON("Brülljubel", "elton_jubel"),//
     KALLE_KANN_NICHT_SEIN("Kann nicht sein", "kalle_das_kann_nicht_sein"),//
     KALLE_SKANDAL("Skandal", "kalle_skandal"),//
+    KEINE_LUST("Keine Lust", "keine_lust"), //
     KAFFEE_GETRUNKEN("Kaffee getrunken", "andreas_kaffee"), //
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
@@ -268,6 +273,7 @@ public enum Sound {
     NICH("Nich?", "nich_keann"),//
     NICHT_GELACHT("Nicht gelacht!", "hier_wird_nicht_gelacht"), //
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
+	NICHTSKOENNER("Nichtskönner", "originale_nichtskönner"), //
 	NIX_VERSTEHEN("Nix verstehen", "nix_verstehen"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OBERGEIL("Obergeil", "obergeil"), //
