@@ -187,6 +187,12 @@ public enum Sound {
     GROSSEN_GEIST("großen Geist", "grossen_geist"),//
     GUTIS_AHH("Aha!", "gutis_aah"),//
     GUTIS_JA("Ja!", "gutis_ja"),//
+    GUTIS_DATENMODELL("Datenmodell", "gutis_datenmodell"),//
+    GUTIS_DEMENTSPRECHEND("Dementsprechend", "gutis_dementsprechend"),//
+    GUTIS_KLAR_GESAGT("Klar gesagt", "gutis_ganz_klar_gesagt"),//
+    GUTIS_WASUACHIMMER("Wasauchimmer", "gutis_was_auch_immer"),//
+    GUTIS_JETZT_BLEIBT("Jetzt bleibt", "gutis_jetzt_bleibt"),//
+    GUTIS_SCHOENABEND("Schön'abend", "gutis_schoenabend"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
