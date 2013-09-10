@@ -76,7 +76,7 @@ public enum Sound {
     DATENWUST("Datenwust", "datenwust"),//
 	DELETE("Delete", "delate"), //
     DENKE_HUST("Denke Hust", "denke_hust"), //
-    DENNIS_DUEP("Dennis Düp", "dennis_düp"), //
+    DENNIS_DUEP("Dennis Düp", "dennis_duep"), //
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
 	DOORBELL("Klingel 1. OG", "klingel"), //
@@ -227,7 +227,7 @@ public enum Sound {
     KALLE_KANN_NICHT_SEIN("Kann nicht sein", "kalle_das_kann_nicht_sein"),//
     KALLE_SKANDAL("Skandal", "kalle_skandal"),//
     KEINE_LUST("Keine Lust", "keine_lust"), //
-    KAFFEE_GETRUNKEN("Kaffee getrunken", "andreas_kaffee"), //
+    KAFFEE_GETRUNKEN("Erstmal Kaffe", "andreas_kaffee"), //
 	KEINE_TRICKS("Keine Tricks", "keine_tricks"), //
 	KANTINE("Kantine", "kantine"), //
 	KHAN("Khan", "khan"), //

@@ -5,6 +5,7 @@
 package panelfx;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 import panelfx.sound.AlarmClock;
 import panelfx.sound.PlayingSounds;
@@ -15,46 +16,49 @@ import panelfx.view.PanelController;
  */
 public class PanelFX extends Application {
 
-	PanelController controller;
+    PanelController controller;
+    PlayingSounds playingSounds;
+    AlarmClock alarmClock;
 
-	PlayingSounds playingSounds;
+    @Override
+    public void start(final Stage primaryStage) {
+        this.playingSounds = new PlayingSounds();
 
-	AlarmClock alarmClock;
+        this.controller = new PanelController(primaryStage, this.playingSounds);
+        this.controller.show();
 
-	@Override
-	public void start(final Stage primaryStage) {
-		this.playingSounds = new PlayingSounds();
+        this.alarmClock = new AlarmClock(this.playingSounds);
+        this.alarmClock.run();
 
-		this.controller = new PanelController(primaryStage, this.playingSounds);
-		this.controller.show();
+        Runtime.getRuntime().addShutdownHook(new GracefulShutdown());
 
-		this.alarmClock = new AlarmClock(this.playingSounds);
-		this.alarmClock.run();
+    }
 
-		Runtime.getRuntime().addShutdownHook(new GracefulShutdown());
+    /**
+     * The main() method is ignored in correctly deployed JavaFX application.
+     * main() serves only as fallback in case the application can not be
+     * launched through deployment artifacts, e.g., in IDEs with limited FX
+     * support. NetBeans ignores main().
+     *
+     * @param args the command line arguments
+     */
+    public static void main(final String[] args) {
+        Application.launch(args);
+    }
 
-	}
+    private class GracefulShutdown extends Thread {
 
-	/**
-	 * The main() method is ignored in correctly deployed JavaFX application.
-	 * main() serves only as fallback in case the application can not be
-	 * launched through deployment artifacts, e.g., in IDEs with limited FX
-	 * support. NetBeans ignores main().
-	 * 
-	 * @param args
-	 *            the command line arguments
-	 */
-	public static void main(final String[] args) {
-		Application.launch(args);
-	}
+        @Override
+        public void run() {
+            PanelFX.this.alarmClock.stop();
+            PanelFX.this.playingSounds.stopAll();
+            System.out.println("Thank you for having used PanelFX");
+            Platform.exit();
+        }
+    }
 
-	private class GracefulShutdown extends Thread {
-
-		@Override
-		public void run() {
-			PanelFX.this.alarmClock.stop();
-			PanelFX.this.playingSounds.stopAll();
-			System.out.println("Thank you for having used PanelFX");
-		}
-	}
+    @Override
+    public void stop() throws java.lang.Exception {
+        Platform.exit();
+    }
 }
