@@ -273,7 +273,7 @@ public enum Sound {
     NICH("Nich?", "nich_keann"),//
     NICHT_GELACHT("Nicht gelacht!", "hier_wird_nicht_gelacht"), //
 	NICHT_GESCHOBEN("Nicht geschoben", "nicht_geschoben"), //
-	NICHTSKOENNER("Nichtskönner", "originale_nichtskönner"), //
+	NICHTSKOENNER("Nichtskönner", "originale_nichtskoenner"), //
 	NIX_VERSTEHEN("Nix verstehen", "nix_verstehen"), //
 	NJAEH("Njääh", "guidolf_njaeh"), //
 	OBERGEIL("Obergeil", "obergeil"), //
