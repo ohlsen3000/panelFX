@@ -483,7 +483,8 @@ public class PanelView {
                 Sound.GUTIS_FEHLER,//
                 Sound.GUTIS_BETA,//
                 Sound.GUTIS_NICHTNURMIR,//
-                Sound.GUTIS_SUBOPTIMAL);
+                Sound.GUTIS_SUBOPTIMAL,//
+                Sound.GUTIS_IDE);
     }
 
     private void createSoundsTab() {

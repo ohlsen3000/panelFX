@@ -201,6 +201,7 @@ public enum Sound {
     GUTIS_BETA("Keine BETA", "gutis_keine_beta"),//
     GUTIS_NICHTNURMIR("Nichtnurmir!", "gutis_nicht_nur_mir"),//
     GUTIS_SUBOPTIMAL("Suboptimal", "gutis_suboptimal"),//
+    GUTIS_IDE("IDE ausbuchen", "gutis_bucht_sich_aus"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
