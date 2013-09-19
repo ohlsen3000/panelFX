@@ -478,7 +478,12 @@ public class PanelView {
                 Sound.GUTIS_KLAR_GESAGT,//
                 Sound.GUTIS_WASUACHIMMER,//
                 Sound.GUTIS_JETZT_BLEIBT,//
-                Sound.GUTIS_SCHOENABEND);
+                Sound.GUTIS_SCHOENABEND,//
+                Sound.GUTIS_DATENBANK,//
+                Sound.GUTIS_FEHLER,//
+                Sound.GUTIS_BETA,//
+                Sound.GUTIS_NICHTNURMIR,//
+                Sound.GUTIS_SUBOPTIMAL);
     }
 
     private void createSoundsTab() {

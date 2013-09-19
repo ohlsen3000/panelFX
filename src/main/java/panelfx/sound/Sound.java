@@ -196,6 +196,11 @@ public enum Sound {
     GUTIS_WASUACHIMMER("Wasauchimmer", "gutis_was_auch_immer"),//
     GUTIS_JETZT_BLEIBT("Jetzt bleibt", "gutis_jetzt_bleibt"),//
     GUTIS_SCHOENABEND("Schön'abend", "gutis_schoenabend"),//
+    GUTIS_DATENBANK("DB haben", "gutis_datenbank_haben"),//
+    GUTIS_FEHLER("Fehler", "gutis_eigene_fehler"),//
+    GUTIS_BETA("Keine BETA", "gutis_keine_beta"),//
+    GUTIS_NICHTNURMIR("Nichtnurmir!", "gutis_nicht_nur_mir"),//
+    GUTIS_SUBOPTIMAL("Suboptimal", "gutis_suboptimal"),//
 	GUDE_LAUNE("Laune OK", "gude_laune"), //
 	GRANATENSTARK("Granatenstark", "granatenstark"), //
 	GRAUEN("Das Grauen", "grauen"), //
