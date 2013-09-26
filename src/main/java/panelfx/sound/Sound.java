@@ -63,6 +63,7 @@ public enum Sound {
     C64_UPNDOWN_GAMING("Up'n D Game", "c64_upndown_gaming"),//
     C64_UPNDOWN_GAMEOVER("Up'n D Over", "c64_upndown_gameover"), //
     CALS_ANFORDERUNG("Anforderung", "cals_explizite_anforderung"), //
+    CHIMO_BAYO_ASI_ME_GUSTA("Hu ha", "chimo_bayo_hu_ha"), //
 	COFFEE("Kaffee", "kaffee"), //
 	COFFEE_MAKER_BASTELECKE("Kaffeemaschine", "kaffemaschine_bastelecke"), //
 	COMPUTER_SAGT_NEIN("Computer: Nein", "computer_sagt_nein"), //
@@ -188,6 +189,7 @@ public enum Sound {
     GEWITTER("Gewitter", "gewitter"), //
     GEWITTER_FRAGE("Gewitter?", "gewitter_frage"),//
     GROSSEN_GEIST("großen Geist", "grossen_geist"),//
+    GUILD_OF_AGES_INTO_THE_NIGHT_RIFF("Into the night", "goa_into_the_night_riff"),//
     GUTIS_AHH("Aha!", "gutis_aah"),//
     GUTIS_JA("Ja!", "gutis_ja"),//
     GUTIS_DATENMODELL("Datenmodell", "gutis_datenmodell"),//
@@ -256,6 +258,7 @@ public enum Sound {
     LISTE("Liste", "liste_hartman"), //
 	LOKAL("Lokal", "lokal"), //
 	LOST("Lost", "lost"), //
+    LOST_BAD_ROBOT("Bad Robot", "bad_robot"),//
     LOST_SYSTEM_FAILURE("System failure", "lost_system_failure"),//
     MAGADAN_REFRAIN("Магадан рефрен", "magadan_refrain"), //
 	MAUS("Maus", "sendung_mit_der_maus"), //
@@ -291,8 +294,9 @@ public enum Sound {
     PAS_COMME_CA("Pas comme ça", "pas_comme_ca"), //
     PAULCHEN_PANTHER("Paulchen Panther", "paulchen_panther"), //
     PAUSE("Pause", "pause"), //
-    PENN_IN_DER_BAHN("Penn in der Bahn", "penn_der_bahn"), //
+    PENN_IN_DER_BAHN("Penn inner Bahn", "penn_der_bahn"), //
 	PFEIFENWICHS("Pfeifenwichs", "pfeifenwichs"), //
+    PIRATAS_CON_EVA("Con Eva", "con_eva"), //
 	PLAN("Plan", "plan"), //
     POKERBRAT_MISTAKE("Mistake", "hellmuth_mistake"), //
 	PREFERRED_LANGUAGE("Preffered lang", "preferred_language"), //

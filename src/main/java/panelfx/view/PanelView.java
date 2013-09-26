@@ -1,5 +1,11 @@
 package panelfx.view;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import javax.annotation.PostConstruct;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -25,12 +31,6 @@ import panelfx.timer.TeaTimer;
 import panelfx.timer.views.AnalogClockView;
 import panelfx.timer.views.DigitalClockView;
 import panelfx.timer.views.ProgressBarView;
-
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class PanelView {
 
@@ -606,21 +606,25 @@ public class PanelView {
         tabContent.getChildren().add(paneStandUp);
 
 
-        final FlowPane companyJingles = new ButtonGroup("Company Jingles",
-                this.soundButtons, //
-                Sound.COMPANY_LYNCH_FROST_PRODUCTIONS);
+        createButtonGroup(tabContent, "Company Jingles",
+                Sound.COMPANY_LYNCH_FROST_PRODUCTIONS,
+                Sound.LOST_BAD_ROBOT);
 
-        tabContent.getChildren().add(companyJingles);
 
-        final FlowPane musicSnippets = new ButtonGroup("Musikschnippsel",
-                this.soundButtons, //
+        createButtonGroup(tabContent, "Musikschnippsel kurz",
                 Sound.JEDU_V_MAGADAN, //
                 Sound.MAGADAN_REFRAIN,//
-                Sound.PENN_IN_DER_BAHN,
-                Sound.MUSE_UNSUSTAINABLE);
+                Sound.PENN_IN_DER_BAHN, //
+                Sound.CHIMO_BAYO_ASI_ME_GUSTA, //
+                Sound.MUSE_UNSUSTAINABLE, //
+                Sound.GUILD_OF_AGES_INTO_THE_NIGHT_RIFF //
+                );
+
+        createButtonGroup(tabContent, "Musikschnippsel lang",
+                Sound.PIRATAS_CON_EVA //
+        );
 
 
-        tabContent.getChildren().add(musicSnippets);
     }
 
     private void createFantasyTab_1() {
