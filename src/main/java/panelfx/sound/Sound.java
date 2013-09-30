@@ -201,6 +201,7 @@ public enum Sound {
     FRALLER_JA_BESTAETIGUNG("Jaha", "fraller_ja_bestaetigung"),//
     FRALLER_JA_GENAU("Ja, genau", "fraller_ja_genau"),//
     FRALLER_HALLO("Hallo", "fraller_halloo"),//
+    FRALLER_TEE("Tee!", "fraller_tee"),//
 	FRANK_MUELLER("Frank Müller", "fmueller"), //
 	FREAKING_IDIOTS("Freaking idiots", "freaking_idiots"), //
 	FREUNDE_DER_SONNE("Freunde d Sonne", "freunde_der_sonne"), //

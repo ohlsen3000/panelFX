@@ -191,6 +191,7 @@ public class PanelView {
         createButtonGroup(tabContent, "Misc",//
                 Sound.COFFEE_MAKER_BASTELECKE, //
                 Sound.COFFEE, //
+                Sound.FRALLER_TEE, //
                 Sound.REMOTE, //
                 Sound.WIE_GEIL, //
                 Sound.LAUGHING_DIYER, //
