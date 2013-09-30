@@ -75,8 +75,10 @@ public enum Sound {
 	DANKOEOE("Danköö", "dankoe"), //
     DAS_REICHT("Das reicht!", "das_reicht_hartman"), //
     DATENWUST("Datenwust", "datenwust"),//
-	DELETE("Delete", "delate"), //
+    DATHER_DAS_IST_RICHTIG("Das ist richtig", "dather_das_ist_richtig"),//
+    DELETE("Delete", "delate"), //
     DENKE_HUST("Denke Hust", "denke_hust"), //
+    DENKE_KNISTER("Denke Knister", "denke_knister"), //
     DENNIS_DUEP("Dennis Düp", "dennis_duep"), //
 	DOD("DoD", "dod"), //
 	DOMAIN("Domäne", "domaene"), //
@@ -105,8 +107,9 @@ public enum Sound {
     FANTASY_CALL_ALERG("Alerg!", "fantasy_call_alerg"),//
     FANTASY_CALL_BEYER("Beyer!", "fantasy_call_beyer"),//
     FANTASY_CALL_CALS("Cals!", "fantasy_call_cals"),//
-    FANTASY_CALL_DAGENS("Dagens!", "fantasy_call_dagens"),//
+    FANTASY_CALL_CHRIANN("Chriann!", "fantasy_call_chriann"),//
     FANTASY_CALL_CHRILLNER("Chrillner!", "fantasy_call_chrillner"),//
+    FANTASY_CALL_DAGENS("Dagens!", "fantasy_call_dagens"),//
     FANTASY_CALL_DATHER("Dather!", "fantasy_call_dather"),//
     FANTASY_CALL_DENKE("Denke!", "fantasy_call_denke"),//
     FANTASY_CALL_DIYER("Diyer!", "fantasy_call_diyer"),//
@@ -117,12 +120,15 @@ public enum Sound {
     FANTASY_CALL_JUEDA("Jüda!", "fantasy_call_jueda"),//
     FANTASY_CALL_JOENDER("Jönder!", "fantasy_call_joender"),//
     FANTASY_CALL_KEANN("Kéann!", "fantasy_call_keann"),//
+    FANTASY_CALL_MALTERS("Malters!", "fantasy_call_malters"),//
     FANTASY_CALL_MAUTH("Mauth!", "fantasy_call_mauth"),//
+    FANTASY_CALL_MICHNY("Michny!", "fantasy_call_michny"),//
     FANTASY_CALL_PATANN("Patann!", "fantasy_call_patann"),//
     FANTASY_CALL_PUETT("Pütt!", "fantasy_call_puett"),//
     FANTASY_CALL_SASCHER("Sascher!", "fantasy_call_sascher"),//
     FANTASY_CALL_SEIER("Seier!", "fantasy_call_seier"),//
-    FANTASY_CALL_TOSCH("Tosch!", "fantasy_call_tosch"),//
+    FANTASY_CALL_SESKE("Seske!", "fantasy_call_seske"),//
+    FANTASY_CALL_TOSCH("Thosch!", "fantasy_call_tosch"),//
     FANTASY_CALL_TOTZ("Totz!", "fantasy_call_totz"),//
     FANTASY_CALL_ULTZ("Ultz!", "fantasy_call_ultz"),//
     FANTASY_NAME_ACHOMM("Dor Achomm", "fantasy_name_achomm"),//
@@ -131,40 +137,55 @@ public enum Sound {
     FANTASY_NAME_ANANN("Dor Anann", "fantasy_name_anann"),//
     FANTASY_NAME_BEYER("Dor Beyer", "fantasy_name_beyer"),//
     FANTASY_NAME_CALS("Dor Cals", "fantasy_name_cals"),//
+    FANTASY_NAME_CHRIANN("Dor Chriann", "fantasy_name_chriann"),//
     FANTASY_NAME_CHRIKA("Dor Chrika", "fantasy_name_chrika"),//
+    FANTASY_NAME_CHRILEN("De Chrilen", "fantasy_name_chrilen"),//
     FANTASY_NAME_CHRILLNER("Dor Chrillner", "fantasy_name_chrillner"),//
+    FANTASY_NAME_CHRISCHKA("Dor Chrischka", "fantasy_name_chrischka"),//
+    FANTASY_NAME_DADIN("Dor Dadin", "fantasy_name_dadin"),//
     FANTASY_NAME_DAGENS("Dor Dagens", "fantasy_name_dagens"),//
+    FANTASY_NAME_DAMME("Dor Damme", "fantasy_name_damme"),//
     FANTASY_NAME_DAMPS("Dor Damps", "fantasy_name_damps"),//
     FANTASY_NAME_DANG("De Dang", "fantasy_name_dang"),//
     FANTASY_NAME_DATHER("Dor Dather", "fantasy_name_dather"),//
     FANTASY_NAME_DENKE("Dor Denke", "fantasy_name_denke"),//
     FANTASY_NAME_DIGER("Dor Diger", "fantasy_name_diger"),//
     FANTASY_NAME_DIYER("Dor Diyer", "fantasy_name_diyer"),//
+    FANTASY_NAME_ERANN("Dor Erann", "fantasy_name_erann"),//
     FANTASY_NAME_FRALLER("Dor Fraller", "fantasy_name_fraller"),//
     FANTASY_NAME_FRANN("Dor Frann", "fantasy_name_frann"),//
     FANTASY_NAME_GAIVO("Dor Gaivo", "fantasy_name_gaivo"),//
     FANTASY_NAME_GUIDOLF("Dor Guidolf", "fantasy_name_guidolf"),//
+    FANTASY_NAME_GUTIS("Dor Gut'is", "fantasy_name_gutis"),//
     FANTASY_NAME_JOENDER("Dor Jönder", "fantasy_name_joender"),//
     FANTASY_NAME_JOTHER("Dor Jother", "fantasy_name_jother"),//
     FANTASY_NAME_JUANN("Dor Juann", "fantasy_name_juann"),//
     FANTASY_NAME_JUEDA("Dor Jüda", "fantasy_name_jueda"),//
     FANTASY_NAME_KEANN("Dor Kéann", "fantasy_name_keann"),//
+    FANTASY_NAME_MAHANN("Dor Mahann", "fantasy_name_mahann"),//
     FANTASY_NAME_MALTERS("Dor Malters", "fantasy_name_malters"),//
+    FANTASY_NAME_MARCHER("Dor Marcher", "fantasy_name_marcher"),//
     FANTASY_NAME_MARGA("Dor Marga", "fantasy_name_marga"),//
+    FANTASY_NAME_MAROHDE("Dor Marohde", "fantasy_name_marohde"),//
     FANTASY_NAME_MARING("Dor Maring", "fantasy_name_maring"),//
+    FANTASY_NAME_MARRES("Dor Marres", "fantasy_name_marres"),//
+    FANTASY_NAME_MARTES("Dor Martes", "fantasy_name_martes"),//
     FANTASY_NAME_MATTI("Dor Matti", "fantasy_name_matti"),//
     FANTASY_NAME_MAUTH("Dor Mauth", "fantasy_name_mauth"),//
     FANTASY_NAME_MICHNY("Dor Michny", "fantasy_name_michny"),//
     FANTASY_NAME_PATANN("Dor Patann", "fantasy_name_patann"),//
     FANTASY_NAME_PUETT("Dor Pütt", "fantasy_name_puett"),//
+    FANTASY_NAME_RALERR("Dor Ralerr", "fantasy_name_ralerr"),//
     FANTASY_NAME_SANDER("De Sander", "fantasy_name_sander"),//
     FANTASY_NAME_SASCHER("Dor Sascher", "fantasy_name_sascher"),//
     FANTASY_NAME_SEIER("Dor Seier", "fantasy_name_seier"),//
     FANTASY_NAME_SESKE("Dor Seske", "fantasy_name_seske"),//
     FANTASY_NAME_SVANN("Dor Svann", "fantasy_name_svann"),//
+    FANTASY_NAME_SVENGEL("Dor Svengel", "fantasy_name_svengel"),//
     FANTASY_NAME_TIANN("Dor Tiann", "fantasy_name_tiann"),//
     FANTASY_NAME_TORKE("Dor Torke", "fantasy_name_torke"),//
-    FANTASY_NAME_TOSCH("Dor Tosch", "fantasy_name_tosch"),//
+    FANTASY_NAME_THOCKER("Dor Thocker", "fantasy_name_thocker"),//
+    FANTASY_NAME_TOSCH("Dor Thosch", "fantasy_name_tosch"),//
     FANTASY_NAME_TOTZ("Dor Totz", "fantasy_name_totz"),//
     FANTASY_NAME_UDITZ("Dor Uditz", "fantasy_name_uditz"),//
     FANTASY_NAME_ULTZ("Dor Ultz", "fantasy_name_ultz"),//
@@ -175,6 +196,7 @@ public enum Sound {
 	FIVE_WEEKS("Five weeks", "five_weeks"), //
 	FOG("The Fog", "fog"), //
 	FRAGE("Frage", "frage"), //
+    FRALLER_AUGENBLICK("Augenblick", "fraller_klein_augenblick"),//
     FRALLER_BIS_GLEICH("Bis gleich", "fraller_bis_gleich"),//
     FRALLER_JA_BESTAETIGUNG("Jaha", "fraller_ja_bestaetigung"),//
     FRALLER_JA_GENAU("Ja, genau", "fraller_ja_genau"),//
@@ -220,6 +242,7 @@ public enum Sound {
 	HUST("Hust", "hust"), //
     HUST_SCOTCH("Hust Scotch", "hust_scotch"), //
 	HUUST("Huust", "hust_titus"),//
+    ICH_WOISS_NICH("Ich weiß nich", "ich_woiss_nich"),//
 	IDEFIX_IT("IDE fix it", "idefix_it"), //
 	JAJAJAJAJAJA("Jajajajajaja", "jajajajajaja"), //
 	JABBA_LACHEN("Jabba", "jabba_lachen"), //

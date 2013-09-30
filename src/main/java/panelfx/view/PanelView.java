@@ -127,6 +127,7 @@ public class PanelView {
         createSoundtrackTab();
         createFantasyTab_1();
         createFantasyTab_2();
+        createFantasyTab_3();
         createTimerTab();
 
         this.scene = new Scene(masterPane);
@@ -181,7 +182,8 @@ public class PanelView {
                 Sound.FRALLER_JA_BESTAETIGUNG,//
                 Sound.FRALLER_JA_GENAU,//
                 Sound.STEELE2, //
-                Sound.FRALLER_BIS_GLEICH //
+                Sound.FRALLER_BIS_GLEICH, //
+                Sound.FRALLER_AUGENBLICK //
         );
 
         tabContent.getChildren().add(paneFrank);
@@ -202,6 +204,7 @@ public class PanelView {
                 Sound.NJAEH, //
                 Sound.QUIET,  //
                 Sound.DENKE_HUST, //
+                Sound.DENKE_KNISTER, //
                 Sound.TACH //
         );
 
@@ -209,7 +212,7 @@ public class PanelView {
                 this.soundButtons, Sound.BIDDE_QUESTIONING,
                 Sound.BIDDE_IN_TROUBLE, Sound.REVERT, Sound.REWE, Sound.EEHM,
                 Sound.DOMAIN, Sound.SO_NICHT, Sound.WEISST_DUS,
-                Sound.CONVERTER, Sound.LOKAL, Sound.WAS_DU_GLAUBST_JOTHER, Sound.ANNEE_NE);
+                Sound.CONVERTER, Sound.LOKAL, Sound.WAS_DU_GLAUBST_JOTHER, Sound.ANNEE_NE, Sound.ICH_WOISS_NICH);
 
         tabContent.getChildren().add(paneJoeHanson);
     }
@@ -471,6 +474,7 @@ public class PanelView {
                 Sound.FAIL_SATANIC, //
                 Sound.DU_WILLST_WAS,//
                 Sound.CALS_ANFORDERUNG,//
+                Sound.DATHER_DAS_IST_RICHTIG, //
                 Sound.GUTIS_AHH,//
                 Sound.GUTIS_JA,//
                 Sound.GUTIS_DATENMODELL,//
@@ -658,6 +662,7 @@ public class PanelView {
                     Sound.FANTASY_NAME_SEIER,//
                     Sound.FANTASY_CALL_SEIER, //
                     Sound.FANTASY_NAME_MALTERS,//
+                    Sound.FANTASY_CALL_MALTERS, //
                     Sound.FANTASY_NAME_UDITZ,//
                     Sound.FANTASY_NAME_FRANN,//
                     Sound.FANTASY_NAME_MATTI //
@@ -677,12 +682,8 @@ public class PanelView {
                     Sound.FANTASY_NAME_TIANN, //
                     Sound.FANTASY_NAME_ANANN, //
                     Sound.FANTASY_NAME_SESKE, //
+                    Sound.FANTASY_CALL_SESKE, //
                     Sound.FANTASY_NAME_MARING //
-            );
-
-            createButtonGroup(tabContent, "Quastan (Name'em)", //
-                    Sound.FANTASY_NAME_CHRIKA, //
-                    Sound.FANTASY_NAME_DIGER //
             );
 
             createButtonGroup(tabContent, "UX", //
@@ -693,7 +694,13 @@ public class PanelView {
                     Sound.FANTASY_NAME_JUANN, //
                     Sound.FANTASY_NAME_SANDER //
             );
-
+            createButtonGroup(tabContent, "TCO (Name'em)", //
+                    Sound.FANTASY_NAME_DATHER, //
+                    Sound.FANTASY_CALL_DATHER, //
+                    Sound.FANTASY_NAME_SVANN, //
+                    Sound.FANTASY_NAME_ACHOMM, //
+                    Sound.FANTASY_NAME_MARRES //
+            );
         }
 
     }
@@ -726,21 +733,14 @@ public class PanelView {
                     Sound.FANTASY_CALL_DENKE//
             );
 
-            createButtonGroup(tabContent, "PM & Artichekten & Koord", //
-                    Sound.FANTASY_NAME_TOSCH,//
-                    Sound.FANTASY_CALL_TOSCH,//
-                    Sound.FANTASY_NAME_CALS,//
-                    Sound.FANTASY_CALL_CALS,//
-                    Sound.FANTASY_NAME_DIYER,//
-                    Sound.FANTASY_CALL_DIYER,//
-                    Sound.FANTASY_NAME_JOENDER,//
-                    Sound.FANTASY_CALL_JOENDER //
-            );
-
             createButtonGroup(tabContent, "BIT", //
                     Sound.FANTASY_NAME_TORKE,//
                     Sound.FANTASY_NAME_PATANN, //
                     Sound.FANTASY_CALL_PATANN//
+            );
+            createButtonGroup(tabContent, "DBA", //
+                    Sound.FANTASY_NAME_ERANN,//
+                    Sound.FANTASY_NAME_MAHANN //
             );
 
             createButtonGroup(tabContent, "All In (Name'em)", //
@@ -750,13 +750,61 @@ public class PanelView {
                     Sound.FANTASY_NAME_GUIDOLF, //
                     Sound.FANTASY_CALL_GUIDOLF,//
                     Sound.FANTASY_NAME_DANG, //
-                    Sound.FANTASY_NAME_MICHNY //
+                    Sound.FANTASY_NAME_MICHNY, //
+                    Sound.FANTASY_CALL_MICHNY //
             );
-            createButtonGroup(tabContent, "TCO (Name'em)", //
-                    Sound.FANTASY_NAME_DATHER, //
-                    Sound.FANTASY_CALL_DATHER, //
-                    Sound.FANTASY_NAME_SVANN, //
-                    Sound.FANTASY_NAME_ACHOMM
+            createButtonGroup(tabContent, "Quastan (Name'em)", //
+                    Sound.FANTASY_NAME_CHRIKA, //
+                    Sound.FANTASY_NAME_DIGER //
+            );
+            createButtonGroup(tabContent, "Solitarios", //
+                    Sound.FANTASY_NAME_MARTES //
+            );
+            createButtonGroup(tabContent, "Artichekten & Koord", //
+                    Sound.FANTASY_NAME_TOSCH,//
+                    Sound.FANTASY_CALL_TOSCH,//
+                    Sound.FANTASY_NAME_CALS,//
+                    Sound.FANTASY_CALL_CALS,//
+                    Sound.FANTASY_NAME_DIYER,//
+                    Sound.FANTASY_CALL_DIYER,//
+                    Sound.FANTASY_NAME_JOENDER,//
+                    Sound.FANTASY_CALL_JOENDER //
+            );
+            createButtonGroup(tabContent, "PMs", //
+                    Sound.FANTASY_NAME_TOSCH,//
+                    Sound.FANTASY_CALL_TOSCH,//
+                    Sound.FANTASY_NAME_THOCKER, //
+                    Sound.FANTASY_NAME_CHRIANN,//
+                    Sound.FANTASY_CALL_CHRIANN,//
+                    Sound.FANTASY_NAME_RALERR//
+            );
+        }
+    }
+    private void createFantasyTab_3() {
+        this.fantasyTab = new Tab("Fantasy III");
+        this.fantasyTab.setClosable(true);
+        if (this.accessDecisionManager.hasFantasyNameAcceess()) {
+
+            this.tabPane.getTabs().add(this.fantasyTab);
+
+            final FlowPane tabContent = new FlowPane();
+            tabContent.setPadding(new Insets(10, 0, 0, 0));
+            tabContent.setVgap(5);
+            tabContent.setHgap(5);
+            tabContent.getStyleClass().add("wood-shifted");
+            this.fantasyTab.setContent(tabContent);
+
+            createButtonGroup(tabContent, "Hades (Name\'em)", //
+                    Sound.FANTASY_NAME_DAMME,//
+                    Sound.FANTASY_NAME_MAROHDE,//
+                    Sound.FANTASY_NAME_GUTIS, //
+                    Sound.FANTASY_NAME_CHRISCHKA, //
+                    Sound.FANTASY_NAME_DADIN //
+            );
+
+            createButtonGroup(tabContent, "Die Anderen", //
+                    Sound.FANTASY_NAME_CHRILEN,//
+                    Sound.FANTASY_NAME_SVENGEL //
             );
         }
     }
