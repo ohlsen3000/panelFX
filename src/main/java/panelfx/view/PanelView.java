@@ -12,10 +12,12 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TitledPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -125,9 +127,7 @@ public class PanelView {
         createMediaTab();
         createSoundsTab();
         createSoundtrackTab();
-        createFantasyTab_1();
-        createFantasyTab_2();
-        createFantasyTab_3();
+        createFantasyTab();
         createTimerTab();
 
         this.scene = new Scene(masterPane);
@@ -632,21 +632,29 @@ public class PanelView {
 
     }
 
-    private void createFantasyTab_1() {
-        this.fantasyTab = new Tab("Fantasy I");
+    private void createFantasyTab() {
+        this.fantasyTab = new Tab("Fantasy");
         this.fantasyTab.setClosable(true);
         if (this.accessDecisionManager.hasFantasyNameAcceess()) {
 
             this.tabPane.getTabs().add(this.fantasyTab);
 
             final FlowPane tabContent = new FlowPane();
-            tabContent.setPadding(new Insets(10, 0, 0, 0));
             tabContent.setVgap(5);
             tabContent.setHgap(5);
             tabContent.getStyleClass().add("wood-shifted");
             this.fantasyTab.setContent(tabContent);
 
-            createButtonGroup(tabContent, "Bug Busters (Name'em/ Call'em)",
+            final Accordion accordion = new Accordion ();
+
+            FlowPane firstFloorContent = new FlowPane();
+            firstFloorContent.getStyleClass().add("wood-shifted");
+            TitledPane firstFloor = new TitledPane("1. Etage", firstFloorContent);
+            accordion.getPanes().add(firstFloor);
+
+            tabContent.getChildren().add(accordion);
+
+            createButtonGroup(firstFloorContent, "Bug Busters (Name'em/ Call'em)",
                     Sound.FANTASY_NAME_SASCHER,//
                     Sound.FANTASY_CALL_SASCHER, //
                     Sound.FANTASY_NAME_GAIVO, //
@@ -657,7 +665,7 @@ public class PanelView {
                     Sound.FANTASY_CALL_TOTZ //
             );
 
-            createButtonGroup(tabContent, "Déjà Vu (Name'em)",
+            createButtonGroup(firstFloorContent, "Déjà Vu (Name'em)",
                     Sound.FANTASY_NAME_PUETT,//
                     Sound.FANTASY_CALL_PUETT, //
                     Sound.FANTASY_NAME_SEIER,//
@@ -669,7 +677,7 @@ public class PanelView {
                     Sound.FANTASY_NAME_MATTI //
             );
 
-            createButtonGroup(tabContent, "Katana (Name'em/ Call'em)",
+            createButtonGroup(firstFloorContent, "Katana (Name'em/ Call'em)",
                     Sound.FANTASY_NAME_ALERG,  //
                     Sound.FANTASY_CALL_ALERG,//
                     Sound.FANTASY_NAME_CHRILLNER, //
@@ -678,7 +686,7 @@ public class PanelView {
                     Sound.FANTASY_CALL_BEYER //
             );
 
-            createButtonGroup(tabContent, "Kihon (Name'em)",
+            createButtonGroup(firstFloorContent, "Kihon (Name'em)",
                     Sound.FANTASY_NAME_MARGA, //
                     Sound.FANTASY_NAME_TIANN, //
                     Sound.FANTASY_NAME_ANANN, //
@@ -687,7 +695,7 @@ public class PanelView {
                     Sound.FANTASY_NAME_MARING //
             );
 
-            createButtonGroup(tabContent, "UX", //
+            createButtonGroup(firstFloorContent, "UX", //
                     Sound.FANTASY_NAME_ALEIP, //
                     Sound.FANTASY_CALL_ALEIP,//
                     Sound.FANTASY_NAME_DAGENS, //
@@ -695,33 +703,20 @@ public class PanelView {
                     Sound.FANTASY_NAME_JUANN, //
                     Sound.FANTASY_NAME_SANDER //
             );
-            createButtonGroup(tabContent, "TCO (Name'em)", //
+            createButtonGroup(firstFloorContent, "TCO (Name'em)", //
                     Sound.FANTASY_NAME_DATHER, //
                     Sound.FANTASY_CALL_DATHER, //
                     Sound.FANTASY_NAME_SVANN, //
                     Sound.FANTASY_NAME_ACHOMM, //
                     Sound.FANTASY_NAME_MARRES //
             );
-        }
 
-    }
+            FlowPane secondFloorContent = new FlowPane();
+            secondFloorContent.getStyleClass().add("wood-shifted");
+            TitledPane secondFloor = new TitledPane("2. Etage", secondFloorContent);
+            accordion.getPanes().add(secondFloor);
 
-
-    private void createFantasyTab_2() {
-        this.fantasyTab = new Tab("Fantasy II");
-        this.fantasyTab.setClosable(true);
-        if (this.accessDecisionManager.hasFantasyNameAcceess()) {
-
-            this.tabPane.getTabs().add(this.fantasyTab);
-
-            final FlowPane tabContent = new FlowPane();
-            tabContent.setPadding(new Insets(10, 0, 0, 0));
-            tabContent.setVgap(5);
-            tabContent.setHgap(5);
-            tabContent.getStyleClass().add("wood-shifted");
-            this.fantasyTab.setContent(tabContent);
-
-            createButtonGroup(tabContent, "Bastelecke (Name'em/ Call'em)", //
+            createButtonGroup(secondFloorContent, "Bastelecke (Name'em/ Call'em)", //
                     Sound.FANTASY_NAME_FRALLER,//
                     Sound.FANTASY_CALL_FRALLER,//
                     Sound.FANTASY_NAME_ULTZ, //
@@ -734,17 +729,17 @@ public class PanelView {
                     Sound.FANTASY_CALL_DENKE//
             );
 
-            createButtonGroup(tabContent, "BIT", //
+            createButtonGroup(secondFloorContent, "BIT", //
                     Sound.FANTASY_NAME_TORKE,//
                     Sound.FANTASY_NAME_PATANN, //
                     Sound.FANTASY_CALL_PATANN//
             );
-            createButtonGroup(tabContent, "DBA", //
+            createButtonGroup(secondFloorContent, "DBA", //
                     Sound.FANTASY_NAME_ERANN,//
                     Sound.FANTASY_NAME_MAHANN //
             );
 
-            createButtonGroup(tabContent, "All In (Name'em)", //
+            createButtonGroup(secondFloorContent, "All In (Name'em)", //
                     Sound.FANTASY_NAME_KEANN, //
                     Sound.FANTASY_CALL_KEANN, //
                     Sound.FANTASY_NAME_DAMPS,  //
@@ -754,14 +749,14 @@ public class PanelView {
                     Sound.FANTASY_NAME_MICHNY, //
                     Sound.FANTASY_CALL_MICHNY //
             );
-            createButtonGroup(tabContent, "Quastan (Name'em)", //
+            createButtonGroup(secondFloorContent, "Quastan (Name'em)", //
                     Sound.FANTASY_NAME_CHRIKA, //
                     Sound.FANTASY_NAME_DIGER //
             );
-            createButtonGroup(tabContent, "Solitarios", //
+            createButtonGroup(secondFloorContent, "Solitarios", //
                     Sound.FANTASY_NAME_MARTES //
             );
-            createButtonGroup(tabContent, "Artichekten & Koord", //
+            createButtonGroup(secondFloorContent, "Artichekten & Koord", //
                     Sound.FANTASY_NAME_TOSCH,//
                     Sound.FANTASY_CALL_TOSCH,//
                     Sound.FANTASY_NAME_CALS,//
@@ -771,7 +766,7 @@ public class PanelView {
                     Sound.FANTASY_NAME_JOENDER,//
                     Sound.FANTASY_CALL_JOENDER //
             );
-            createButtonGroup(tabContent, "PMs", //
+            createButtonGroup(secondFloorContent, "PMs", //
                     Sound.FANTASY_NAME_TOSCH,//
                     Sound.FANTASY_CALL_TOSCH,//
                     Sound.FANTASY_NAME_THOCKER, //
@@ -779,23 +774,13 @@ public class PanelView {
                     Sound.FANTASY_CALL_CHRIANN,//
                     Sound.FANTASY_NAME_RALERR//
             );
-        }
-    }
-    private void createFantasyTab_3() {
-        this.fantasyTab = new Tab("Fantasy III");
-        this.fantasyTab.setClosable(true);
-        if (this.accessDecisionManager.hasFantasyNameAcceess()) {
 
-            this.tabPane.getTabs().add(this.fantasyTab);
+            FlowPane thirdFloorContent = new FlowPane();
+            thirdFloorContent.getStyleClass().add("wood-shifted");
+            TitledPane thirdFloor = new TitledPane("Diverse", thirdFloorContent);
+            accordion.getPanes().add(thirdFloor);
 
-            final FlowPane tabContent = new FlowPane();
-            tabContent.setPadding(new Insets(10, 0, 0, 0));
-            tabContent.setVgap(5);
-            tabContent.setHgap(5);
-            tabContent.getStyleClass().add("wood-shifted");
-            this.fantasyTab.setContent(tabContent);
-
-            createButtonGroup(tabContent, "Hades (Name\'em)", //
+            createButtonGroup(thirdFloorContent, "Hades (Name\'em)", //
                     Sound.FANTASY_NAME_DAMME,//
                     Sound.FANTASY_NAME_MAROHDE,//
                     Sound.FANTASY_NAME_GUTIS, //
@@ -803,11 +788,12 @@ public class PanelView {
                     Sound.FANTASY_NAME_DADIN //
             );
 
-            createButtonGroup(tabContent, "Die Anderen", //
+            createButtonGroup(thirdFloorContent, "Die Anderen", //
                     Sound.FANTASY_NAME_CHRILEN,//
                     Sound.FANTASY_NAME_SVENGEL //
             );
         }
+
     }
 
 
